@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI for Founders Mastery — Proposal · Daniel Priestley × Mindvalley</title>
+<meta name="description" content="Proposal for AI for Founders Mastery: an 18-week, Priestley-led Mastery where founders build the AI system that grows their business."/>
+<style>
+:root{
+ --brand:#1832B4;--brand-bright:#3D63F5;--brand-content:#1429A0;--brand-dark:#0F1F7A;
+ --brand-light:#EEF2FF;--brand-border:#D6DEFF;--green:#159F65;--green-light:#E8F8F1;
+ --orange:#ED6325;--orange-content:#C9541F;--orange-light:#FFF4E9;--pink:#DF1A6F;--pink-light:#FDEBF3;
+ --grey-100:#F9F9F9;--grey-200:#F3F4F6;--grey-300:#CED1D7;--grey-400:#979CA5;
+ --grey-500:#595E67;--grey-600:#292D38;--ink:#0F131A;
+ --bg:#fff;--surface:#fff;--text:#0F131A;--text-muted:#595E67;--text-subtle:#71767F;
+ --border:#DFE1E5;--border-strong:#CED1D7;
+ --shadow-light:0 4px 15px 0 rgba(0,0,0,.05);--shadow-medium:0 5px 20px 0 rgba(0,0,0,.10);
+ --dusk:linear-gradient(135deg,#0F1F7A 0%,#1429A0 55%,#3D63F5 100%);
+ --container:1180px;--ease:cubic-bezier(0.2,0,0,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Google Sans","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--text);background:var(--bg);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px}
+.overline{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-content)}
+.overline.on-dark{color:#9DB4FF}
+h1{font-size:clamp(38px,5.4vw,64px);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:700;line-height:1.15;letter-spacing:-.02em}
+h3{font-size:20px;font-weight:700;line-height:1.3}
+.body-lg{font-size:19px;line-height:1.65;color:var(--text-muted)}
+.body-md{font-size:16px;line-height:1.6;color:var(--text-muted)}
+.small{font-size:13px;color:var(--text-subtle)}
+.badge{display:inline-flex;align-items:center;gap:6px;border-radius:128px;padding:6px 14px;font-size:12.5px;font-weight:600;background:var(--brand-light);color:var(--brand-content)}
+.badge.green{background:var(--green-light);color:var(--green)}
+.badge.orange{background:var(--orange-light);color:var(--orange-content)}
+.badge.dark{background:rgba(255,255,255,.12);color:#fff}
+
+/* Topbar */
+.topbar{position:sticky;top:0;z-index:60;height:60px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;align-items:center}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+.wordmark{font-size:18px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.wordmark span{color:var(--brand)}
+.topbar .meta{font-size:13px;color:var(--text-subtle);font-weight:500}
+
+/* Hero */
+.hero{background:var(--dusk);color:#fff;padding:72px 0 100px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(61,99,245,.55),transparent 65%)}
+.hero .wrap{position:relative;z-index:2}
+.hero .badges{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}
+.hero h1{max-width:900px;margin:14px 0 20px}
+.hero .answer{max-width:820px;font-size:20px;line-height:1.65;color:#DCE4FF}
+.hero .answer strong{color:#fff}
+.hero .quickfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.qf{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:18px 20px}
+.qf .n{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.qf .l{font-size:13px;color:#B9C6FF;margin-top:4px;line-height:1.4}
+
+/* Tabs */
+.tabbar-outer{position:sticky;top:60px;z-index:55;background:#fff;border-bottom:1px solid var(--border);box-shadow:var(--shadow-light)}
+.tabbar{display:flex;gap:4px;overflow-x:auto;padding:10px 0;-ms-overflow-style:none;scrollbar-width:none}
+.tabbar::-webkit-scrollbar{display:none}
+.tab-btn{flex:0 0 auto;border:1px solid transparent;background:transparent;color:var(--text-muted);font:inherit;font-size:14.5px;font-weight:600;padding:9px 18px;border-radius:100px;cursor:pointer;transition:all .18s var(--ease);white-space:nowrap}
+.tab-btn:hover{background:var(--grey-200);color:var(--ink)}
+.tab-btn.active{background:var(--brand);color:#fff}
+.tab-btn .num{display:inline-block;font-size:11px;font-weight:700;opacity:.65;margin-right:6px}
+.tab-panel{display:none;padding:56px 0 80px}
+.tab-panel.active{display:block}
+section+section{margin-top:56px}
+.section-head{margin-bottom:26px;max-width:820px}
+.section-head p{margin-top:10px}
+
+/* Cards & grids */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:26px;box-shadow:var(--shadow-light)}
+.card.tint{background:var(--brand-light);border-color:var(--brand-border)}
+.card.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+.card.dark .body-md{color:#B9BEC9}
+.card h3{margin-bottom:8px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-content);margin-bottom:10px}
+.card.dark .kicker{color:#9DB4FF}
+
+/* Stat blocks */
+.stat{border-radius:18px;padding:24px;border:1px solid var(--border);background:#fff}
+.stat .n{font-size:40px;font-weight:700;letter-spacing:-.02em;color:var(--brand);line-height:1}
+.stat.green .n{color:var(--green)}
+.stat.orange .n{color:var(--orange)}
+.stat.pink .n{color:var(--pink)}
+.stat .l{font-size:14px;font-weight:600;color:var(--ink);margin-top:10px;line-height:1.4}
+.stat .s{font-size:12.5px;color:var(--text-subtle);margin-top:5px;line-height:1.45}
+
+/* SCQA */
+.scqa{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-radius:20px;overflow:hidden}
+.scqa>div{padding:26px;border-right:1px solid var(--border)}
+.scqa>div:last-child{border-right:0}
+.scqa .letter{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;margin-bottom:14px}
+.scqa .s-l{background:var(--grey-200);color:var(--grey-600)}
+.scqa .c-l{background:var(--orange-light);color:var(--orange-content)}
+.scqa .q-l{background:var(--pink-light);color:var(--pink)}
+.scqa .a-l{background:var(--brand);color:#fff}
+.scqa h4{font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:8px}
+.scqa p{font-size:14.5px;line-height:1.6;color:var(--text-muted)}
+.scqa .answer-cell{background:var(--brand-light)}
+.scqa .answer-cell p{color:var(--brand-dark);font-weight:500}
+
+/* Pyramid keyline */
+.keyline{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.keyline .kl{background:#fff;border:1px solid var(--border);border-top:4px solid var(--brand);border-radius:16px;padding:22px;box-shadow:var(--shadow-light)}
+.keyline .kl:nth-child(2){border-top-color:var(--green)}
+.keyline .kl:nth-child(3){border-top-color:var(--orange)}
+.keyline .kl:nth-child(4){border-top-color:var(--pink)}
+.keyline .kl .idx{font-size:12px;font-weight:700;color:var(--text-subtle);letter-spacing:.08em}
+.keyline .kl h3{font-size:16.5px;margin:8px 0 8px;line-height:1.35}
+.keyline .kl p{font-size:13.5px;color:var(--text-muted);line-height:1.55}
+
+/* Tables */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--border);border-radius:16px;overflow:hidden;font-size:14px}
+.tbl th{background:var(--grey-100);text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-subtle);padding:12px 16px;border-bottom:1px solid var(--border)}
+.tbl td{padding:12px 16px;border-bottom:1px solid var(--grey-200);vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .score{font-weight:700;color:var(--green);white-space:nowrap}
+.tbl .score.warn{color:var(--orange)}
+.tbl .score.bad{color:var(--pink)}
+.tbl .who{color:var(--text-subtle);font-size:13px}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;background:var(--grey-200);color:var(--grey-500);white-space:nowrap}
+.pill.b{background:var(--brand-light);color:var(--brand-content)}
+.pill.g{background:var(--green-light);color:var(--green)}
+.pill.o{background:var(--orange-light);color:var(--orange-content)}
+.pill.p{background:var(--pink-light);color:var(--pink)}
+
+/* Modules / weeks */
+.module{border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-bottom:18px;background:#fff}
+.module-head{padding:24px 28px;display:flex;align-items:flex-start;gap:18px;cursor:pointer;user-select:none}
+.module-head:hover{background:var(--grey-100)}
+.mnum{flex:0 0 46px;height:46px;border-radius:13px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
+.module.m2 .mnum{background:var(--green)}
+.module.m3 .mnum{background:var(--orange)}
+.module.m4 .mnum{background:var(--pink)}
+.module.mi .mnum{background:var(--ink)}
+.module-head .mtitle{flex:1}
+.module-head h3{font-size:19px}
+.module-head .msub{font-size:14px;color:var(--text-muted);margin-top:4px}
+.module-head .chev{flex:0 0 auto;font-size:20px;color:var(--text-subtle);transition:transform .2s var(--ease);margin-top:8px}
+.module.open .chev{transform:rotate(180deg)}
+.module-body{display:none;border-top:1px solid var(--grey-200);padding:6px 28px 26px}
+.module.open .module-body{display:block}
+.week{display:grid;grid-template-columns:92px 1fr 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--grey-200)}
+.week:last-child{border-bottom:0}
+.week .wk{font-size:13px;font-weight:700;color:var(--text-subtle);padding-top:2px}
+.call{border-left:3px solid var(--brand-border);padding-left:14px}
+.call.lab{border-left-color:#BEE9D6}
+.call .ct{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.call .ct.teach{color:var(--brand-content)}
+.call .ct.lab-t{color:var(--green)}
+.call h4{font-size:15px;font-weight:700;line-height:1.35}
+.call p{font-size:13px;color:var(--text-muted);margin-top:4px;line-height:1.5}
+.call .win{font-size:12.5px;margin-top:7px;color:var(--green);font-weight:600}
+
+/* Callouts */
+.callout{border-radius:18px;padding:24px 28px;border:1px solid var(--brand-border);background:var(--brand-light);display:flex;gap:16px;align-items:flex-start}
+.callout.warn{background:var(--orange-light);border-color:#FBD9BC}
+.callout.good{background:var(--green-light);border-color:#BEE9D6}
+.callout .ic{font-size:20px;line-height:1.3}
+.callout p{font-size:14.5px;color:var(--grey-600);line-height:1.6}
+.callout strong{color:var(--ink)}
+
+/* Quote */
+.quote{border-left:4px solid var(--brand);padding:6px 0 6px 22px;margin:8px 0}
+.quote p{font-size:17px;line-height:1.6;color:var(--ink);font-style:italic}
+.quote .by{font-size:13px;color:var(--text-subtle);margin-top:8px;font-style:normal;font-weight:600}
+
+/* Faculty photos */
+.avatar{width:100%;height:250px;object-fit:cover;object-position:center 22%;border-radius:14px;margin-bottom:16px;background:var(--grey-200);display:block}
+.bench-card .avatar{height:200px}
+.mono{width:100%;height:250px;border-radius:14px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;font-size:54px;font-weight:700;color:#fff;background:var(--dusk)}
+.bench-card .mono{height:200px;font-size:44px}
+.fmeta{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 12px}
+.covers{font-size:12.5px;color:var(--text-subtle);margin-top:10px;padding-top:10px;border-top:1px dashed var(--grey-300)}
+.covers strong{color:var(--grey-600)}
+
+/* Footer */
+footer{background:var(--ink);color:#8D93A0;padding:36px 0;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media(max-width:960px){
+ .g3,.g4,.keyline,.scqa,.hero .quickfacts{grid-template-columns:repeat(2,1fr)}
+ .scqa>div{border-bottom:1px solid var(--border)}
+ .week{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ .g2,.g3,.g4,.keyline,.scqa,.hero .quickfacts{grid-template-columns:1fr}
+}
+</style>
+<script>
+/* Defined in <head> so it exists before any <img> parses.
+   Chain: local file → Airtable attachment URL → monogram tile. */
+function imgFail(img){
+ if(img.dataset.remote && !img.dataset.triedRemote){
+  img.dataset.triedRemote='1';img.src=img.dataset.remote;return;
+ }
+ if(img.dataset.remote2 && !img.dataset.triedRemote2){
+  img.dataset.triedRemote2='1';img.src=img.dataset.remote2;return;
+ }
+ var d=document.createElement('div');d.className='mono';
+ if(img.classList.contains('avatar')&&img.closest('.bench-card')){d.style.height='200px';d.style.fontSize='44px';}
+ d.textContent=img.dataset.initials||'?';
+ img.replaceWith(d);
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+ <div class="wrap">
+  <div class="wordmark">Mindvalley <span>×</span> Daniel Priestley</div>
+  <div class="meta">Proposal · Prepared by the Curriculum Team · July 2026</div>
+ </div>
+</div>
+
+<div class="hero">
+ <div class="wrap">
+  <div class="badges">
+   <span class="badge dark">Exponential Entrepreneur Pathway</span>
+   <span class="badge dark">New Mastery Programme</span>
+   <span class="badge dark">Evidence-based proposal</span>
+  </div>
+  <div class="overline on-dark">The Proposition</div>
+  <h1>AI for Founders Mastery</h1>
+  <p class="answer"><strong>Launch an 18-week, Priestley-led Mastery where founders don't learn AI — they leave running on it.</strong> Every week pairs a strategy Teach call with a hands-on Implementation Lab, so each founder graduates with a working <strong>Founder Operating System</strong>: an AI-run demand engine, sales engine, delivery agents and asset engine wired into their real business. It fills the single biggest whitespace across our three Mastery lines — and every design choice below is backed by our own cohort data.</p>
+  <div class="quickfacts">
+   <div class="qf"><div class="n">18 weeks</div><div class="l">Twice-weekly live calls — Teach (Tue) + Implementation Lab (Thu)</div></div>
+   <div class="qf"><div class="n">4 modules</div><div class="l">Reinvention → Demand → Delivery → Scale &amp; Assets</div></div>
+   <div class="qf"><div class="n">3-day intensive</div><div class="l">Mid-programme Founder OS build — the keystone milestone</div></div>
+   <div class="qf"><div class="n">9.55 avg</div><div class="l">Priestley's rating across 12 EM sessions. Never below 9.2</div></div>
+  </div>
+ </div>
+</div>
+
+<div class="tabbar-outer">
+ <div class="wrap">
+  <nav class="tabbar" id="tabbar">
+   <button class="tab-btn active" data-tab="overview"><span class="num">01</span>The Case</button>
+   <button class="tab-btn" data-tab="evidence"><span class="num">02</span>The Evidence</button>
+   <button class="tab-btn" data-tab="programme"><span class="num">03</span>The Programme</button>
+   <button class="tab-btn" data-tab="curriculum"><span class="num">04</span>Week by Week</button>
+   <button class="tab-btn" data-tab="faculty"><span class="num">05</span>Faculty &amp; Format</button>
+   <button class="tab-btn" data-tab="students"><span class="num">06</span>The Students</button>
+   <button class="tab-btn" data-tab="next"><span class="num">07</span>Founder OS &amp; Next Steps</button>
+  </nav>
+ </div>
+</div>
+
+<main class="wrap">
+<!-- ============ TAB 1: THE CASE ============ -->
+<div class="tab-panel active" id="panel-overview">
+
+ <section>
+  <div class="section-head">
+   <div class="overline">The argument in 30 seconds</div>
+   <h2>Founders are already telling us what they want. No programme gives it to them.</h2>
+  </div>
+  <div class="scqa">
+   <div><div class="letter s-l">S</div><h4>Situation</h4><p>We run three successful Masteries. AI Mastery teaches AI tools and productivity. Entrepreneurship Mastery teaches business frameworks. Social Media Mastery teaches content and funnels. All three follow a proven live-cohort model.</p></div>
+   <div><div class="letter c-l">C</div><h4>Complication</h4><p>The highest-rated and best-attended sessions across all three are the handful where <em>AI meets business outcome</em> — yet no programme owns that ground. AI Mastery stops at productivity; EM's AI stayed at chatbot level; SMM never touches operations. Founders sit through 3 programmes to assemble half a system.</p></div>
+   <div><div class="letter q-l">Q</div><h4>Question</h4><p>What should we build to own the "AI as a business growth system" ground — and who should lead it?</p></div>
+   <div class="answer-cell"><div class="letter a-l">A</div><h4>Answer</h4><p>AI for Founders Mastery: 18 weeks, Priestley-led, twice-weekly Teach + Lab pairs, a mid-programme 3-day intensive, and one graduating artefact — a working Founder Operating System.</p></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">The key line</div>
+   <h2>Four reasons this wins</h2>
+   <p class="body-md">Each is expanded with data in the Evidence tab.</p>
+  </div>
+  <div class="keyline">
+   <div class="kl"><div class="idx">REASON 01</div><h3>The whitespace is real — no programme teaches AI as a growth system</h3><p>Our three Masteries cover tools, frameworks and content respectively. None wires AI into demand, sales, delivery and scale end-to-end. Nor does any major competitor.</p></div>
+   <div class="kl"><div class="idx">REASON 02</div><h3>Demand is proven — AI × business outcome is our top-rated, top-attended content</h3><p>EM's #1 session ever (9.97), AIM 2026's #1 teach (9.69), a perfect-10 Implementation Lab, and rooms of 900+ for AI sessions.</p></div>
+   <div class="kl"><div class="idx">REASON 03</div><h3>Priestley is the proven teacher — and his IP is the exact spine required</h3><p>12 EM sessions, 9.2–9.87, averaging 9.55. Oversubscribed, LAPS, Scorecard, the AI Wrapper and the 6-Step Method map one-to-one onto the gap.</p></div>
+   <div class="kl"><div class="idx">REASON 04</div><h3>The delivery model is validated — paired Teach → Lab is our best-performing format</h3><p>Speaking &amp; Influence proved the twice-weekly paired cadence and 3-day mid-intensive; AIM 2026's Implementation Labs rate 9.0–10.0.</p></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Reason 01 · The whitespace</div>
+   <h2>Three programmes, three half-systems</h2>
+  </div>
+  <div class="grid g3">
+   <div class="card">
+    <div class="kicker">AI Mastery</div>
+    <h3>Teaches the tools, not the business</h3>
+    <p class="body-md">Built around "eliminate Fridays": second brain, assistants, agents, creative AI. Brilliant on capability — but zero lead generation, no offers, no sales systems, no monetization. Vibe-coding builds an MVP and stops at "collect emails."</p>
+   </div>
+   <div class="card">
+    <div class="kicker">Entrepreneurship Mastery</div>
+    <h3>Teaches the frameworks, with shallow AI</h3>
+    <p class="body-md">World-class on offers, oversubscription, monetization. But its "AI employees" are well-onboarded chatbots in Projects — automation platforms were name-dropped, never built. The leap from "assistant that drafts" to "agent that executes" was asserted, not demonstrated.</p>
+   </div>
+   <div class="card">
+    <div class="kicker">Social Media Mastery</div>
+    <h3>Teaches content-to-funnel, not operations</h3>
+    <p class="body-md">Strong AI content systems and monetization funnels — but nothing on AI for the business itself: sales pipeline, delivery, ops, finance. Students repeatedly asked "how does this apply to my B2B / service / product business?"</p>
+   </div>
+  </div>
+  <div style="margin-top:18px" class="callout good">
+   <div class="ic">◆</div>
+   <p><strong>AI for Founders Mastery owns the intersection:</strong> Priestley's growth playbook, rebuilt as AI systems the founder actually ships during the programme. Not "use AI as a finisher or a browser" — run your business on it. It also resolves the three contradictions our cohorts surfaced (when to automate, AI copy vs human voice, coach-only examples) with one staged doctrine.</p>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">The positioning statement</div>
+   <h2>How we say it</h2>
+  </div>
+  <div class="card dark">
+   <div class="kicker">Draft positioning</div>
+   <p style="font-size:22px;line-height:1.55;font-weight:500">"Most founders use AI like a browser — open a tab, ask a question, close it. In 18 weeks, Daniel Priestley rebuilds your business so AI runs your demand, your sales and your delivery — and you run the parts only a founder can: <em>purpose, taste and discernment</em>. You don't graduate with a certificate. You graduate with a machine."</p>
+   <p class="body-md" style="margin-top:16px">Anchored in Priestley's own AI Summit language: "Your business is already dead — it needs to be reinvented… you can take the core essence of your business and make it even better at light speed."</p>
+  </div>
+  <div class="grid g3" style="margin-top:18px">
+   <div class="card tint"><div class="kicker">Who it's for</div><p class="body-md">Founders, entrepreneurs and creators building something — business growth, sales, marketing, content, audience — who want AI as the system underneath their version of success, at any stage from idea to scale. Profiled from 872 real intake surveys in <strong>The Students</strong> tab.</p></div>
+   <div class="card tint"><div class="kicker">The promise</div><p class="body-md">Leave with a working Founder Operating System: business brain, demand engine, sales engine, delivery agents, asset engine and founder cockpit — with a 12-month growth calendar loaded — built on your real business, live, during the programme.</p></div>
+   <div class="card tint"><div class="kicker">The enemy</div><p class="body-md">"AI as a finisher." Prompt-of-the-week culture. Courses that demo the teacher's setup and send you home to a blank screen — the #1 friction in our own cohort feedback ("this works in your Claude, not mine").</p></div>
+  </div>
+ </section>
+
+</div>
+<!-- ============ TAB 2: THE EVIDENCE ============ -->
+<div class="tab-panel" id="panel-evidence">
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Reason 02 · Proven demand</div>
+   <h2>The data: AI × business outcome is our best content — by rating and by room size</h2>
+   <p class="body-md">Every figure below is pulled from the EM, SMM and AIM Airtable bases (session ratings /10 and live attendance), July 2026.</p>
+  </div>
+  <div class="grid g4">
+   <div class="stat green"><div class="n">9.97</div><div class="l">From Founder → AI-Leveraged Operator (Noelle Russell)</div><div class="s">The #1-rated session in the entire Entrepreneurship Mastery base</div></div>
+   <div class="stat green"><div class="n">10.0</div><div class="l">Implementation Lab: Build the App You Always Wished Existed</div><div class="s">AI Mastery 2026 — a perfect score for a hands-on build session</div></div>
+   <div class="stat"><div class="n">998</div><div class="l">Live attendance, "Building Your Brain on AI"</div><div class="s">Biggest room in the AI Mastery base. Custom Assistant: 930. Think Smarter: 856</div></div>
+   <div class="stat"><div class="n">9.69</div><div class="l">Find, Understand &amp; Win Your Best Customers</div><div class="s">AIM 2026's #1 teach session — the most "founder" topic in the curriculum</div></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <h2>When AI content turns commercial, ratings jump</h2>
+  </div>
+  <table class="tbl">
+   <thead><tr><th>Session</th><th>Programme</th><th>Rating /10</th><th>Attendance</th><th>Why it matters</th></tr></thead>
+   <tbody>
+    <tr><td><strong>From Founder → AI-Leveraged Operator</strong> <span class="who">Noelle Russell</span></td><td><span class="pill b">EM 2025</span></td><td class="score">9.97</td><td>178</td><td>Full business cycle with AI overlaid at every stage — the closest existing session to this proposal's thesis, and the base's best score</td></tr>
+    <tr><td><strong>Find, Understand &amp; Win Your Best Customers</strong></td><td><span class="pill b">AIM 2026</span></td><td class="score">9.69</td><td>303</td><td>The moment AIM pointed AI at customers instead of productivity, it produced its top-rated teach</td></tr>
+    <tr><td><strong>Build Your AI Operating System (Pt 1 / Pt 2)</strong></td><td><span class="pill b">AIM 2026</span></td><td class="score">9.64 / 9.54</td><td>349 / 312</td><td>The "OS" framing is already validated with our audience — we extend it from personal OS to business OS</td></tr>
+    <tr><td><strong>Build &amp; Test Your Personal AI Operating System</strong> <span class="who">Kwame Christian</span></td><td><span class="pill b">EM 2025</span></td><td class="score">9.59</td><td>181</td><td>Same signal from the EM side — students want to build systems, not collect prompts</td></tr>
+    <tr><td><strong>What to Build with AI (and What to Avoid)</strong> <span class="who">Ajit Nawalkha</span></td><td><span class="pill b">EMC 2025</span></td><td class="score">9.58</td><td>146</td><td>Prioritisation doctrine rates as highly as tooling — founders want judgment, not just capability</td></tr>
+    <tr><td><strong>From Viral to Valuable: Attention → Authority + Sales</strong> <span class="who">Chris Do</span></td><td><span class="pill p">SMM 2026</span></td><td class="score">9.78</td><td>132</td><td>SMM's top-rated 2026 teach is its most commercial session</td></tr>
+    <tr><td><strong>AI-Powered Scale &amp; Integration</strong> <span class="who">Domenic Ashburn</span></td><td><span class="pill p">SMM 2026</span></td><td class="score">9.66</td><td>118</td><td>AI-systems thread consistently at the top of SMM's table</td></tr>
+    <tr><td><strong>$1M From Social Media &amp; AI (Without Being Famous)</strong> <span class="who">John Lee</span></td><td><span class="pill p">SMM 2026</span></td><td class="score">9.54</td><td>129</td><td>Money + AI framing outperforms craft sessions taught by the same faculty</td></tr>
+    <tr><td><strong>The AI-Powered Entrepreneur</strong> <span class="who">Vishen</span></td><td><span class="pill b">EM 2025</span></td><td class="score warn">8.25</td><td><strong>476</strong></td><td>The draw is enormous — 2nd biggest EM room — but no single session can deliver systems-level depth. The gap between that pull and what one class can hold <em>is</em> the product opportunity</td></tr>
+   </tbody>
+  </table>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Reason 03 · The teacher</div>
+   <h2>Priestley is already our most consistent 9.5+ performer — and his IP is the missing half</h2>
+  </div>
+  <div class="grid g2">
+   <div>
+    <table class="tbl">
+     <thead><tr><th>Priestley session (EM 2025)</th><th>Rating /10</th><th>Attend.</th></tr></thead>
+     <tbody>
+      <tr><td>Designing Your Next 12 Months</td><td class="score">9.87</td><td>167</td></tr>
+      <tr><td>Asset Leverage &amp; Repurposing</td><td class="score">9.82</td><td>165</td></tr>
+      <tr><td>High Value Offers &amp; Price Anchoring</td><td class="score">9.74</td><td>214</td></tr>
+      <tr><td>Monetization Frameworks</td><td class="score">9.61</td><td>273</td></tr>
+      <tr><td>Authority Content Systems</td><td class="score">9.56</td><td>228</td></tr>
+      <tr><td>The 5 Pillars of Influence</td><td class="score">9.55</td><td>179</td></tr>
+      <tr><td>Scaling Influence Systems</td><td class="score">9.52</td><td>160</td></tr>
+      <tr><td>Signature Positioning</td><td class="score">9.51</td><td>203</td></tr>
+      <tr><td>From Idea to Impact</td><td class="score">9.49</td><td><strong>371</strong></td></tr>
+      <tr><td>Legacy &amp; Exit Strategy</td><td class="score">9.47</td><td>178</td></tr>
+      <tr><td>Oversubscription Strategies</td><td class="score">9.26</td><td>216</td></tr>
+      <tr><td>Waitlists, Scarcity &amp; Launch Mechanics</td><td class="score">9.22</td><td>213</td></tr>
+     </tbody>
+    </table>
+    <p class="small" style="margin-top:10px">12 sessions · average 9.55 · floor 9.22 · biggest room 371. No other EM guest has this combination of volume and consistency.</p>
+   </div>
+   <div>
+    <div class="card" style="margin-bottom:16px">
+     <div class="kicker">His AI Summit talk is the strategic spine, pre-written</div>
+     <p class="body-md">"How AI Rewrites the Entrepreneur's Playbook" (AI Summit 2026) already contains the programme's core frames: AI agents as a free 24/7 workforce ("Atlanteans"), the two sides of business (speed to market / speed to value), digital soil, the AI Wrapper business model, moving founders above the line into IP · Media · Data · Technology, and the 6-Step Entrepreneurial Method at AI speed.</p>
+    </div>
+    <div class="quote">
+     <p>"There's really only two sides to business. Side one is speed to market, and side two is speed to value. That's all we do."</p>
+     <div class="by">Daniel Priestley — AI Summit 2026 (this becomes the programme's organising axis: Module 2 = market, Module 3 = value)</div>
+    </div>
+    <div class="quote">
+     <p>"You can't create the power plant, but you can create the blender that plugs into it… you can create businesses that sit on top of AI."</p>
+     <div class="by">Daniel Priestley — the AI Wrapper thesis, Module 4's centrepiece</div>
+    </div>
+    <div class="card tint" style="margin-top:16px">
+     <div class="kicker">Funnel asset already built</div>
+     <p class="body-md">The Vishen × Priestley "Science of Growing Customers" webinar + 2-evening intensive (existing microsite) becomes the natural front-door: webinar → intensive → <strong>AI for Founders Mastery</strong>. Same voice, same frameworks, ascending commitment.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Reason 04 · The format</div>
+   <h2>Paired Teach → Lab is our highest-performing format. Abstract sessions are our lowest.</h2>
+  </div>
+  <div class="grid g2">
+   <div class="card">
+    <div class="kicker">What the data rewards</div>
+    <p class="body-md">AIM 2026 Implementation Labs: <strong>9.03 · 9.07 · 9.14 · 9.21 · 9.22 · 9.23 · 9.25 · 9.26 · 9.29 · 9.34 · 9.37 · 10.0</strong>. The 2026 capstone "Tying Everything Together" hit <strong>9.87</strong>. Speaking &amp; Influence ran the same mechanic for 46 sessions across ~20 weeks — guest teaches Part 1, host workshops Part 2, assignment between calls, a 3-day signature-build intensive mid-programme, graduation + alumni reunion. We adopt it wholesale.</p>
+   </div>
+   <div class="card">
+    <div class="kicker">What the data punishes</div>
+    <p class="body-md">AIM 2026's opener "Kick Off &amp; Define Your Vision in the Age of AI": <strong>6.04</strong> — the lowest-rated session in the base, in front of 661 people. Unstructured community calls: <strong>5.89</strong>. And SMM's AI workshop lost the room when students' tools weren't pre-configured. Three design rules follow: <strong>open with a build, not a visioning session</strong>; every community touchpoint has a job; ship a pre-configured starter kit before week 1.</p>
+   </div>
+  </div>
+  <div style="margin-top:18px" class="callout warn">
+   <div class="ic">▲</div>
+   <p><strong>The honest risk, and the mitigation.</strong> Follow-along AI workshops fail when setup friction eats the session (observed in both SMM and EM capstones). Mitigation is structural: a shipped Founder OS Starter Kit (pre-built skills, prompts, project templates, connector guides) installed in onboarding week, plus labs run at two speeds — build-along and watch-then-replay — the fix Domenic improvised mid-cohort, formalised.</p>
+  </div>
+ </section>
+
+</div>
+<!-- ============ TAB 3: THE PROGRAMME ============ -->
+<div class="tab-panel" id="panel-programme">
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Architecture</div>
+   <h2>Four modules on Priestley's axis: reinvent, then market, then value, then assets</h2>
+   <p class="body-md">18 weeks · twice-weekly · every topic is a pair: <strong>Teach</strong> (Priestley or marquee guest — strategy, frameworks, proof) → <strong>Implementation Lab</strong> (Sabrina Stocker — the founder builds it into their own business before the next call). The Speaking &amp; Influence model, pointed at business growth.</p>
+  </div>
+  <div class="grid g4">
+   <div class="card" style="border-top:4px solid var(--brand)">
+    <div class="kicker">Module 1 · Weeks 1–4</div>
+    <h3>The Reinvention</h3>
+    <p class="body-md">"Your business is already dead." Rebuild founder thinking for the age of intelligence, capture your intellectual capital, and stand up the business brain everything else runs on.</p>
+   </div>
+   <div class="card" style="border-top:4px solid var(--green)">
+    <div class="kicker">Module 2 · Weeks 5–8</div>
+    <h3>The Demand Engine</h3>
+    <p class="body-md"><em>Speed to market.</em> ICP, signals before sales, scorecard lead capture, authority content system, oversubscription and waitlist mechanics — each shipped as a running AI system.</p>
+   </div>
+   <div class="card" style="border-top:4px solid var(--orange)">
+    <div class="kicker">Module 3 · Weeks 10–13</div>
+    <h3>The Delivery Engine</h3>
+    <p class="body-md"><em>Speed to value.</em> Offer architecture, the LAPS sales dashboard, AI teammates for follow-up, fulfilment and support — with human-in-the-loop checkpoints where trust lives.</p>
+   </div>
+   <div class="card" style="border-top:4px solid var(--pink)">
+    <div class="kicker">Module 4 · Weeks 14–18</div>
+    <h3>Scale &amp; Assets</h3>
+    <p class="body-md">Convert labour into IP, media, data and technology. Build the AI Wrapper MVP, design the plural-founder operating rhythm, graduate with a 12-month growth calendar.</p>
+   </div>
+  </div>
+  <div style="margin-top:18px" class="module mi open">
+   <div class="module-head" style="cursor:default">
+    <div class="mnum">★</div>
+    <div class="mtitle">
+     <h3>Week 9 — The Founder OS Intensive (3 days)</h3>
+     <div class="msub">The mid-programme keystone, mirroring Speaking &amp; Influence's "One Talk Workshop." Demand engine assembled end-to-end: live builds, hot seats, Priestley teaching the strategy floor, Sabrina running the build floor. Founders leave the intensive with their demand engine switched on — real leads flowing before Module 3 begins. Candidate venue: live at Mindvalley U + streamed, matching the Science of Growing Customers format.</div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">The weekly rhythm</div>
+   <h2>One mechanic, week after week: learn it Tuesday, run it by Thursday night</h2>
+  </div>
+  <div class="grid g3">
+   <div class="card"><div class="kicker">Tuesday · Teach (75–90 min)</div><p class="body-md"><strong>Priestley-led.</strong> One framework, one founder case (PAR: person–action–result), one decision the founder must make about their own business. Guests teach inside his arc — he opens and closes every guest week, exactly as Eric anchored S&amp;I.</p></div>
+   <div class="card"><div class="kicker">Thursday · Implementation Lab (90 min)</div><p class="body-md"><strong>Sabrina-led.</strong> The Tuesday decision becomes a working system: build-along with the starter kit, one volunteer's business built live on screen, two speeds (build-along / watch-then-replay). Every lab ends with a shipped artefact.</p></div>
+   <div class="card"><div class="kicker">Between calls · The assignment</div><p class="body-md">One concrete deliverable per week, S&amp;I-style — submitted to the community, reviewed in the next Q&amp;A block. Certification requires a running Founder OS, not watched videos (AIM 2025's project-submission precedent).</p></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">The doctrine</div>
+   <h2>One staged roadmap resolves the contradictions our cohorts surfaced</h2>
+   <p class="body-md">John Lee says automate with avatars. Natalie Ellis writes every email herself. Domenic warns "hand it all to AI and you get slop." All three are right — at different stages. This programme is the first to say <em>when</em>.</p>
+  </div>
+  <table class="tbl">
+   <thead><tr><th>Stage</th><th>Founder's job</th><th>What AI runs</th><th>What stays human</th><th>Built in</th></tr></thead>
+   <tbody>
+    <tr><td><strong>$0 → $10K</strong> <span class="who">Validate</span></td><td>Founder–opportunity fit, first offer, first 100 leads</td><td>Research, ICP discovery, landing page &amp; scorecard build, content drafting</td><td>Every sale, every conversation, the offer itself</td><td><span class="pill b">Modules 1–2</span></td></tr>
+    <tr><td><strong>$10K → $100K</strong> <span class="who">Systemise demand</span></td><td>Sell every week; find the repeatable week</td><td>Lead capture &amp; scoring, nurture sequences, content velocity, LAPS dashboard</td><td>Voice &amp; taste on flagship content, high-ticket calls</td><td><span class="pill g">Module 2 + Intensive</span></td></tr>
+    <tr><td><strong>$100K → $1M</strong> <span class="who">Systemise delivery</span></td><td>Orchestrate; hire AI before humans</td><td>Follow-up, onboarding, fulfilment support, reporting — with human-in-the-loop gates</td><td>Purpose, taste, discernment; the moments that build trust</td><td><span class="pill o">Module 3</span></td></tr>
+    <tr><td><strong>$1M+</strong> <span class="who">Asset mode</span></td><td>Plural founder: portfolio at different stages</td><td>The wrapper product; data, media and IP engines compounding</td><td>Being the Key Person of Influence — the one thing AI can't be</td><td><span class="pill p">Module 4</span></td></tr>
+   </tbody>
+  </table>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Mindvalley standards check</div>
+   <h2>Stress-tested against the four filters</h2>
+  </div>
+  <div class="grid g4">
+   <div class="card"><div class="kicker">Completion</div><p class="body-md">Early win in week 1 (a working business brain), a felt breakthrough per module, and the intensive as a mid-programme re-commitment spike — the S&amp;I completion mechanics, preserved.</p></div>
+   <div class="card"><div class="kicker">Substance</div><p class="body-md">Every week ends with a shipped system, not a concept. Five of the 6 Shifts covered (the spiritual shift doesn't apply): Mindset (operator → orchestrator), Habit (weekly OS review), Show-Up (founder as KPI), Lifestyle (4-day founder week), Tool Kit (the full OS).</p></div>
+   <div class="card"><div class="kicker">Self-generated insight</div><p class="body-md">No on-camera pitching. The upgrade path (Accelerator → Mastery) is experienced through the Science of Growing Customers funnel, and BlinkLife/Membership value is discovered inside exercises.</p></div>
+   <div class="card"><div class="kicker">Funnel</div><p class="body-md">Front door: AI Summit + Growing Customers webinar. On-ramp: EM &amp; AIM alumni (the 476-person AI-Powered Entrepreneur room is the retargeting list). Continuity: alumni reunion + quarterly OS-upgrade calls.</p></div>
+  </div>
+ </section>
+
+</div>
+<!-- ============ TAB 4: WEEK BY WEEK ============ -->
+<div class="tab-panel" id="panel-curriculum">
+
+ <section>
+  <div class="section-head">
+   <div class="overline">The curriculum</div>
+   <h2>18 weeks, 36 live sessions, one machine</h2>
+   <p class="body-md">Click a module to expand. Each week: Tuesday <span class="pill b">TEACH</span> + Thursday <span class="pill g">LAB</span>. Session titles to be run through ABCS optimisation before launch.</p>
+  </div>
+
+  <div class="module m1 open">
+   <div class="module-head"><div class="mnum">1</div><div class="mtitle"><h3>The Reinvention — weeks 1–4</h3><div class="msub">Breakthrough: "My AI knows my business better than my last hire did — and I finally know where AI belongs in it."</div></div><div class="chev">▾</div></div>
+   <div class="module-body">
+    <div class="week"><div class="wk">WEEK 1</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>Your Business Is Already Dead (Good News)</h4><p>The age-of-intelligence reset: Jevons paradox, atomised industries, Atlanteans, digital soil. Which of the 10 steps only you can do — and why everything else is now up for grabs.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Stand Up Your Business Brain</h4><p>Starter-kit install; build the context layer — offers, voice, customers, numbers, proof stories — into a working project.</p><div class="win">Win: an AI that answers like your co-founder, by Thursday night</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 2</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>The Founder's New Job: Purpose, Taste, Discernment</h4><p>From operator to orchestrator. The GAIN audit (grinding · avoidable · intensive · neglected) applied to a real founder's week, live.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Your AI Opportunity Backlog</h4><p>GAIN × ICE scoring on your own business — a ranked build list for the next 16 weeks. The Roomba Rule: where AI would make you slower.</p><div class="win">Win: your prioritised AI roadmap — no more shiny objects</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 3</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>The 6-Step Method at AI Speed</h4><p>Founder–opportunity fit → MVP → PMF → go-to-market → scale → exit, with shrinking team sizes. Where your business actually is, and what that stage demands.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Hire Your First AI Teammate</h4><p>Job description, onboarding docs, feedback loops — the EA or marketing assistant that solves your #1 constraint. Treat it like a hire, not a chat.</p><div class="win">Win: 3–5 founder-hours reclaimed this week</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 4</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>Intellectual Capital: Pause, Reflect, Document</h4><p>Your baggage is the asset. Proof stories, playbooks, "things only you could say" — the raw material AI multiplies and competitors can't copy.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>The IP Vault</h4><p>Extract voice, frameworks and stories into a reusable context vault — the industry nuance that beats "the 19-year-old AI bros."</p><div class="win">Win: content in your voice that no generic prompt can produce</div></div>
+    </div>
+   </div>
+  </div>
+
+  <div class="module m2">
+   <div class="module-head"><div class="mnum">2</div><div class="mtitle"><h3>The Demand Engine — weeks 5–8 · speed to market</h3><div class="msub">Breakthrough: "Leads arrived this week from a system I built — while I was doing something else."</div></div><div class="chev">▾</div></div>
+   <div class="module-body">
+    <div class="week"><div class="wk">WEEK 5</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>Own a Micro-Niche: ICP &amp; Being Best in the World</h4><p>Power-law markets. Define the game you can win, and the exact person who resonates. Connection beats competition.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>The Customer Intelligence System</h4><p>AI-driven ICP research: mine reviews, communities and competitor audiences; build a living avatar the whole OS reads from. (Modelled on AIM 2026's 9.69 session.)</p><div class="win">Win: you can say precisely who it's for — and who it isn't</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 6</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>Signals Before Sales: Scorecard Thinking</h4><p>Offer value before you sell. The free diagnostic that costs data, not money — his ScoreApp playbook ($1.3M from a standing start, the identical week run 43 times).</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Build Your Lead Capture Funnel</h4><p>Scorecard/quiz + landing page, vibe-coded and shipped live in session. Real link, real traffic, real signals.</p><div class="win">Win: a lead machine with your name on it, live on the internet</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 7</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>Authority Content Systems</h4><p>Short form · long form · lead form; the Pain–Prize–Problem–News hook rotation. Content that builds influence vs noise — his 9.56-rated EM session, extended with AI velocity.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>The Content Velocity Engine</h4><p>Your IP vault + a weekly content pipeline: research runs before you wake, drafts in your voice, you supply taste and discernment. Anti-slop gate built in.</p><div class="win">Win: a week of on-voice content from one founder-hour</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 8</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>Oversubscribed: Capacity, Tension, Waitlists</h4><p>Only oversubscribed businesses make a profit. Name your capacity, warm your market, run the waitlist campaign — buy conditions = logic + emotion + urgency.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Build the Waitlist Campaign</h4><p>The campaign assembled: waitlist page, nurture sequence, launch mechanics — scheduled and automated, ready to fire at the intensive.</p><div class="win">Win: your first oversubscription campaign, armed</div></div>
+    </div>
+   </div>
+  </div>
+
+  <div class="module mi">
+   <div class="module-head"><div class="mnum">★</div><div class="mtitle"><h3>Week 9 — The Founder OS Intensive (3 days)</h3><div class="msub">Assemble everything from weeks 1–8 into one running demand engine. Day 1: strategy floor (Priestley) — your 12-month demand thesis. Day 2: build floor (Sabrina + lab coaches) — every system connected, hot seats, live launches. Day 3: switch-on — campaigns fired live, LAPS dashboard reading real numbers, cohort showcase. Founders return to Module 3 with leads in the pipeline.</div></div><div class="chev">▾</div></div>
+   <div class="module-body">
+    <div class="callout" style="margin:16px 0">
+     <div class="ic">◆</div>
+     <p><strong>Why mid-programme, not final:</strong> S&amp;I placed its 3-day One Talk Workshop at the centre and rode the momentum for ten more weeks. A final-week capstone celebrates; a mid-programme intensive <em>compounds</em> — every Module 3–4 session then runs on a live business with real data flowing.</p>
+    </div>
+   </div>
+  </div>
+
+  <div class="module m3">
+   <div class="module-head"><div class="mnum">3</div><div class="mtitle"><h3>The Delivery Engine — weeks 10–13 · speed to value</h3><div class="msub">Breakthrough: "A customer went from lead to delighted without me touching the process — except the moment that mattered."</div></div><div class="chev">▾</div></div>
+   <div class="module-body">
+    <div class="week"><div class="wk">WEEK 10</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>The Offer Ecosystem &amp; Price Anchoring</h4><p>Free gift → diagnostic → core offer → subscription. High-value offers, anchoring, the ascending transaction model — his 9.74-rated EM session, rebuilt for AI-era margins.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Design the Offer Stack</h4><p>Transformation statement (X→Y), objection-reversing bonuses, the $1,500 call threshold. Offer copy generated from your vault, priced and shipped.</p><div class="win">Win: an offer page you'd happily send tomorrow</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 11</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>LAPS: The Sales System That Runs Weekly</h4><p>Leads → Appointments → Presentations → Sales as the founder's weekly dashboard. The repeatable week. Where automation lifts conversion and where it kills trust.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Build the Sales Engine</h4><p>Lead scoring, follow-up sequences ("the fortune is in the follow-up"), proposal generation, call-prep briefs — human-in-the-loop gates at every trust moment.</p><div class="win">Win: no lead goes cold in your business again</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 12</div>
+     <div class="call"><div class="ct teach">Teach · Guest (Noelle Russell) + Priestley wrap</div><h4>Your AI Workforce: One Agent, One Job</h4><p>Agentic design from the 9.97 session: scope by purpose, success metric and data; your business constitution — values and decision filters the whole workforce obeys.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Delivery Agents, Deployed</h4><p>Onboarding, fulfilment support and customer-service workflows with escalation checkpoints — the n8n/agents build AIM proved at 9.14–9.37.</p><div class="win">Win: delivery that scales without headcount</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 13</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>The 4-Day Founder Week</h4><p>The repeatable week, formalised: what you orchestrate, what the OS runs, what gets killed. Metrics → strategy: reading the dashboard like a CEO.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>The Founder Cockpit</h4><p>One dashboard: LAPS numbers, content performance, delivery health, weekly AI-generated founder brief. Your Monday now starts with a report, not a scramble.</p><div class="win">Win: a business you can read in five minutes</div></div>
+    </div>
+   </div>
+  </div>
+
+  <div class="module m4">
+   <div class="module-head"><div class="mnum">4</div><div class="mtitle"><h3>Scale &amp; Assets — weeks 14–18</h3><div class="msub">Breakthrough: "I'm not selling my hours anymore. I own things that compound."</div></div><div class="chev">▾</div></div>
+   <div class="module-body">
+    <div class="week"><div class="wk">WEEK 14</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>Above the Line: IP · Media · Data · Technology</h4><p>"You were raised for a system that no longer exists." AI's job is converting your skilled labour into the four asset classes where the real money is made.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>The Asset &amp; Repurposing Engine</h4><p>One idea → ten platforms, automated (his 9.82 session, systematised). Audit what you already own; set the compounding loops running.</p><div class="win">Win: your back catalogue starts earning again</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 15</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>The AI Wrapper: Products That Sit on Top of AI</h4><p>Customer data + your IP + generative AI → a sellable product. BookMagic ($5M valuation, founder aged 70), AwardsApp, ScoreApp ($50M+). The blender, not the power plant.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Vibe-Code Your Wrapper MVP</h4><p>Scope with user stories, build the prototype, put it in front of ten real users this week. (AIM's perfect-10 lab, pointed at revenue.)</p><div class="win">Win: a product demo that didn't exist on Monday</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 16</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>Dynamism Is the New Moat</h4><p>Castles are dead; be James Bond. Community, exclusivity, memorable experience and culture as the defences AI can't commoditise — and being the Key Person of Influence in your niche.</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>Retention &amp; Community Systems</h4><p>Renewal signals, win-back sequences, community rituals, personal touches at scale — the human moments, protected by automation everywhere else.</p><div class="win">Win: churn stops being a mystery</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 17</div>
+     <div class="call"><div class="ct teach">Teach · Priestley</div><h4>The Plural Founder</h4><p>Portfolio entrepreneurship: projects at different stages of the 6 steps, each running on its own OS — how AI makes plural possible (his own Dent / ScoreApp / BookMagic / AwardsApp stack).</p></div>
+     <div class="call lab"><div class="ct lab-t">Lab · Sabrina</div><h4>The 12-Month Growth Calendar</h4><p>The three-part year: perfect repeatable week, quarterly spotlights, one big annual message — loaded into the OS with campaigns pre-scheduled into 2027.</p><div class="win">Win: you know what your business is doing next August</div></div>
+    </div>
+    <div class="week"><div class="wk">WEEK 18</div>
+     <div class="call"><div class="ct teach">Teach · Priestley + Vishen</div><h4>Graduation: Designing Your Next 12 Months</h4><p>His highest-rated EM session (9.87) as the closing ceremony: from momentum to market leadership. Success sharing, certification, cohort showcase.</p></div>
+     <div class="call lab"><div class="ct lab-t">+6 weeks · Alumni</div><h4>Alumni Reunion &amp; OS Upgrade Call</h4><p>The S&amp;I continuity mechanic: reunion, wins audit, quarterly OS-upgrade calls as the bridge to the next cohort and the wider Exponential Entrepreneur pathway.</p><div class="win">Win: the machine keeps compounding after the course ends</div></div>
+    </div>
+   </div>
+  </div>
+
+ </section>
+</div>
+<!-- ============ TAB 5: FACULTY & FORMAT ============ -->
+<div class="tab-panel" id="panel-faculty">
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Faculty</div>
+   <h2>Priestley leads and owns the curriculum. A rated author bench covers every module.</h2>
+   <p class="body-md">The availability reality: Daniel anchors the programme, but we cannot assume he fronts all 18 weeks. So the chain of command is explicit — Daniel owns it, <strong>Vishen deputises</strong>, Sabrina builds it — and every module has named cover from authors already rated 9.3+ on this exact material with our own students. He opens and closes every week he's live for; the bench teaches inside his arc, never instead of it.</p>
+  </div>
+  <div class="grid g3">
+   <div class="card" style="border-top:4px solid var(--brand)">
+    <img class="avatar" src="images/daniel-priestley.jpg?v=3" alt="Daniel Priestley" data-remote="https://v5.airtableusercontent.com/v3/u/55/55/1784102400000/xbnuarluETqXLWky2jfzXQ/iBoycvwh8q8DjATiq48gHcTR-vcdPeWHeV_ewhp6MebtkH2us5q0j1t4c98x57TMUS7nM5J9d2WdC3YzsNF8DdincsRRlp86Ur6GDM6YsY3H1WSTb5hYGtTCrQVuUxEv7HdoBy7D8rLTr2g-8tTqsQ/lyhWzpJ9yHxMRN2-SKi64ckvFw9KGo_8QHJIvrePNMk" data-initials="DP" onerror="imgFail(this)"/>
+    <div class="kicker">Lead teacher &amp; curriculum owner</div>
+    <h3>Daniel Priestley</h3>
+    <div class="fmeta"><span class="pill g">12 EM sessions · avg 9.55</span><span class="pill b">Floor 9.22 · peak 9.87</span></div>
+    <p class="body-md">Owns all four module spines. His published IP — Oversubscribed, Key Person of Influence, 24 Assets, ScoreApp/scorecard marketing, LAPS — maps one-to-one onto Modules 2–4 with zero licensing ambiguity: it's his. Most-repeated guest on Diary of a CEO (7×) — external draw matches internal data.</p>
+    <div class="covers"><strong>Non-negotiable Priestley weeks:</strong> W1 kickoff · W6 Oversubscribed/scorecard · W8 waitlists · W15 AI Wrapper · W18 graduation · Intensive Day 1. Everything else has named cover below.</div>
+   </div>
+   <div class="card" style="border-top:4px solid var(--brand-bright)">
+    <img class="avatar" src="images/vishen.jpg?v=3" alt="Vishen Lakhiani" data-initials="VL" onerror="imgFail(this)"/>
+    <div class="kicker">Deputy curriculum lead</div>
+    <h3>Vishen Lakhiani</h3>
+    <div class="fmeta"><span class="pill g">Impactful Videos 9.81</span><span class="pill g">Founder's Content System 9.79</span><span class="pill g">Webinars to Sell 9.58</span></div>
+    <p class="body-md">The house voice of AI-first founding — AI-First Blueprint, second brain, vibe coding — and the biggest rooms in the EM base (476–488). Co-created the Science of Growing Customers funnel with Daniel and hosts its webinar, so when he deputises a strategy week the audience hears the same voice that sold them the programme.</p>
+    <div class="covers"><strong>Covers:</strong> W1 co-open · first call for any Priestley strategy week · opens the intensive · co-hosts W18 graduation</div>
+   </div>
+   <div class="card" style="border-top:4px solid var(--green)">
+    <img class="avatar" src="images/sabrina-stocker.jpg?v=3" alt="Sabrina Stocker" data-remote="https://v5.airtableusercontent.com/v3/u/55/55/1784102400000/GRlNc0S2-7yrXt-RtPMibg/JPWPuu7NKrVi66-kuUHUJM2c2D1axnH30-HpaVsmR7dImZJ5eZgyGD_ZF66mshloNECeXvQ1U5YkZ3S8ltUAW2FwhOMQkX3JPAgtuV6ceITZnnAvNQTxdIqIJnmvmcYpNKxLD-NOOl-L0eoPsMISGQ/zSCUo_YGjJtXRO_lupVFl2B-hVIdAP4LJEqBVQmb24M" data-initials="SS" onerror="imgFail(this)"/>
+    <div class="kicker">Lab lead · every Thursday</div>
+    <h3>Sabrina Stocker</h3>
+    <div class="fmeta"><span class="pill g">AI Live Build 9.38</span><span class="pill b">Priestley's Dent orbit</span></div>
+    <p class="body-md">Runs all Implementation Labs — the strategy→build handoff is native because she already teaches his frameworks. Her SMM live build (a volunteer's complete business in 20 minutes; a student banked £8K in two weeks off a prior version) is the model workshop. Her 1,500-client case database becomes lab fuel. Also the first cover for offer/funnel teaches.</p>
+    <div class="covers"><strong>Covers:</strong> all labs · W5 and W10 teach cover (avatar, offer, funnel)</div>
+   </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">The bench</div>
+   <h2>Six authors, chosen by the data, mapped to the weeks they can carry</h2>
+   <p class="body-md">Selection rule: only authors who have already taught this material to our students at 9.3+ (or, for Vykintas, who owns the AIM lab machinery). Every rating below is from our own bases.</p>
+  </div>
+  <div class="grid g3">
+   <div class="card bench-card">
+    <img class="avatar" src="images/ajit-nawalkha.jpg?v=3" alt="Ajit Nawalkha" data-remote="https://v5.airtableusercontent.com/v3/u/55/55/1784102400000/v6jZOhJDCMKxbdpKaPphkg/rmuG78FSvchDm5ZI7TXFK4Rr-TU5aG1QW_eJuBb2cp4JuvOYPBNv1ST7uT9rdd71_fI62PKIwJiVC5kQ7oxgnDl5LLbqt3N5j4lDTKVIp485PHglqWF6T2E4ysLwvVMWBMNYV3eKDy_9h_IV6NT6Hg/9nMaVDXKUAZmvPCBnVCnlfoze1w6wnJc9TlZlGu_5qc" data-remote2="https://drive.google.com/thumbnail?id=1bCsGqIKTukP-MkTocdftaYFGj0t0gi7V&amp;sz=w800" data-initials="AN" onerror="imgFail(this)"/>
+    <div class="kicker">Business frameworks lead</div>
+    <h3>Ajit Nawalkha</h3>
+    <div class="fmeta"><span class="pill g">Million-Dollar Game Plan 9.97</span><span class="pill g">3 Offers 9.81</span></div>
+    <p class="body-md">Taught the entire EM coaches-&amp;-consultants track (EMC) solo — 22 sessions, routinely 9.4–9.97 — and owns the "hire AI before humans / AI CEO" doctrine. The safest hands in the building for any business-framework week.</p>
+    <div class="covers"><strong>Covers:</strong> W2–3 (founder OS, time system) · W10 offers · W13 founder week · Priestley's understudy for any strategy session</div>
+   </div>
+   <div class="card bench-card">
+    <img class="avatar" src="images/noelle-russell.png?v=3" alt="Noelle Russell" data-remote="https://v5.airtableusercontent.com/v3/u/55/55/1784102400000/H1n9wQorQr7m35mP09ZRCw/0v5KT2q55KxBk2wwIyINw0Kp5s7PZ_DjoLTZo2sQPXakumOuWcbAz5ElGWikHb927KwYuPqd4xeanf218vlm3bGOkOm5yvycNkcJFxdrPyWjHNyRvZ8jjfVT2xwnVkdPd8C-SzZX-wyjACfkok3eTw/RVzkwdUfSM1nvcnN6h1zJwUAETCB5IBJwZb78xadqOw" data-initials="NR" onerror="imgFail(this)"/>
+    <div class="kicker">AI workforce &amp; enterprise credibility</div>
+    <h3>Noelle Russell</h3>
+    <div class="fmeta"><span class="pill g">Founder → AI Operator 9.97</span></div>
+    <p class="body-md">Chief AI Officer, AI Leadership Institute (ex-Amazon Alexa). Her EM session is the highest-rated in the base — the full business cycle with AI at every stage, plus agentic design ("one agent, one job").</p>
+    <div class="covers"><strong>Covers:</strong> W12 AI workforce (booked) · W11–13 delivery-engine teaches · governance/safety anywhere it's needed</div>
+   </div>
+   <div class="card bench-card">
+    <img class="avatar" src="images/domenic-ashburn.jpeg?v=3" alt="Domenic Ashburn" data-remote="https://v5.airtableusercontent.com/v3/u/55/55/1784102400000/BEopEkTrjWKY2TngS5Plpw/bjLfubxRgQu15bqwQEK7LX7mcKjB0se_vZTtbE2y_e7qNproBzMEYrdVuYVXETM5qQnKOEEY7D8rmB8aBqru2-YXWbNQLV4MnDrXM5S0uIp1DovoeZ8amaIQwbbKBZLUW5rMXZBftoyUnJ_P0avLSA/531f9A_NXl6u02R9RVP0HfECkXCDpMBrNR0h5L0Oqxs" data-remote2="https://drive.google.com/thumbnail?id=1GJOM1U0iVt3M4kvwtELj1r9sduyZem-m&amp;sz=w800" data-initials="DA" onerror="imgFail(this)"/>
+    <div class="kicker">AI systems &amp; content velocity</div>
+    <h3>Domenic Ashburn</h3>
+    <div class="fmeta"><span class="pill g">Q&amp;A 9.85</span><span class="pill g">AI Scale 9.66</span><span class="pill g">Velocity 9.47</span></div>
+    <p class="body-md">"Mr. Grateful" — the intelligence-layer teacher (purpose, taste, discernment; edge workers; anti-slop doctrine). Consistently top-3 across AIM and SMM; students follow him between programmes.</p>
+    <div class="covers"><strong>Covers:</strong> W7 content velocity · W14 asset engine · W16 retention systems · second builder voice in any lab</div>
+   </div>
+   <div class="card bench-card">
+    <img class="avatar" src="images/vykintas-glodenis.jpg?v=3" alt="Vykintas Glodenis" data-remote="https://v5.airtableusercontent.com/v3/u/55/55/1784102400000/e47kmOXu1YFNZpVx1GgQgg/mLeGVKQ0ENBkWdhiAtVy7eoOFCgJ7FyPRUyTI7S8Yust8Qeed8PSIv8F8K-g3JyU7KD5Hlw8057Ma2M_gl8AHVTM3qnjjSzk6Ez7nV95UkZVZ_nPOrlUqkjBN4IiXGley3rAsuqep4-XpOsUid3lAg/1i3HTtBlsYYCo3vfxNM_EBZEFuCNbKsyy-fmOugUuMU" data-remote2="https://drive.google.com/thumbnail?id=1YLZjY4GeALSq_pCMNebWykd4TW5ppcHW&amp;sz=w800" data-initials="VG" onerror="imgFail(this)"/>
+    <div class="kicker">Technical spine &amp; starter kit</div>
+    <h3>Vykintas Glodenis</h3>
+    <div class="fmeta"><span class="pill g">GAIN/ICE capstone 9.56–9.66</span><span class="pill b">Owns AIM lab format</span></div>
+    <p class="body-md">Mindvalley's Chief AI Transformation Officer and the AIM workshop backbone (2023–26). Builds and maintains the Founder OS Starter Kit; the "least techy guy → tech lead" origin story is the relatability asset for non-technical founders.</p>
+    <div class="covers"><strong>Covers:</strong> starter-kit owner · W2 GAIN/ICE · W15 wrapper build · backup lab lead any week</div>
+   </div>
+   <div class="card bench-card">
+    <img class="avatar" src="images/kwame-christian.jpg?v=3" alt="Kwame Christian" data-remote="https://v5.airtableusercontent.com/v3/u/55/55/1784102400000/BEvkX8jznrQcZ4fz-bL4UA/iwmAH-BPQkXw8hiUNoWlYnywkVSwITecxDVNdD8P-TgAEwL5NpY_zeutge0marosaUeZzdV__BnwlyDChUBibaJguo3ELCozhDfOK43EAkPhJqhNjy_V2plhOEQvlhe7unmb_RvStWrl2k8LsCWwgA/eK1BPmC4JnV1jbAEARomAn7mm9xFr5gGAw0kyTXjYxE" data-initials="KC" onerror="imgFail(this)"/>
+    <div class="kicker">Sales conversations specialist</div>
+    <h3>Kwame Christian</h3>
+    <div class="fmeta"><span class="pill g">AI OS build 9.59</span><span class="pill g">Negotiation 9.47</span></div>
+    <p class="body-md">World's #1 negotiation podcast; already ran EM's AI OS capstone. Owns the human side of the sales engine — the conversations automation must never touch — plus the Roomba Rule doctrine.</p>
+    <div class="covers"><strong>Covers:</strong> first cover for W11 sales conversations · high-ticket closing anywhere in Module 3</div>
+   </div>
+   <div class="card bench-card">
+    <img class="avatar" src="images/chris-do.png?v=3" alt="Chris Do" data-remote="https://v5.airtableusercontent.com/v3/u/55/55/1784102400000/HxhvsbXCIqwNNVQmhE8q7g/3B0hIW7hwbo5NWYiEKY56hTLakPeLoMxVROqFVjLpApUs8SiladmOZECYl3DtL5IJ2WN7UgfFmcXBvn3oCWhSL8A61FBaAq7iIfscUWkEQfpCzIhHlKcngGuC67Y1UJgRj2EUaGcgATwYpqhPk5YiA/sq_6HFbpbazCwioR7-0E54Ro7RDtpCx3lK-Ozmnj7O8" data-initials="CD" onerror="imgFail(this)"/>
+    <div class="kicker">Authority-to-sales specialist</div>
+    <h3>Chris Do</h3>
+    <div class="fmeta"><span class="pill g">Viral → Valuable 9.78</span><span class="pill g">Conversion Map 9.58</span></div>
+    <p class="body-md">The Futur founder; SMM 2026's top-rated teach. His Conversion Map is the one framework we found that translates cleanly across business types — the exact fix for the "does this apply to me?" gap.</p>
+    <div class="covers"><strong>Covers:</strong> W5 ICP/positioning · W16 trust &amp; brand moat · DM-to-sale systems in Module 2–3</div>
+   </div>
+  </div>
+  <div style="margin-top:18px" class="callout">
+   <div class="ic">◆</div>
+   <p><strong>Continuity rule (the S&amp;I lesson):</strong> when a bench author teaches a Tuesday, Priestley records a 3–5 minute open and close for that week and appears in the following Q&amp;A block. The audience buys a Priestley-led programme; the bench keeps it running at 9.5 quality. Vishen opens the intensive and co-hosts graduation. S&amp;I speaking content stays out — one programme, one promise; stagecraft cross-sells into S&amp;I Mastery.</p>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Coverage matrix</div>
+   <h2>Every week has a named first cover — no session depends on one calendar</h2>
+  </div>
+  <table class="tbl">
+   <thead><tr><th>Block</th><th>Priestley status</th><th>First cover</th><th>Evidence for the cover</th></tr></thead>
+   <tbody>
+    <tr><td><strong>W1</strong> Kickoff · reinvention</td><td><span class="pill p">Must be Daniel</span></td><td>Vishen co-opens (reschedule Daniel, don't recast)</td><td>The promise of the programme is his voice on day one</td></tr>
+    <tr><td><strong>W2–4</strong> Founder job · 6-step · IP vault</td><td>Preferred</td><td>Vishen (deputy) / Ajit / Vykintas</td><td>Vishen AI-first sessions 9.2–9.8 · Founder OS with Ajit 9.51 · GAIN/ICE 9.56–9.66</td></tr>
+    <tr><td><strong>W5</strong> ICP &amp; micro-niche</td><td>Preferred</td><td>Chris Do / Sabrina</td><td>Conversion Map 9.58 · AI Live Build 9.38</td></tr>
+    <tr><td><strong>W6 + W8</strong> Scorecard · Oversubscribed · waitlists</td><td><span class="pill p">Must be Daniel</span></td><td>— (his flagship IP)</td><td>Oversubscription 9.26 · Waitlists 9.22 taught by him already</td></tr>
+    <tr><td><strong>W7</strong> Authority content systems</td><td>Preferred</td><td>Domenic</td><td>Content velocity 9.47 · SMM Q&amp;A 9.85</td></tr>
+    <tr><td><strong>Intensive</strong> (3 days)</td><td>Day 1 live (Days 2–3 optional)</td><td>Sabrina + Vykintas run build floor; Vishen opens</td><td>The build floor is bench-native by design</td></tr>
+    <tr><td><strong>W10–11</strong> Offers · LAPS sales engine</td><td>Preferred</td><td>Ajit (offers) / Kwame (sales)</td><td>3 Offers 9.81 · $10K Offer 9.45 · Negotiation 9.47</td></tr>
+    <tr><td><strong>W12–13</strong> AI workforce · founder cockpit</td><td>Optional</td><td>Noelle (booked) / Ajit</td><td>9.97 — the base's best session is the designated teacher here</td></tr>
+    <tr><td><strong>W14 + W16–17</strong> Assets · moat · plural founder</td><td>Preferred</td><td>Domenic / Chris Do</td><td>AI Scale 9.66 · Viral→Valuable 9.78</td></tr>
+    <tr><td><strong>W15</strong> The AI Wrapper</td><td><span class="pill p">Must be Daniel</span></td><td>Vykintas (build half only)</td><td>His cases (ScoreApp, BookMagic, AwardsApp) are the session</td></tr>
+    <tr><td><strong>W18</strong> Graduation</td><td><span class="pill p">Must be Daniel</span></td><td>+ Vishen co-host</td><td>His 9.87 "Next 12 Months" is the close</td></tr>
+   </tbody>
+  </table>
+  <p class="small" style="margin-top:10px">Net Priestley commitment: 5 must-be weeks + intensive Day 1 = <strong>6 anchor days</strong>, plus recorded 3–5 min weekly bookends and as many "preferred" weeks as his calendar allows. Everything else survives his diary.</p>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Format spec</div>
+   <h2>The operating model, borrowed from what already works</h2>
+  </div>
+  <table class="tbl">
+   <thead><tr><th>Element</th><th>Spec</th><th>Precedent / evidence</th></tr></thead>
+   <tbody>
+    <tr><td><strong>Duration</strong></td><td>18 weeks + onboarding week + alumni reunion (+6 wks)</td><td>S&amp;I ran ~20 weeks, 46 sessions, with strong completion mechanics</td></tr>
+    <tr><td><strong>Cadence</strong></td><td>Twice weekly: Teach (Tue) → Implementation Lab (Thu)</td><td>S&amp;I paired sessions; AIM 2026 labs rated 9.0–10.0</td></tr>
+    <tr><td><strong>Session count</strong></td><td>33 live calls (16 teach + 16 lab + graduation) + 3-day intensive = 36 live touchpoints</td><td>Comparable to S&amp;I (46) and AIM 2026 (~40) — familiar load</td></tr>
+    <tr><td><strong>Mid-programme intensive</strong></td><td>Week 9, 3 days, live + streamed — demand engine switched on</td><td>S&amp;I's One Talk Workshop (slots 10–12); Science of Growing Customers 2-evening format</td></tr>
+    <tr><td><strong>Assignments</strong></td><td>One shipped artefact per week, community-submitted</td><td>S&amp;I assignment column; AIM certification-by-project</td></tr>
+    <tr><td><strong>Starter kit</strong></td><td>Pre-built skills, prompts, project templates, connector guides — installed in onboarding week, before Week 1</td><td>Fixes the #1 observed workshop failure ("works in your Claude, not mine") in SMM L39 and EM_48</td></tr>
+    <tr><td><strong>Community</strong></td><td>Every touchpoint has a job: hot-seat calls, build clinics, wins wall — no unstructured hangouts</td><td>Unstructured community calls rated 5.89 (AIM) vs 9.7 when purposeful (SMM)</td></tr>
+    <tr><td><strong>Kickoff</strong></td><td>Opens with a build (business brain), not a visioning session</td><td>AIM 2026's abstract visioning kickoff: 6.04 — the base's worst score</td></tr>
+    <tr><td><strong>Stack</strong></td><td>Opinionated: Claude (projects/skills/code) as the spine, ScoreApp for lead capture, one automation layer — alternatives acknowledged, not taught</td><td>Tool sprawl was a recurring cohort complaint (541 Claude mentions vs long tail of one-offs in EM)</td></tr>
+    <tr><td><strong>Wrapper</strong></td><td>Per-session email nurture, chat capture, survey, avg-rating tracking in the Mastery base</td><td>The existing S&amp;I/AIM/EM ops wrapper, unchanged</td></tr>
+   </tbody>
+  </table>
+ </section>
+
+</div>
+
+<!-- ============ TAB 6: THE STUDENTS ============ -->
+<div class="tab-panel" id="panel-students">
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Who actually buys · 872 intake surveys</div>
+   <h2>Meet the student: the second-act founder</h2>
+   <p class="body-md">Aggregated from the onboarding surveys of Entrepreneurship Mastery (n=202), AI Mastery (n=515) and Social Media Mastery (n=155). This is not who we imagine buys these programmes — it's who filled in the forms.</p>
+  </div>
+  <div class="grid g4">
+   <div class="stat"><div class="n">68%</div><div class="l">Female</div><div class="s">EM 69% · AIM 65% · SMM 79% — a majority most AI education ignores</div></div>
+   <div class="stat"><div class="n">78%</div><div class="l">Aged 45+</div><div class="s">55+ is the single biggest bracket in AIM (47%). 18–24: two people in 872</div></div>
+   <div class="stat orange"><div class="n">70%</div><div class="l">CEO / Founder (AIM)</div><div class="s">47% solopreneurs; EM: 81% of teams are solo or 2–5 people</div></div>
+   <div class="stat pink"><div class="n">44%</div><div class="l">US-based</div><div class="s">US + Canada + UK ≈ 60%; then DACH, Benelux, France, UAE, Australia</div></div>
+  </div>
+  <div style="margin-top:18px" class="grid g3">
+   <div class="card"><div class="kicker">What she does</div><p class="body-md">Consulting / professional services, coaching &amp; training, healthcare, personal growth. Service businesses built on expertise and decades of industry nuance — almost no SaaS, almost no VC-track startups.</p></div>
+   <div class="card"><div class="kicker">Where her business is</div><p class="body-md">Early. EM: 58% idea or early stage; of those declaring revenue, 57% are under $100K (24 pre-revenue). SMM: 91% not yet making money from social. A meaningful minority (EM: 27% established/scaling, $1M+ exists) needs the advanced track.</p></div>
+   <div class="card"><div class="kicker">Where her AI is</div><p class="body-md">She already uses AI — 95% ChatGPT, 40% Claude — but self-rates beginner (58%; advanced: 4%). Usage today: research, writing, productivity. Business automation ranks 7th of 9 usage areas. <strong>The "AI as a finisher" problem isn't our framing — it's her self-report.</strong></p></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Demand signal</div>
+   <h2>She has already told us what to teach — and it's this curriculum</h2>
+   <p class="body-md">EM intake, "skills I want to learn" (n=201, multi-select). The top five are, in order, the spine of Modules 2–3.</p>
+  </div>
+  <div class="grid g2">
+   <div class="card">
+    <div class="kicker">EM: skills wanted (top 8 of 13)</div>
+    <div style="font-size:13.5px">
+     <div style="margin:10px 0"><div style="display:flex;justify-content:space-between"><span>Scaling revenue streams</span><strong>139</strong></div><div style="height:8px;border-radius:4px;background:var(--grey-200);margin-top:4px"><div style="height:8px;border-radius:4px;width:100%;background:var(--brand)"></div></div></div>
+     <div style="margin:10px 0"><div style="display:flex;justify-content:space-between"><span>Creating irresistible offers</span><strong>138</strong></div><div style="height:8px;border-radius:4px;background:var(--grey-200);margin-top:4px"><div style="height:8px;border-radius:4px;width:99%;background:var(--brand)"></div></div></div>
+     <div style="margin:10px 0"><div style="display:flex;justify-content:space-between"><span>Building funnels and campaigns</span><strong>134</strong></div><div style="height:8px;border-radius:4px;background:var(--grey-200);margin-top:4px"><div style="height:8px;border-radius:4px;width:96%;background:var(--brand)"></div></div></div>
+     <div style="margin:10px 0"><div style="display:flex;justify-content:space-between"><span>Using AI &amp; automation effectively</span><strong>128</strong></div><div style="height:8px;border-radius:4px;background:var(--grey-200);margin-top:4px"><div style="height:8px;border-radius:4px;width:92%;background:var(--green)"></div></div></div>
+     <div style="margin:10px 0"><div style="display:flex;justify-content:space-between"><span>Building systems and processes</span><strong>125</strong></div><div style="height:8px;border-radius:4px;background:var(--grey-200);margin-top:4px"><div style="height:8px;border-radius:4px;width:90%;background:var(--green)"></div></div></div>
+     <div style="margin:10px 0"><div style="display:flex;justify-content:space-between"><span>Managing time, energy &amp; focus</span><strong>121</strong></div><div style="height:8px;border-radius:4px;background:var(--grey-200);margin-top:4px"><div style="height:8px;border-radius:4px;width:87%;background:var(--grey-300)"></div></div></div>
+     <div style="margin:10px 0"><div style="display:flex;justify-content:space-between"><span>Sales &amp; pitching with confidence</span><strong>109</strong></div><div style="height:8px;border-radius:4px;background:var(--grey-200);margin-top:4px"><div style="height:8px;border-radius:4px;width:78%;background:var(--grey-300)"></div></div></div>
+     <div style="margin:10px 0"><div style="display:flex;justify-content:space-between"><span>Writing copy / marketing content</span><strong>100</strong></div><div style="height:8px;border-radius:4px;background:var(--grey-200);margin-top:4px"><div style="height:8px;border-radius:4px;width:72%;background:var(--grey-300)"></div></div></div>
+    </div>
+    <p class="small" style="margin-top:8px">Revenue + offers + funnels + AI-as-system + systems = Modules 2–3 verbatim. "AI &amp; automation" was ticked by 64% of an <em>entrepreneurship</em> cohort.</p>
+   </div>
+   <div>
+    <div class="card" style="margin-bottom:16px">
+     <div class="kicker">AIM: ambition vs reality</div>
+     <p class="body-md">Asked their goal, 53% chose <strong>"master building more advanced AI apps &amp; automations"</strong> — yet 58% self-rate beginner and business automation sits 7th in actual usage. The gap between ambition and current behaviour is exactly the product: a guided path from chat-user to systems-owner.</p>
+    </div>
+    <div class="card" style="margin-bottom:16px">
+     <div class="kicker">SMM: the monetization hunger</div>
+     <p class="body-md">91% aren't making money from social yet; top goals are brand authority, leads and sales. The demand engine (Module 2) is the answer they bought SMM hoping for.</p>
+    </div>
+    <div class="card tint">
+     <div class="kicker">The whitespace, proven again</div>
+     <p class="body-md">52% of AIM students have bought other premium programmes — but only <strong>11 of 515</strong> did Entrepreneurship Mastery 2025. The AI-curious founder and the business-framework buyer are two different wallets. AI for Founders is the bridge product both have pre-ordered with their survey answers.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Design consequences</div>
+   <h2>Five ways the student shapes the design</h2>
+  </div>
+  <div class="grid g3">
+   <div class="card"><div class="kicker">1 · Beginner-proof the build floor</div><p class="body-md">58% AI beginners, 4% advanced. That's why the starter kit and two-speed labs are core product design, not an afterthought. Vykintas' "I was the least techy guy" origin story is onboarding-week material. No lab assumes prior tooling.</p></div>
+   <div class="card"><div class="kicker">2 · Capstone flexes by stage</div><p class="body-md">Majority solo and pre-$100K, minority scaling at $1M+. Certification has two valid paths: idea/early founders graduate on Demand Engine + first customers; established founders graduate on Delivery Agents + Asset Engine. Same OS, different proof.</p></div>
+   <div class="card"><div class="kicker">3 · Her story leads the marketing</div><p class="body-md">A women-majority, 45+, expertise-rich audience. Priestley's own flagship case — Lucy Makara, who built BookMagic to a $5M valuation at 70 — is the hero story. "Your decades of industry nuance beat the 19-year-old AI bros" (Sabrina) is the rallying cry.</p></div>
+   <div class="card"><div class="kicker">4 · Schedule &amp; language</div><p class="body-md">44% US, 60% US/CA/UK → call times anchor to US morning / EU evening (the current Mastery slot). Plain-language teaching; every framework demonstrated on a service business, not a startup.</p></div>
+   <div class="card"><div class="kicker">5 · Week 13 earns its slot</div><p class="body-md">"Managing time, energy &amp; focus" ranked 6th of 13 wanted skills — for solopreneurs the 4-Day Founder Week isn't a bonus, it's a core promise. It holds a full teach week of its own.</p></div>
+   <div class="card tint"><div class="kicker">Two datasets, one arc</div><p class="body-md">The ratings evidence and the intake surveys converge on the same four-module arc: the student data tells us <em>how</em> to teach it, the session ratings tell us <em>what</em> earns a 9.5+. When two independent datasets point at the same product, that's the signal to build.</p></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Cohort comparison</div>
+   <h2>Three surveys, one person</h2>
+  </div>
+  <table class="tbl">
+   <thead><tr><th></th><th>Entrepreneurship (n=202)</th><th>AI Mastery (n=515)</th><th>Social Media (n=155)</th></tr></thead>
+   <tbody>
+    <tr><td><strong>Female</strong></td><td>69%</td><td>65%</td><td>79%</td></tr>
+    <tr><td><strong>Aged 45+</strong></td><td>70%</td><td>80%</td><td>81%</td></tr>
+    <tr><td><strong>Top countries</strong></td><td>US 34% · CA 10% · UK 7%</td><td>US 48% · CA 8% · UK 7%</td><td>US 44% · CA 10% · UK 6%</td></tr>
+    <tr><td><strong>Founder status</strong></td><td>52% full-time founders, 26% preparing to start</td><td>70% CEO/Founder · 47% solopreneur</td><td>(creator-first survey)</td></tr>
+    <tr><td><strong>Stage / level</strong></td><td>58% idea or early stage; 57% of declared revenue &lt;$100K</td><td>58% AI beginner · 4% advanced</td><td>72% content beginners · 91% not monetizing</td></tr>
+    <tr><td><strong>#1 ask</strong></td><td>Scaling revenue streams (69%)</td><td>Master advanced AI apps &amp; automations (53%)</td><td>Brand authority + leads</td></tr>
+   </tbody>
+  </table>
+  <p class="small" style="margin-top:10px">Sources: EM, AIM and SMM student intake/onboarding survey tables (Airtable), aggregated July 2026. Multi-select percentages are of respondents answering each question.</p>
+ </section>
+
+</div>
+
+<!-- ============ TAB 7: FOUNDER OS & NEXT STEPS ============ -->
+<div class="tab-panel" id="panel-next">
+
+ <section>
+  <div class="section-head">
+   <div class="overline">The graduating artefact</div>
+   <h2>The Founder Operating System — six components, all running</h2>
+   <p class="body-md">This is the certification bar: not videos watched, but a machine switched on. Each component is built in a specific week and keeps compounding after graduation (the continuity bonus, by design).</p>
+  </div>
+  <div class="grid g3">
+   <div class="card"><div class="kicker">01 · Weeks 1–4</div><h3>The Business Brain</h3><p class="body-md">Context layer + IP vault: your offers, voice, customers, numbers and proof stories, readable by every system downstream.</p></div>
+   <div class="card"><div class="kicker">02 · Weeks 5–8</div><h3>The Demand Engine</h3><p class="body-md">Customer intelligence, scorecard funnel, content velocity, waitlist campaigns — switched on at the intensive.</p></div>
+   <div class="card"><div class="kicker">03 · Week 11</div><h3>The Sales Engine</h3><p class="body-md">LAPS dashboard, lead scoring, follow-up sequences, proposal generation — human-in-the-loop at every trust moment.</p></div>
+   <div class="card"><div class="kicker">04 · Week 12</div><h3>The Delivery Agents</h3><p class="body-md">Onboarding, fulfilment and support workflows with escalation gates, scoped one-agent-one-job.</p></div>
+   <div class="card"><div class="kicker">05 · Weeks 14–15</div><h3>The Asset Engine</h3><p class="body-md">Repurposing loops plus the AI Wrapper MVP — labour converting to IP, media, data and technology.</p></div>
+   <div class="card"><div class="kicker">06 · Weeks 13–17</div><h3>The Founder Cockpit</h3><p class="body-md">One dashboard, a weekly AI founder brief, and the 12-month growth calendar loaded into 2027.</p></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Commercial logic</div>
+   <h2>It slots into an ascending Priestley funnel we've already half-built</h2>
+  </div>
+  <div class="grid g4">
+   <div class="card tint"><div class="kicker">Front door</div><h3>AI Summit / Webinar</h3><p class="body-md">"How to Get More Customers Than You Can Handle" — existing script, Vishen hosts, Priestley teaches.</p></div>
+   <div class="card tint"><div class="kicker">Taste</div><h3>Growing Customers Intensive</h3><p class="body-md">The 2-evening accelerator (existing microsite) — concept + principles, $1K virtual ticket precedent.</p></div>
+   <div class="card tint"><div class="kicker">Transformation</div><h3>AI for Founders Mastery</h3><p class="body-md">This proposal: 18 weeks, the full machine. Priced in line with Mastery tier; waitlist mechanics run straight from Daniel's own cookbook.</p></div>
+   <div class="card tint"><div class="kicker">Continuity</div><h3>Alumni &amp; OS Upgrades</h3><p class="body-md">Quarterly OS-upgrade calls + alumni reunion; natural bridge to next cohort, EM and the Exponential Entrepreneur pathway.</p></div>
+  </div>
+  <div style="margin-top:18px" class="callout good">
+   <div class="ic">◆</div>
+   <p><strong>Practise what it preaches:</strong> the launch itself runs Oversubscribed mechanics — named capacity, waitlist campaign, signals-before-sales scorecard ("What's your Founder AI Score?") — making the marketing a live demonstration of Module 2. The retargeting pool already exists: 476 in the AI-Powered Entrepreneur room, 488 at the EM opener, 900+ AIM AI-session attendees.</p>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Decisions &amp; next steps</div>
+   <h2>What we need to greenlight</h2>
+  </div>
+  <div class="grid g2">
+   <div class="card">
+    <div class="kicker">Decided (this proposal)</div>
+    <p class="body-md">✔ Priestley-led and Priestley-owned, Vishen as deputy curriculum lead, Sabrina as lab lead<br/>✔ Author bench covers every non-flagship week (see Faculty tab) — his required live commitment is 6 anchor days across 18 weeks, plus recorded weekly bookends<br/>✔ 18 weeks, twice-weekly Teach + Lab<br/>✔ Mid-programme 3-day Founder OS intensive<br/>✔ Four-module arc on the speed-to-market / speed-to-value axis<br/>✔ Certification by running OS, not attendance — two valid paths (demand engine for early-stage, delivery+assets for established), per the intake data<br/>✔ Beginner-proof labs: starter kit + two speeds, designed for the 58%-beginner audience</p>
+   </div>
+   <div class="card">
+    <div class="kicker">To decide next</div>
+    <p class="body-md">1. Faculty agreements — Priestley scope &amp; dates; Sabrina lab contract; Noelle guest slot<br/>2. Cohort dates + intensive venue (MVU live + stream vs full virtual)<br/>3. Pricing &amp; capacity — named capacity number for the oversubscription campaign<br/>4. Starter-kit build sprint — 4–6 weeks, Vykintas as owner with the curriculum team, Domenic as technical reviewer<br/>5. Title lockup + ABCS pass on every session title</p>
+   </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="section-head">
+   <div class="overline">Appendix</div>
+   <h2>Source base</h2>
+  </div>
+  <p class="body-md">Ratings and attendance: Entrepreneurship Summit &amp; Mastery base (130 records), Social Media Summit &amp; Mastery base (164 records), AI Summit &amp; Mastery base (175 records, 2023–2026 cohorts). Student profile: EM intake survey (n=202), AIM intake survey (n=515), SMM onboarding survey (n=155) — 872 respondents aggregated, no PII carried into this document. Curriculum mining: AI Mastery 2025 (41 transcripts), AI Summit 2026 (13 talks incl. Priestley's "How AI Rewrites the Entrepreneur's Playbook"), Entrepreneurship Mastery 2025–26 (~60 transcripts), Social Media Mastery 2025 + 2026 (~55 transcripts), Speaking &amp; Influence Mastery (46-session schedule + transcripts), and the existing Priestley accelerator microsite ("The Science of Growing Customers").</p>
+ </section>
+
+</div>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div>AI for Founders Mastery — proposal. Prepared by Gareth Winter, Creative Director &amp; Head of Content.</div>
+  <div>Sources: EM, SMM &amp; AIM Airtable bases · Mastery transcript library · AI Summit 2026</div>
+ </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tab-btn').forEach(function(b){
+ b.addEventListener('click',function(){
+  document.querySelectorAll('.tab-btn').forEach(function(x){x.classList.remove('active')});
+  document.querySelectorAll('.tab-panel').forEach(function(x){x.classList.remove('active')});
+  b.classList.add('active');
+  document.getElementById('panel-'+b.dataset.tab).classList.add('active');
+  window.scrollTo({top:document.querySelector('.tabbar-outer').offsetTop-60,behavior:'smooth'});
+ });
+});
+document.querySelectorAll('.module-head').forEach(function(h){
+ h.addEventListener('click',function(){h.parentElement.classList.toggle('open')});
+});
+</script>
+</body>
+</html>
