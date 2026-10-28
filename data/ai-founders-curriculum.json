@@ -630,7 +630,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-14T16:35:46Z",
+ "synced_at": "2026-10-28T10:24:13Z",
  "aligned": false,
  "cadence": "Seventeen lessons and a graduation · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London 16 to 25 March) · graduation Tuesday 30 March 2027",
  "slot": {
@@ -1176,7 +1176,7 @@
   {
    "name": "Vishen Lakhiani",
    "ea": 13,
-   "aif": 2,
+   "aif": 8,
    "weeks_on_both": 1,
    "first_overlap": "2026-11-16",
    "last_overlap": "2026-11-16",
@@ -1187,12 +1187,12 @@
   {
    "name": "Vykintas Glodenis",
    "ea": 12,
-   "aif": 21,
+   "aif": 26,
    "weeks_on_both": 8,
    "first_overlap": "2026-11-09",
    "last_overlap": "2027-02-15",
    "peak_per_week": 3,
-   "weeks_3plus": 1,
+   "weeks_3plus": 3,
    "clashes": []
   }
  ],
@@ -1206,74 +1206,38 @@
    {
     "name": "Vishen Lakhiani",
     "status": "Confirmed",
-    "where": "Opens week 1, closes at graduation",
-    "why": "Face of the programme and the model for it. Three big sessions, as the team directed on 26 Sep. The opening moved to the Monday the brief names as the start date, which also keeps him clear of his Expert & Authority lesson on Tue 17 Nov."
+    "where": "Opens week 1; lessons in weeks 2, 6, 7, 9, 15 and 16; co-hosts graduation",
+    "why": "Strategy and vision, the decisions a founder makes: what to sell, how the brand looks, which funnel, how to be found, how to close, how to steer. His AI Mastery ratings average 8.59 (287), best on live builds at 9.28 to 9.49, lowest on content creation at 7.87, so he stays off the step-by-step. None of his lessons falls on a Tuesday when he also teaches Expert & Authority; week 1 is twenty minutes."
    },
    {
     "name": "Vykintas Glodenis",
     "status": "Confirmed",
-    "where": "Every lab, both Get AI-Ready drop-ins, builds live in week 1, co-closes graduation",
-    "why": "Leads the curriculum and installs every system. The load map and the company brain are his to teach because everything after them runs on his Skill Pack."
+    "where": "Every lab, both Get AI-Ready drop-ins; lessons in weeks 1, 3, 4, 8, 10 and 11; co-hosts graduation",
+    "why": "Leads the curriculum and takes the builds the rest depends on: the website, the brain, the funnel wiring and the content systems. 472 AI Mastery ratings averaging 9.37, the highest volume of any teacher; his best sessions are integration and system builds."
    },
    {
     "name": "Noelle Russell",
-    "status": "Confirmed",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "Enterprise AI governance sized for a small company answers the $100K+ group's most-asked question; her end-to-end delivery walkthrough is the summit's pre-offer build, carried into the Mastery."
+    "status": "Proposed",
+    "where": "Weeks 5 and 17",
+    "why": "Her two best-rated topics: the first AI team member (9.25) in the week AI first reads private email, and founder to AI-leveraged operator (9.97, the highest-rated lesson in the Entrepreneurship Mastery base) for the owner pages and the week the founder only decides."
    },
    {
-    "name": "Nate Herk",
-    "status": "In consideration",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "His summit session is literally the Module 1 management idea, and he builds business automations step by step: the nearest replacement for the builder role Domenic used to carry."
+    "name": "Marisha Lakhiani",
+    "status": "Proposed",
+    "where": "Week 12",
+    "why": "Chief Revenue Officer; argued for paid and organic in the call. Her first Mastery rating comes from Expert & Authority's Paid Advertising workshop on 4 December."
    },
    {
-    "name": "Sabrina Ramonov",
-    "status": "Outreach done",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "Runs her business solo with agents and publishes at volume. Content is the solo founder's biggest time-eater; she is the most authentic voice for it, and balances a male-heavy roster."
+    "name": "Sara Davison & Tyler Fisk",
+    "status": "Proposed",
+    "where": "Week 13",
+    "why": "AI Build Lab teaches agents through hands-on builds, and their summit talk is recurring work on autopilot. No Mindvalley ratings yet: their summit numbers decide the contract."
    },
    {
-    "name": "Ruben Hassid",
-    "status": "In consideration",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "Built EasyGen and a founder audience on LinkedIn with AI drafting. Marketing's distribution half, so Sabrina's week is not asked to carry both."
-   },
-   {
-    "name": "Liam Ottley",
-    "status": "Outreach done",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "Builds lead research, qualification and follow-up systems inside real small businesses every week. His summit session title is the Module 4 problem statement."
-   },
-   {
-    "name": "Nick Saraev",
-    "status": "In consideration",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "Builds outbound and lead systems for a living; the pipeline-filling half of sales that the follow-up engine does not cover."
-   },
-   {
-    "name": "Callan Faulkner",
-    "status": "Outreach done",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "150 AI employees beside a 30-person team is the Module 6 case study. Her summit session is the same title. She runs a competing programme and may decline; the week is written so a substitute can take it."
-   },
-   {
-    "name": "Alex Dogliotti",
-    "status": "In consideration",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "Mindvalley's COO and CHRO and author of Replaced by AI. Internal proof on adoption and org design, in a lab seat rather than a headline, which is where his ratings say he belongs."
-   },
-   {
-    "name": "Shawn Kanungo",
-    "status": "Can't make the summit",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "A CPA with a Deloitte background teaching founder finance is the only credible occupant of the pillar every other programme skips. His summit status is Can't make it; the Mastery date is a separate ask."
-   },
-   {
-    "name": "Matt Gray",
-    "status": "In consideration",
-    "where": "Candidate, to be mapped once the curriculum is settled",
-    "why": "Founder OS is his product and his audience: what to build or sell next and the repeatable week. The most literal match on the list to the graduating artefact."
+    "name": "Joe Stolte",
+    "status": "Proposed",
+    "where": "Week 14",
+    "why": "Known for AI lead generation, fast follow-up and reviving old leads; his summit talk is the AI-powered sales engine. No Mindvalley ratings yet: his summit numbers decide the contract."
    }
   ],
   "alternates": [
@@ -1301,6 +1265,51 @@
   ],
   "not_placed": [
    {
+    "name": "Nate Herk",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "status": "In consideration"
+   },
+   {
+    "name": "Sabrina Ramonov",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October. Outreach done",
+    "status": "Outreach done"
+   },
+   {
+    "name": "Ruben Hassid",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "status": "In consideration"
+   },
+   {
+    "name": "Liam Ottley",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October. Outreach done",
+    "status": "Outreach done"
+   },
+   {
+    "name": "Nick Saraev",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "status": "In consideration"
+   },
+   {
+    "name": "Callan Faulkner",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October. Outreach done",
+    "status": "Outreach done"
+   },
+   {
+    "name": "Alex Dogliotti",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "status": "In consideration"
+   },
+   {
+    "name": "Shawn Kanungo",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October. Can't make the summit",
+    "status": "Can't make the summit"
+   },
+   {
+    "name": "Matt Gray",
+    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "status": "In consideration"
+   },
+   {
     "name": "Dan Martell",
     "why": "Not Approved in Airtable. Would have been the Module 1 keynote; Nate Herk carries the idea instead."
    },
@@ -1325,6 +1334,7 @@
   ]
  },
  "notes": [
+  "Teachers, from the teacher map of 21 October (draft for Vykintas), entered in the AIF Airtable base on 28 October: Vykintas teaches weeks 1, 3, 4, 8, 10 and 11, every lab and both drop-ins; Vishen opens week 1 and teaches weeks 2, 6, 7, 9, 15 and 16; Noelle Russell weeks 5 and 17; Marisha Lakhiani week 12; Sara Davison and Tyler Fisk week 13; Joe Stolte week 14; Vishen and Vykintas co-host graduation. Labs, week 1, graduation and the drop-ins are Confirmed in Airtable; the sixteen mapped lessons are Proposed. Before contracts: Joe, Sara and Tyler have no Mindvalley ratings until the summit; week 9 is Vishen-free only if Regan Hillyer teaches Expert & Authority Membership on 26 January; week 7 must stay on the three business-model templates because Vishen teaches E&A Funnel Design on 8 December.",
   "14 October, after the team call (Vykintas, Jaideep, Marisha, Gareth), Vykintas’s post-call draft and Jaideep’s decision deck, with Gareth’s decisions on the deck: seventeen lessons and a graduation (eighteen calls, as agreed in the call); the company brain in week 4 and inbox triage straight after it in week 5, because the brain gives AI the context to prioritise and draft (Vykintas, later on 14 October, who asked for the brain in lesson 3 to 5), with the longest privacy segment in the inbox lab; hosting in onboarding with a go-live clinic; owner pages, a test week and graduation as the ending; Meta ads kept in the core so paid and organic are both taught; software building as an elective. Every lesson installs an AI team, a head and three members, as Vykintas proposed. Teachers are mapped once the curriculum is settled, five or six at most.",
   "Rebuilt on 5 October from three sources: Vykintas Glodenis’s curriculum proposal (eight modules, one business pillar each, the problem / management idea / installed system / observable change pattern, and the Get AI-Ready onboarding layer), Jaideep’s launch brief (16 weeks from Monday 16 November, two sessions per module, the summit on 30 October to 1 November), and the AI for Founders quiz (812 answers: operations, marketing and sales are where the pain is; solo founders start with marketing, founders with teams with operations; data safety and sounding like me are the unprogrammed worries).",
   "Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; roughly one guest teacher per pillar; at least one more woman on the roster. Every guest here is placed where they are most authentic, from the names in consideration on 5 October, and none is confirmed for the Mastery until the team says so.",
@@ -1429,7 +1439,12 @@
    "type": "Lesson",
    "start": "2026-11-24T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
    "module": "Module 1: Storefront",
    "description": "Every output from here aims at a buyer and an offer. Vague here means generic everywhere. The Head of Product Marketing runs three AI specialists: a customer researcher who reads your reviews, testimonials and call notes for the words buyers actually use; a competitor analyst who researches ten competitors live; and an offer and pricing strategist who builds the offer ladder and the prices.\n\nThe output is the offer book: the ideal customer, the competitors, the ladder, the prices. The offers and pricing section goes live on the site the same week, so the lesson ends with something on a page, not a document in a folder.\n\nThe line with Expert & Authority: that programme designs the signature offer of a person who is the product. This lesson prices what a company already sells, or is about to sell, and puts it on the site. Founders with no customer data yet start from competitor research and five conversations, and the guide shows how.",
    "brief": "A step back after the wow, because every later page, email and ad aims at a buyer and an offer. Your customers researched from your own reviews and call notes, ten competitors researched live, and an offer ladder with prices. Your company's products and services, priced; this is not a personal signature offer.",
@@ -1477,7 +1492,12 @@
    "type": "Lesson",
    "start": "2026-12-01T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
    "module": "Module 1: Storefront",
    "description": "The Head of Copywriting runs the workflow: the conversion auditor scores the week 1 site, the conversion copywriter rewrites it from the offer book, the case study writer turns your best customer story into proof, and the auditor scores it again. The before and after number is the lesson's proof.\n\nThen the voice file: how the company sounds, the words it uses and never uses, written from your best pages and your own speech. It is short, it is the company's voice, not a personal brand, and it goes into the company brain next week. The inbox team reads it there in week 5, the funnel in weeks 7 and 8, the content team in week 10. The lead magnet is promised on the page this week and built in week 7.\n\nThe line with Expert & Authority: that programme finds a person's distinctive voice. This lesson writes conversion copy for a company and keeps it consistent.",
    "brief": "Copy is what sells, and every later page, email and post reuses it. Your site audited, rewritten from the offer book, and audited again, so you can see the score move. Then the voice file: how your company sounds, written once, and the first thing in what becomes your company brain.",
@@ -1524,7 +1544,12 @@
    "type": "Lesson",
    "start": "2026-12-08T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
    "module": "Module 2: Company brain",
    "description": "By week 4 the founder has felt the problem the brain solves: three folders, re-attached for every task. It comes early on purpose, late enough for the need to be obvious and early enough that every later lesson builds on it. The lesson shows the pain first, then the template, then the migration, then the C-suite answering questions from it. The chief of staff holds priorities, goals, decisions and briefs; the chief information officer keeps where everything lives clean; the chief operating officer holds processes, projects and the current state.\n\nEvery AI team from here reads from the brain and saves back to it: next week the inbox assistant prioritises and drafts replies from the offer book, the copy and the voice file it holds, and the funnel, content, sales and finance teams are all built on it. Website code stays outside the synced brain. A guide covers sharing it with a team, for founders who have one.",
    "brief": "Three weeks in, the pain is real: the site in one folder, the offer book in another, the copy and voice file in a third, and every new AI team needs them all. The company brain puts everything in one place, an AI chief of staff answers from it, and every lesson from here builds on it, starting with your inbox next week.",
@@ -1567,7 +1592,12 @@
    "type": "Lesson",
    "start": "2026-12-15T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Noelle Russell",
+     "image": "authors/noelle-russell.jpg"
+    }
+   ],
    "module": "Module 3: Operations: the first system that runs itself",
    "description": "Operations is the area founders named first in the quiz, and the inbox is where it lands every morning. This week the first AI team that runs on a schedule arrives: the executive assistant sorts the inbox before you wake and drafts replies; the operations analyst finds the work that eats your week; the continuous improvement manager turns every correction you make into a better instruction for tomorrow.\n\nIt comes straight after the brain because the brain is what gives it the context to prioritise and draft: the offer book to answer questions about what you sell and for how much, the copy to answer like your website does, the voice file to sound like your company, and the chief of staff's priorities to know what matters first. Drafts are never sent without you, and it starts with read access only. A schedule that runs on your own computer needs it switched on at that hour; the guide covers what to do when it is not.\n\nThe second half is the audit the quiz asked for most: what should I automate first? Your week, ranked by hours and by how safely AI can take it, so the rest of the programme has a list to work from. This lab carries the longest privacy segment of the programme, because this is the week AI first reads something private.",
    "brief": "Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 5, straight after the brain. An AI assistant sorts your inbox each morning, prioritises it and drafts replies in your company's voice from what the brain knows, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?",
@@ -1614,7 +1644,12 @@
    "type": "Lesson",
    "start": "2027-01-05T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
    "module": "Module 4: Brand and funnel",
    "description": "The Creative Director runs a brand designer, an art director and a brand guardian. The brand kit is made from what exists: your logo, your best photos, the colours already on the site. The image library is built in ChatGPT, the one tool outside the stack, because Claude does not make photographs: your own photos turned into editorial shots, product images, backgrounds, the things founders assume cost an agency.\n\nThe site is restyled with the kit, and the kit goes into the brain so the funnel, the content and the ads reuse it. The brand guardian checks every later asset against it. The kit goes into the brain beside the voice file from week 3: how the company sounds, and how it looks, in one place.",
    "brief": "Trust is visual before it is verbal. A brand kit made from what you already have, an image library built with the one exception tool, ChatGPT, and the site restyled so it looks like one company. Keep your logo: AI logos are weak, and a clean text logo beats a bad one.",
@@ -1661,7 +1696,12 @@
    "type": "Lesson",
    "start": "2027-01-12T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
    "module": "Module 4: Brand and funnel",
    "description": "Business models need different funnels, so there are three templates: services, where the funnel ends in a booked call; products, where it ends in a purchase; software, where it ends in a trial. The Head of Growth runs a funnel strategist who chooses and maps yours, a lead magnet creator, and an email marketer.\n\nThe lead magnet is the one promised on the page in week 3: a checklist, a short guide, a scorecard, made from the offer book. The nurture emails are written from the copy and the voice file and point at the offer. A PDF is the default magnet; a quiz is the stretch, built next week.\n\nThe design is done this week and wired next week, so nobody is building and deciding at the same time.",
    "brief": "A site without a path loses its visitors. Your funnel chosen for how you sell: a booked call for services, a purchase for products, a trial for software. Then the lead magnet that earns an email and the nurture emails that do the first conversations for you, written from your offer book, copy and voice file.",
@@ -1708,7 +1748,12 @@
    "type": "Lesson",
    "start": "2027-01-19T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
    "module": "Module 4: Brand and funnel",
    "description": "The Head of Growth now runs the build team: an automation specialist who wires the email platform, a quiz developer for the stretch option, and a funnel tester who sends a test lead through every step. The landing page is built from last week's map and published in one sentence; the form connects to the email platform; the tag starts the nurture sequence.\n\nKit, free, is what we demonstrate. Every email tool has the same four parts, a form, a tag, a sequence and a broadcast, so founders on another tool follow the adapter guide and change only the last step. The wiring is clicking in a tool, not AI work, so the guide does the explaining and the lab does the unsticking.",
    "brief": "A design earns nothing until it is live. The landing page built and published in one sentence, the email platform wired, and a test lead sent all the way through: the page, the magnet, the emails. The quiz version for anyone who wants the stretch.",
@@ -1755,7 +1800,12 @@
    "type": "Lesson",
    "start": "2027-01-26T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
    "module": "Module 5: Traffic",
    "description": "Answer engine optimisation is search for the AI age. The Head of SEO runs a search strategist who maps the questions and objections your buyers actually ask, from the offer book and the inbox; an SEO writer who answers them in articles written from the brain in your company's voice; and a search analyst who checks, on a schedule, whether you are found.\n\nThe answer hub goes live on your site in one sentence, because publishing was set up in week 1. Results take months and AI citations are hard to measure, so the lesson is honest about both and sets up Google Search Console so there is a number to watch.",
    "brief": "When people ask an AI who to hire, it answers from pages like the ones you are about to publish. Your buyers' questions mapped from the brain, an answer hub built on your site, and the first articles written and published: free traffic from AI and search into the funnel.",
@@ -1802,7 +1852,12 @@
    "type": "Lesson",
    "start": "2027-02-02T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
    "module": "Module 5: Traffic",
    "description": "The Head of Content runs a content strategist, a content repurposer and a graphic designer. One article from the answer hub is the source; the repurposer cuts it into posts, carousels and a newsletter in seconds, and the designer turns carousels into images with the brand kit. No face needed, which suits founders who would rather stay behind the business.\n\nThis lesson is production, not a social media strategy. Choosing platforms, growing a following and monetising an audience belong to the social media Mastery; here the job is a month of good content, made once, in the company's voice.",
    "brief": "Steady visibility without a content team, and without showing your face. One answer article becomes thirty days of posts, carousels and a newsletter, written in your voice from the brain. Production only: growing a following is a different Mastery.",
@@ -1849,7 +1904,12 @@
    "type": "Lesson",
    "start": "2027-02-09T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
    "module": "Module 5: Traffic",
    "description": "The Head of Content now runs the weekly rhythm: a newsletter editor who writes from the week's articles and posts, a social media scheduler who drafts next week's batch on a schedule, and a content analyst who reads the post stats and names the winners. Posting itself stays in each platform's own scheduler, because automatic posting breaks easily.\n\nThe question this week answers is which content brings customers. The analyst's report feeds the dashboard in week 16.",
    "brief": "A list is the one channel you own. The weekly newsletter, next week's content drafted every week, and the post stats read so you know which content brings customers, not just likes.",
@@ -1896,7 +1956,12 @@
    "type": "Lesson",
    "start": "2027-02-16T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Marisha Lakhiani",
+     "image": "authors/marisha-lakhiani.jpg"
+    }
+   ],
    "module": "Module 5: Traffic",
    "description": "The Media Buyer runs a Meta ad spy that studies what your competitors are running, an ad creative designer who makes creatives from your best content and the brand kit, and a Meta ads analyst who reports every week. The campaign plan aims at the funnel built in weeks 7 and 8.\n\nMeta's account setup is the hardest setup in the programme, so the guide arrives a week early. Not everyone will spend money, and that is fine: the ad spy and the creatives are useful on their own, and the test campaign can run on a very small daily amount.",
    "brief": "Organic is free and slow; paid is fast and costs money. Both matter, so this week is paid: an ad spy that studies your competitors' ads, creatives made with your brand kit, a campaign plan, and a small test campaign live with a weekly report. How much to spend stays your decision.",
@@ -1943,7 +2008,16 @@
    "type": "Lesson",
    "start": "2027-02-23T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Sara Davison",
+     "image": "authors/sara-davison.jpg"
+    },
+    {
+     "name": "Tyler Fisk",
+     "image": "authors/tyler-fisk.jpg"
+    }
+   ],
    "module": "Module 6: Finance",
    "description": "Every business has bills and receipts, even before it has sales, so this automation is the one everyone understands. The Chief Operating Officer runs a bookkeeper and an accounts receivable agent, both on a schedule, and an automation engineer. The bookkeeper reads the inbox and the drive for invoices and receipts, extracts the client, the date and the amount, and fills a sheet; accounts receivable drafts the chase for anything overdue.\n\nThe automation engineer then applies the same pattern to one more item from the week 5 list. Finance drew little interest in the quiz, so the lesson is about time back, and the money data it creates feeds the dashboard in week 16. Excel or Google Sheets on your own computer is the default.",
    "brief": "Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your week 5 automate-first list.",
@@ -1990,7 +2064,12 @@
    "type": "Lesson",
    "start": "2027-03-02T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Joe Stolte",
+     "image": null
+    }
+   ],
    "module": "Module 7: Sales",
    "description": "Leads come from forms, the inbox and direct messages, and CRMs vary, so the pipeline lives in the brain by default and the skills work with a CRM wherever it lives. The Head of Sales runs a sales development rep who drafts outreach, a lead qualifier who scores every lead on a schedule, and a prospect researcher who prepares the background before you reply.\n\nMarketing has had seven weeks to show results by now, so founders know how much direct selling they need. The reply to every lead is drafted the same day; the founder sends it.",
    "brief": "By now leads arrive from four places: the site, the funnel, content and ads. Your pipeline lives in the brain, every lead is scored and researched, and every one gets a reply the same day, drafted for you. Outreach drafted too, for the leads worth chasing.",
@@ -2037,7 +2116,12 @@
    "type": "Lesson",
    "start": "2027-03-09T15:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
    "module": "Module 7: Sales",
    "description": "The Head of Sales runs a sales call coach, a proposal writer and a follow-up manager on a schedule. Before a call, the coach prepares from the pipeline and the brain; after it, the coach reviews the transcript for what worked and what was missed. The proposal writer drafts from the offer book and the call; the follow-up manager drafts every follow-up until there is a yes or a no.\n\nSelf-serve products have no calls, so those founders apply the same workflow to partners, wholesale or larger customers.",
    "brief": "Deals are lost after the first conversation. Call prep before, a call review after, a proposal written from the brain, and follow-ups that go out until there is an answer.",
@@ -2084,7 +2168,12 @@
    "type": "Lesson",
    "start": "2027-03-16T14:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
    "module": "Module 8: Cockpit and handover",
    "description": "The Head of Performance team arrived in onboarding and has added tracking to every building block since, saving the numbers in the brain. This week the data engineer assembles them on a schedule, the dashboard designer builds one screen, and the CEO briefing arrives every Monday with three actions: do this, try this, spend time here.\n\nSome numbers only come as exports; the guide shows the ten minutes a week they take. The briefing is the page the founder reads in week 17, when deciding is the only job.",
    "brief": "Every team you built has been saving its numbers since onboarding. This week they become one dashboard, and every Monday a briefing arrives with three things to do. Steering by numbers is what the business running beyond you looks like.",
@@ -2133,7 +2222,12 @@
    "type": "Lesson",
    "start": "2027-03-23T14:00:00.000Z",
    "duration_min": 90,
-   "speakers": [],
+   "speakers": [
+    {
+     "name": "Noelle Russell",
+     "image": "authors/noelle-russell.jpg"
+    }
+   ],
    "module": "Module 8: Cockpit and handover",
    "description": "Each department built since week 1 gets an owner page: what runs and when, who owns it, a person or an AI team with a human checkpoint, what good looks like, and what to do when it breaks. Founders with a team hand pages to people; solo founders own them and let the AI teams do the work.\n\nThen the test: the five working days from this lesson to graduation, in which the founder only decides. The Monday briefing and the owner pages are the job; the work is not. It is worded carefully. The systems and their owners do the work and the founder reviews and decides; nobody is promised a business with no human in it.",
    "brief": "The promise is a business running beyond you, so this week tests it. Every department gets an owner page: what runs, when, who checks it, what to do when it breaks. Then five working days in which the founder only decides, reading the Monday briefing and the owner pages, and doing none of the work.",
