@@ -630,7 +630,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-29T12:25:00Z",
+ "synced_at": "2026-10-29T16:44:44Z",
  "aligned": false,
  "cadence": "Seventeen lessons and a graduation · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London 16 to 25 March) · graduation Tuesday 30 March 2027",
  "slot": {
@@ -1007,10 +1007,11 @@
   "text": "Two pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first, ready from 5 November: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second, ready from 12 November: the go-live walkthrough for hosting, for late buyers and anyone stuck. Before both, on Wednesday 4 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
  },
  "changelog": [
-  "Teacher allocation D, agreed with Vykintas on 29 October and entered in the AIF Airtable base: four teachers in the first four weeks (Vishen, Vykintas, Noelle Russell, Ajit Nawalkha), so the room meets the faculty early. The 2025 AI Mastery cohort met seven teachers in its first eight lessons and kept 62% of its live audience by lesson 8; the 2026 cohort met four and kept 52%.",
+  "Teacher allocation D, agreed with Vykintas on 29 October and entered in the AIF Airtable base: three teachers in the first four weeks (Vishen, Vykintas, Ajit Nawalkha) and a fourth, Noelle Russell, as the first lesson back after the holiday break. The 2025 AI Mastery cohort met seven teachers in its first eight lessons and kept 62% of its live audience by lesson 8; the 2026 cohort met four and kept 52%.",
   "Getting recommended by ChatGPT and Google moves from week 9 to week 4, into the storefront module, taught by Ajit. Search results take months, so starting in week 4 gives four months of them by graduation. Its questions now come from the offer book and customer research, because the brain and inbox are not built yet.",
   "The company brain moves to week 5 and the sorted inbox to week 6, the first week back after the holiday break. Brand and funnel run weeks 7 to 9; content weeks 10 and 11; Meta ads week 12. Finance, sales and the cockpit keep their weeks.",
-  "Noelle Russell teaches copy in week 3 and closing in week 15. Ajit teaches content in week 10. Vykintas teaches the inbox in week 6 and the owner pages in week 17. Vishen opens week 1 and teaches weeks 2, 7, 8 and 16. Marisha (12), Sara and Tyler (13) and Joe Stolte (14) are unchanged.",
+  "Noelle Russell teaches the inbox in week 6 and closing in week 15. Ajit teaches content in week 10. Vykintas teaches copy in week 3 and the owner pages in week 17. Vishen opens week 1 and teaches weeks 2, 7, 8 and 16. Marisha (12), Sara and Tyler (13) and Joe Stolte (14) are unchanged.",
+  "After team feedback (Marta, Marijana), weeks 3 and 6 swap teachers: Noelle takes the inbox, the first AI team member, her best-rated AI Mastery topic (9.25); Vykintas takes copy, an audit, rewrite and re-score build. Nothing in Noelle’s record points to conversion copywriting. Ajit keeps content in week 10: his Entrepreneurship Mastery content lessons scored 9.68 (social content) and 9.39 (newsletters).",
   "A fast action bonus call for early buyers on Wednesday 4 November, 7am Pacific (3pm London): What to Automate First, Built With Vishen, live with Vishen and Vykintas, the bridge from the summit to kickoff. The recording follows in BlinkLearn.",
   "Both Get AI-Ready sessions are pre-recorded rather than live drop-ins: setup, first skills and the hours log from 5 November; the go-live walkthrough from 12 November.",
   "Customer-facing descriptions for every session are in Airtable, written to the mastery-lesson-descriptions house style; the internal briefs stay here."
@@ -1206,14 +1207,14 @@
    {
     "name": "Vykintas Glodenis",
     "status": "Confirmed",
-    "where": "Every lab and both pre-recorded Get AI-Ready sessions; lessons in weeks 1, 5, 6, 9, 11 and 17; co-hosts the fast action bonus call and graduation",
+    "where": "Every lab and both pre-recorded Get AI-Ready sessions; lessons in weeks 1, 3, 5, 9, 11 and 17; co-hosts the fast action bonus call and graduation",
     "why": "Leads the curriculum and takes the builds the rest depends on: the website, the brain, the funnel wiring and the content systems. 472 AI Mastery ratings averaging 9.37, the highest volume of any teacher; his best sessions are integration and system builds."
    },
    {
     "name": "Noelle Russell",
     "status": "Proposed",
-    "where": "Weeks 3 and 15",
-    "why": "Copy that converts in week 3 and closing in week 15: a second voice in the first month, and the follow-up that turns leads into signed clients."
+    "where": "Weeks 6 and 15",
+    "why": "Her best-rated AI Mastery topic, onboarding your first AI team member (9.25), is the inbox assistant in week 6, the first lesson back after the holiday break. Her 9.97 Entrepreneurship Mastery lesson covers speed to lead and follow-up, which is closing in week 15."
    },
    {
     "name": "Ajit Nawalkha",
@@ -1334,7 +1335,7 @@
   ]
  },
  "notes": [
-  "Teachers, allocation D, agreed with Vykintas on 29 October and entered in the AIF Airtable base: Vishen opens week 1 and teaches weeks 2, 7, 8 and 16; Vykintas teaches weeks 1, 5, 6, 9, 11 and 17, every lab and both pre-recorded Get AI-Ready sessions; Noelle Russell weeks 3 and 15; Ajit Nawalkha weeks 4 and 10; Marisha Lakhiani week 12; Sara Davison and Tyler Fisk week 13; Joe Stolte week 14; Vishen and Vykintas host the fast action bonus call on 4 November and co-host graduation. Labs, Vykintas’s lessons, week 1, graduation and the pre-recorded sessions are Confirmed in Airtable; Vishen’s and the guests’ lessons are Proposed. Before contracts: Joe, Sara and Tyler have no Mindvalley ratings until the summit.",
+  "Teachers, allocation D, agreed with Vykintas on 29 October and entered in the AIF Airtable base: Vishen opens week 1 and teaches weeks 2, 7, 8 and 16; Vykintas teaches weeks 1, 3, 5, 9, 11 and 17, every lab and both pre-recorded Get AI-Ready sessions; Noelle Russell weeks 6 and 15 (weeks 3 and 6 swapped on 29 October after team feedback); Ajit Nawalkha weeks 4 and 10; Marisha Lakhiani week 12; Sara Davison and Tyler Fisk week 13; Joe Stolte week 14; Vishen and Vykintas host the fast action bonus call on 4 November and co-host graduation. Labs, Vykintas’s lessons, week 1, graduation and the pre-recorded sessions are Confirmed in Airtable; Vishen’s and the guests’ lessons are Proposed. Before contracts: Joe, Sara and Tyler have no Mindvalley ratings until the summit.",
   "14 October, after the team call (Vykintas, Jaideep, Marisha, Gareth), Vykintas’s post-call draft and Jaideep’s decision deck, with Gareth’s decisions on the deck: seventeen lessons and a graduation (eighteen calls, as agreed in the call); the company brain in week 4 and inbox triage straight after it in week 5, because the brain gives AI the context to prioritise and draft (Vykintas, later on 14 October, who asked for the brain in lesson 3 to 5), with the longest privacy segment in the inbox lab; hosting in onboarding with a go-live clinic; owner pages, a test week and graduation as the ending; Meta ads kept in the core so paid and organic are both taught; software building as an elective. Every lesson installs an AI team, a head and three members, as Vykintas proposed. Teachers are mapped once the curriculum is settled, five or six at most.",
   "Rebuilt on 5 October from three sources: Vykintas Glodenis’s curriculum proposal (eight modules, one business pillar each, the problem / management idea / installed system / observable change pattern, and the Get AI-Ready onboarding layer), Jaideep’s launch brief (16 weeks from Monday 16 November, two sessions per module, the summit on 30 October to 1 November), and the AI for Founders quiz (812 answers: operations, marketing and sales are where the pain is; solo founders start with marketing, founders with teams with operations; data safety and sounding like me are the unprogrammed worries).",
   "Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; roughly one guest teacher per pillar; at least one more woman on the roster. Every guest here is placed where they are most authentic, from the names in consideration on 5 October, and none is confirmed for the Mastery until the team says so.",
@@ -1513,8 +1514,8 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Noelle Russell",
-     "image": "authors/noelle-russell.jpg"
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
     }
    ],
    "module": "Module 1: Storefront",
@@ -1665,8 +1666,8 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Vykintas Glodenis",
-     "image": "authors/vykintas-glodenis.jpg"
+     "name": "Noelle Russell",
+     "image": "authors/noelle-russell.jpg"
     }
    ],
    "module": "Module 3: Operations: the first system that runs itself",
