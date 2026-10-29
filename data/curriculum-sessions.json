@@ -1,5 +1,5 @@
 {
- "source": "AIF Airtable base app7lhR1V9Fts0mNc: Schedule (order, date, speakers, module) and Lessons (title, type, description). Snapshot 29 Oct 2026, option D.",
+ "source": "AIF Airtable base app7lhR1V9Fts0mNc: Schedule (order, date, speakers, module) and Lessons (title, type, description). Snapshot 29 Oct 2026, option D. Titles: proposed set from the mastery-lesson-titles skill, 29 Oct 2026, pending approval before they are written to Airtable; airtable_title holds the title Airtable has now.",
  "modules": {
   "0": "Before you start",
   "1": "Storefront",
@@ -23,12 +23,14 @@
    "start_utc": "2026-11-04T15:00:00Z",
    "module": 0,
    "type": "Bonus",
-   "title": "What to Automate First, Built With Vishen",
+   "title": "What to Automate First: Your Biggest Time Drain, Built Live",
    "teachers": [
     "Vishen Lakhiani",
     "Vykintas Glodenis"
    ],
-   "description": "Because you joined early, you get a live session with Vishen and Vykintas before the program begins. Most founders automate the wrong thing first. On this call you'll look at your own week, find the work that eats the most hours, choose the one thing to hand to AI first, and see it built live. It's the bridge between the AI for Founders Summit and kickoff on Tuesday 17 November. Can't make it live? The recording will be waiting for you in BlinkLearn.\n\nYou'll leave with:\n- The one thing in your business to automate first\n- A live build you can follow and copy\n- A head start before week 1"
+   "description": "Because you joined early, you get a live session with Vishen and Vykintas before the program begins. Most founders automate the wrong thing first. On this call you'll look at your own week, find the work that eats the most hours, choose the one thing to hand to AI first, and see it built live. It's the bridge between the AI for Founders Summit and kickoff on Tuesday 17 November. Can't make it live? The recording will be waiting for you in BlinkLearn.\n\nYou'll leave with:\n- The one thing in your business to automate first\n- A live build you can follow and copy\n- A head start before week 1",
+   "prerecorded": false,
+   "airtable_title": "What to Automate First, Built With Vishen"
   },
   {
    "order": "0.1",
@@ -36,11 +38,13 @@
    "start_utc": "2026-11-05T15:00:00Z",
    "module": 0,
    "type": "Bonus",
-   "title": "Get AI-Ready 1 (pre-recorded): setup, your first pack, your hours log",
+   "title": "Get AI-Ready 1: Everything Set Up Before Week 1",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Get set up for week 1 in your own time. In this recorded session, Vykintas walks you through everything you need before the program starts: Claude Code set up on a folder, your first AI skills installed, talking to AI instead of typing, the basics of how AI works, and your hosting ready, so you can publish with one sentence. You'll also start your 30-minute hours log, the number your graduation is measured against.\n\nYou'll leave with:\n- Claude Code set up, with your first AI skills installed\n- Your hosting ready, so publishing takes one sentence\n- Your hours log started"
+   "description": "Get set up for week 1 in your own time. In this recorded session, Vykintas walks you through everything you need before the program starts: Claude Code set up on a folder, your first AI skills installed, talking to AI instead of typing, the basics of how AI works, and your hosting ready, so you can publish with one sentence. You'll also start your 30-minute hours log, the number your graduation is measured against.\n\nYou'll leave with:\n- Claude Code set up, with your first AI skills installed\n- Your hosting ready, so publishing takes one sentence\n- Your hours log started",
+   "prerecorded": true,
+   "airtable_title": "Get AI-Ready 1 (pre-recorded): setup, your first pack, your hours log"
   },
   {
    "order": "0.2",
@@ -48,11 +52,13 @@
    "start_utc": "2026-11-12T15:00:00Z",
    "module": 0,
    "type": "Bonus",
-   "title": "Get AI-Ready 2 (pre-recorded): the go-live walkthrough",
+   "title": "Get AI-Ready 2: Your Website Ready to Publish",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Joined late, or stuck on setup? This recorded walkthrough takes you through your hosting step by step, so you can publish your website with one sentence from week 1. Anyone who still can't publish gets help live in the week 1 lab.\n\nYou'll leave with:\n- Your hosting set up\n- Your website ready to publish with one sentence"
+   "description": "Joined late, or stuck on setup? This recorded walkthrough takes you through your hosting step by step, so you can publish your website with one sentence from week 1. Anyone who still can't publish gets help live in the week 1 lab.\n\nYou'll leave with:\n- Your hosting set up\n- Your website ready to publish with one sentence",
+   "prerecorded": true,
+   "airtable_title": "Get AI-Ready 2 (pre-recorded): the go-live walkthrough"
   },
   {
    "order": "1",
@@ -60,12 +66,14 @@
    "start_utc": "2026-11-17T15:00:00Z",
    "module": 1,
    "type": "Lesson",
-   "title": "A Website That Beats Your Competitors'",
+   "title": "Website: Build One That Beats Your 3 Closest Competitors",
    "teachers": [
     "Vishen Lakhiani",
     "Vykintas Glodenis"
    ],
-   "description": "Most programs start with theory. This one starts with a finished website. Vishen opens the program, then Vykintas builds a site live in the first minutes, from nothing more than a folder of what a business already has. From there you'll learn the idea everything in this program runs on: AI is only as good as what you feed it. You'll put your business into one folder and let your AI web team build a site that beats your three closest competitors, with a working lead form. No website yet? Ten minutes of you talking about who you serve is enough to start.\n\nYou'll learn:\n- Why feeding AI your business once, properly, improves every result after it\n- How to brief an AI web team to build and refine your site\n- How to benchmark your site against your three closest competitors\n- How to publish with one sentence, using the hosting you set up before week 1"
+   "description": "Most programs start with theory. This one starts with a finished website. Vishen opens the program, then Vykintas builds a site live in the first minutes, from nothing more than a folder of what a business already has. From there you'll learn the idea everything in this program runs on: AI is only as good as what you feed it. You'll put your business into one folder and let your AI web team build a site that beats your three closest competitors, with a working lead form. No website yet? Ten minutes of you talking about who you serve is enough to start.\n\nYou'll learn:\n- Why feeding AI your business once, properly, improves every result after it\n- How to brief an AI web team to build and refine your site\n- How to benchmark your site against your three closest competitors\n- How to publish with one sentence, using the hosting you set up before week 1",
+   "prerecorded": false,
+   "airtable_title": "A Website That Beats Your Competitors'"
   },
   {
    "order": "2",
@@ -73,11 +81,13 @@
    "start_utc": "2026-11-19T15:00:00Z",
    "module": 1,
    "type": "Workshop",
-   "title": "Your Site, Live by Thursday",
+   "title": "Launch Your Website and Test Your Lead Form",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "The lesson showed you a website built live. In this session, Vykintas has you build and launch yours. If your hosting isn't set up yet, you'll do it together first. Then you'll refine your site with your own photos and reviews, publish it with one sentence, connect a custom domain if you want one, and test your lead form with a real enquiry. You'll also start your 30-minute hours log, the number your graduation is measured against. Before the session ends, your link goes in the community thread.\n\nYou'll leave with:\n- Your website live, built by you and your AI team\n- Your lead form tested end to end\n- Your hours log started"
+   "description": "The lesson showed you a website built live. In this session, Vykintas has you build and launch yours. If your hosting isn't set up yet, you'll do it together first. Then you'll refine your site with your own photos and reviews, publish it with one sentence, connect a custom domain if you want one, and test your lead form with a real enquiry. You'll also start your 30-minute hours log, the number your graduation is measured against. Before the session ends, your link goes in the community thread.\n\nYou'll leave with:\n- Your website live, built by you and your AI team\n- Your lead form tested end to end\n- Your hours log started",
+   "prerecorded": false,
+   "airtable_title": "Your Site, Live by Thursday"
   },
   {
    "order": "3",
@@ -85,11 +95,13 @@
    "start_utc": "2026-11-24T15:00:00Z",
    "module": 1,
    "type": "Lesson",
-   "title": "Who Buys, What to Sell, What to Charge",
+   "title": "Offer and Pricing: Who Buys, What to Sell, What to Charge",
    "teachers": [
     "Vishen Lakhiani"
    ],
-   "description": "Every page, email and post you create from here aims at a buyer and an offer, so vague here means generic everywhere. This week Vishen shows you how to decide who you serve, what you sell and what you charge, with a team of AI specialists doing the research: one reads your reviews and call notes for the words your buyers actually use, one studies ten competitors live, and one builds your offer ladder and prices. No customer data yet? You'll start from competitor research and five conversations.\n\nYou'll learn:\n- How to find the exact words your buyers use, from your own reviews and calls\n- How to research ten competitors in minutes, not weeks\n- How to build an offer ladder and set prices with clear reasons behind them\n- How to put your offers and prices live on your website the same week"
+   "description": "Every page, email and post you create from here aims at a buyer and an offer, so vague here means generic everywhere. This week Vishen shows you how to decide who you serve, what you sell and what you charge, with a team of AI specialists doing the research: one reads your reviews and call notes for the words your buyers actually use, one studies ten competitors live, and one builds your offer ladder and prices. No customer data yet? You'll start from competitor research and five conversations.\n\nYou'll learn:\n- How to find the exact words your buyers use, from your own reviews and calls\n- How to research ten competitors in minutes, not weeks\n- How to build an offer ladder and set prices with clear reasons behind them\n- How to put your offers and prices live on your website the same week",
+   "prerecorded": false,
+   "airtable_title": "Who Buys, What to Sell, What to Charge"
   },
   {
    "order": "4",
@@ -97,11 +109,13 @@
    "start_utc": "2026-11-26T15:00:00Z",
    "module": 1,
    "type": "Workshop",
-   "title": "Your Offer Book, and Prices on the Page",
+   "title": "Put Your Offers and Prices on Your Website",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vishen's lesson gave you the framework for who buys, what to sell and what to charge. In this session, Vykintas has you apply it to your own business. You'll feed your reviews, testimonials and call notes to your customer researcher, build your offer ladder, and make your pricing decisions in the room, with the reasons written down. Then you'll publish your offers and prices to your website in one sentence. This session falls on US Thanksgiving; it's recorded, and the next lesson picks up anyone who misses it.\n\nYou'll leave with:\n- Your offer book: ideal customer, competitors, offer ladder and prices\n- Your offers and prices live on your website"
+   "description": "Vishen's lesson gave you the framework for who buys, what to sell and what to charge. In this session, Vykintas has you apply it to your own business. You'll feed your reviews, testimonials and call notes to your customer researcher, build your offer ladder, and make your pricing decisions in the room, with the reasons written down. Then you'll publish your offers and prices to your website in one sentence. This session falls on US Thanksgiving; it's recorded, and the next lesson picks up anyone who misses it.\n\nYou'll leave with:\n- Your offer book: ideal customer, competitors, offer ladder and prices\n- Your offers and prices live on your website",
+   "prerecorded": false,
+   "airtable_title": "Your Offer Book, and Prices on the Page"
   },
   {
    "order": "5",
@@ -109,11 +123,13 @@
    "start_utc": "2026-12-01T15:00:00Z",
    "module": 1,
    "type": "Lesson",
-   "title": "Copy That Turns Visitors Into Buyers",
+   "title": "Copywriting: Turn Your Website Visitors Into Buyers",
    "teachers": [
     "Noelle Russell"
    ],
-   "description": "A good-looking website that doesn't convert is just a brochure. This week Noelle shows you how to put your site through a proper conversion audit: score it, rewrite it from your offer book, turn your best customer story into proof, and score it again, so you can see exactly how much better it got. Then you'll write your company's voice file: how your business sounds, the words it uses and the words it never uses. From next week, everything your AI writes for you uses that voice.\n\nYou'll learn:\n- How to audit and score a page for conversion\n- How to rewrite your copy around what your buyers actually want\n- How to turn one customer story into a case study that sells\n- How to capture your company's voice so all your AI writing sounds like you"
+   "description": "A good-looking website that doesn't convert is just a brochure. This week Noelle shows you how to put your site through a proper conversion audit: score it, rewrite it from your offer book, turn your best customer story into proof, and score it again, so you can see exactly how much better it got. Then you'll write your company's voice file: how your business sounds, the words it uses and the words it never uses. From next week, everything your AI writes for you uses that voice.\n\nYou'll learn:\n- How to audit and score a page for conversion\n- How to rewrite your copy around what your buyers actually want\n- How to turn one customer story into a case study that sells\n- How to capture your company's voice so all your AI writing sounds like you",
+   "prerecorded": false,
+   "airtable_title": "Copy That Turns Visitors Into Buyers"
   },
   {
    "order": "6",
@@ -121,11 +137,13 @@
    "start_utc": "2026-12-03T15:00:00Z",
    "module": 1,
    "type": "Workshop",
-   "title": "Rewrite, Re-score, Publish",
+   "title": "Rewrite Your Website and Score the Difference",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Noelle's lesson gave you the audit, rewrite and re-score workflow. In this session, Vykintas has you run it on your own website. You'll audit your site and write down its score, rewrite it from your offer book and your best customer story, and publish the new version in one sentence. Then you'll write your voice file from your best pages and a short voice note, audit the site again, and share your before and after score with the room.\n\nYou'll leave with:\n- Your website rewritten and live, with a before and after score\n- Your company voice file, written"
+   "description": "Noelle's lesson gave you the audit, rewrite and re-score workflow. In this session, Vykintas has you run it on your own website. You'll audit your site and write down its score, rewrite it from your offer book and your best customer story, and publish the new version in one sentence. Then you'll write your voice file from your best pages and a short voice note, audit the site again, and share your before and after score with the room.\n\nYou'll leave with:\n- Your website rewritten and live, with a before and after score\n- Your company voice file, written",
+   "prerecorded": false,
+   "airtable_title": "Rewrite, Re-score, Publish"
   },
   {
    "order": "7",
@@ -133,11 +151,13 @@
    "start_utc": "2026-12-08T15:00:00Z",
    "module": 1,
    "type": "Lesson",
-   "title": "Get Recommended by ChatGPT and Google",
+   "title": "Search: Get Recommended by ChatGPT and Google",
    "teachers": [
     "Ajit Nawalkha"
    ],
-   "description": "More and more buyers ask ChatGPT before they ask Google. This week Ajit shows you how to become the answer. You'll map the questions and objections your buyers actually ask, from your offer book and your customer research, then publish answers to them in your company's voice, on a hub on your own website. You'll also set up Google Search Console, so you have a real number to watch. Results take months, which is why this starts now: by graduation, you'll have four months of them.\n\nYou'll learn:\n- How AI search decides which businesses to recommend\n- How to find the questions your buyers are already asking\n- How to publish answer articles that build trust\n- How to track whether you're being found"
+   "description": "More and more buyers ask ChatGPT before they ask Google. This week Ajit shows you how to become the answer. You'll map the questions and objections your buyers actually ask, from your offer book and your customer research, then publish answers to them in your company's voice, on a hub on your own website. You'll also set up Google Search Console, so you have a real number to watch. Results take months, which is why this starts now: by graduation, you'll have four months of them.\n\nYou'll learn:\n- How AI search decides which businesses to recommend\n- How to find the questions your buyers are already asking\n- How to publish answer articles that build trust\n- How to track whether you're being found",
+   "prerecorded": false,
+   "airtable_title": "Get Recommended by ChatGPT and Google"
   },
   {
    "order": "8",
@@ -145,11 +165,13 @@
    "start_utc": "2026-12-10T15:00:00Z",
    "module": 1,
    "type": "Workshop",
-   "title": "Your Answer Hub, Live",
+   "title": "Publish Your First Search Article and Start Tracking It",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Ajit's lesson showed you how to become the answer when buyers ask AI. In this session, Vykintas has you build your answer hub. You'll map your buyers' questions from your offer book and customer research, publish your first article, and connect Google Search Console. Your homework is to review the next three to five articles before they go live.\n\nYou'll leave with:\n- Your answer hub live, with its first article\n- Google Search Console connected and tracking"
+   "description": "Ajit's lesson showed you how to become the answer when buyers ask AI. In this session, Vykintas has you build your answer hub. You'll map your buyers' questions from your offer book and customer research, publish your first article, and connect Google Search Console. Your homework is to review the next three to five articles before they go live.\n\nYou'll leave with:\n- Your answer hub live, with its first article\n- Google Search Console connected and tracking",
+   "prerecorded": false,
+   "airtable_title": "Your Answer Hub, Live"
   },
   {
    "order": "9",
@@ -157,11 +179,13 @@
    "start_utc": "2026-12-15T15:00:00Z",
    "module": 2,
    "type": "Lesson",
-   "title": "Build a Company Brain That Knows Your Business",
+   "title": "Company Brain: Never Explain Your Business Twice",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "By now you've felt the problem: four folders, re-attached to every task, and AI that forgets what you told it yesterday. This week Vykintas shows you how to build one company brain that holds everything your business knows: your website, offers, copy, voice, answer hub, priorities and processes. You'll watch an AI chief of staff answer questions about your business from it. Every AI team you build after this reads from your brain and saves back to it, so your AI gets smarter about your business every week.\n\nYou'll learn:\n- Why one shared brain beats a pile of separate chats and folders\n- How to structure your brain so AI can find anything in it\n- How to move your existing work in, using a ready-made template\n- How to keep it clean and up to date as your business changes"
+   "description": "By now you've felt the problem: four folders, re-attached to every task, and AI that forgets what you told it yesterday. This week Vykintas shows you how to build one company brain that holds everything your business knows: your website, offers, copy, voice, answer hub, priorities and processes. You'll watch an AI chief of staff answer questions about your business from it. Every AI team you build after this reads from your brain and saves back to it, so your AI gets smarter about your business every week.\n\nYou'll learn:\n- Why one shared brain beats a pile of separate chats and folders\n- How to structure your brain so AI can find anything in it\n- How to move your existing work in, using a ready-made template\n- How to keep it clean and up to date as your business changes",
+   "prerecorded": false,
+   "airtable_title": "Build a Company Brain That Knows Your Business"
   },
   {
    "order": "10",
@@ -169,11 +193,13 @@
    "start_utc": "2026-12-17T15:00:00Z",
    "module": 2,
    "type": "Workshop",
-   "title": "Move In, and Ask It Anything",
+   "title": "Set Up Your Company Brain and Ask It Anything",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vykintas's lesson showed you how a company brain works. In this session, he helps you build yours. You'll start with what should never go into it, and why, then move your website, offer book, copy, voice file and answer hub into the brain template. You'll open Claude Code inside it, ask your AI chief of staff five questions about your business, and write down the gaps it finds. Over the holiday break, you'll keep moving in, so your brain is ready when we're back.\n\nYou'll leave with:\n- Your company brain, set up and filled with your work\n- Five answers from your AI chief of staff, and the gaps it found\n- A plan for what to move in over the break"
+   "description": "Vykintas's lesson showed you how a company brain works. In this session, he helps you build yours. You'll start with what should never go into it, and why, then move your website, offer book, copy, voice file and answer hub into the brain template. You'll open Claude Code inside it, ask your AI chief of staff five questions about your business, and write down the gaps it finds. Over the holiday break, you'll keep moving in, so your brain is ready when we're back.\n\nYou'll leave with:\n- Your company brain, set up and filled with your work\n- Five answers from your AI chief of staff, and the gaps it found\n- A plan for what to move in over the break",
+   "prerecorded": false,
+   "airtable_title": "Move In, and Ask It Anything"
   },
   {
    "order": "11",
@@ -181,11 +207,13 @@
    "start_utc": "2027-01-05T15:00:00Z",
    "module": 3,
    "type": "Lesson",
-   "title": "Wake Up to a Sorted Inbox",
+   "title": "Inbox: Wake Up to Sorted Email and Drafted Replies",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Start the new year with an inbox that sorts itself. This week Vykintas shows you how to set up your first AI team that works on a schedule: an assistant that sorts your inbox before you wake and drafts your replies, using everything your company brain knows about your offers, your copy and your voice. Nothing is ever sent without you, and it starts with read-only access. Then you'll run the audit founders ask for most, what should I automate first, ranking your own week by hours and by how safely AI can take it over.\n\nYou'll learn:\n- How to give AI safe, read-only access to your email\n- How to set up a morning run that sorts and drafts while you sleep\n- How to teach it from your corrections, so it improves every day\n- How to decide what to automate first in your business"
+   "description": "Start the new year with an inbox that sorts itself. This week Vykintas shows you how to set up your first AI team that works on a schedule: an assistant that sorts your inbox before you wake and drafts your replies, using everything your company brain knows about your offers, your copy and your voice. Nothing is ever sent without you, and it starts with read-only access. Then you'll run the audit founders ask for most, what should I automate first, ranking your own week by hours and by how safely AI can take it over.\n\nYou'll learn:\n- How to give AI safe, read-only access to your email\n- How to set up a morning run that sorts and drafts while you sleep\n- How to teach it from your corrections, so it improves every day\n- How to decide what to automate first in your business",
+   "prerecorded": false,
+   "airtable_title": "Wake Up to a Sorted Inbox"
   },
   {
    "order": "12",
@@ -193,11 +221,13 @@
    "start_utc": "2027-01-07T15:00:00Z",
    "module": 3,
    "type": "Workshop",
-   "title": "Your First Morning Run",
+   "title": "Switch On Your Inbox Assistant and Pick What to Automate",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vykintas's lesson showed you an inbox that sorts itself. In this session, he helps you set yours up, safely. You'll start with 15 minutes on privacy: what the assistant can read, what it can never do, and why nothing is sent without you. Then you'll connect your email, run the sort once by hand, and schedule it for every morning. Finally, you'll run the automate-first audit on your own week and choose your top three.\n\nYou'll leave with:\n- Your inbox sorted and replies drafted every morning\n- Your top three things to automate next"
+   "description": "Vykintas's lesson showed you an inbox that sorts itself. In this session, he helps you set yours up, safely. You'll start with 15 minutes on privacy: what the assistant can read, what it can never do, and why nothing is sent without you. Then you'll connect your email, run the sort once by hand, and schedule it for every morning. Finally, you'll run the automate-first audit on your own week and choose your top three.\n\nYou'll leave with:\n- Your inbox sorted and replies drafted every morning\n- Your top three things to automate next",
+   "prerecorded": false,
+   "airtable_title": "Your First Morning Run"
   },
   {
    "order": "13",
@@ -205,11 +235,13 @@
    "start_utc": "2027-01-12T15:00:00Z",
    "module": 4,
    "type": "Lesson",
-   "title": "A Professional Brand Without a Design Agency",
+   "title": "Branding: A Professional Brand Without a Design Agency",
    "teachers": [
     "Vishen Lakhiani"
    ],
-   "description": "Founders assume a professional brand takes an agency. It doesn't. This week Vishen shows you how to build a brand kit from what you already have, your logo, your best photos and the colors already on your site, and how to turn your own photos into editorial shots, product images and backgrounds. Your site is restyled with the kit, and the kit goes into your brain, so your funnel, content and ads all look like one company.\n\nYou'll learn:\n- How to build a brand kit from the assets you already own\n- How to turn your own photos into professional imagery with ChatGPT\n- How to restyle your website in one pass\n- How to keep every future asset on brand"
+   "description": "Founders assume a professional brand takes an agency. It doesn't. This week Vishen shows you how to build a brand kit from what you already have, your logo, your best photos and the colors already on your site, and how to turn your own photos into editorial shots, product images and backgrounds. Your site is restyled with the kit, and the kit goes into your brain, so your funnel, content and ads all look like one company.\n\nYou'll learn:\n- How to build a brand kit from the assets you already own\n- How to turn your own photos into professional imagery with ChatGPT\n- How to restyle your website in one pass\n- How to keep every future asset on brand",
+   "prerecorded": false,
+   "airtable_title": "A Professional Brand Without a Design Agency"
   },
   {
    "order": "14",
@@ -217,11 +249,13 @@
    "start_utc": "2027-01-14T15:00:00Z",
    "module": 4,
    "type": "Workshop",
-   "title": "Your Brand Kit, Applied",
+   "title": "Build Your Brand Kit and Restyle Your Website",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vishen's lesson showed you a professional brand without an agency. In this session, Vykintas has you make yours. You'll build your brand kit from your logo, photos and site, create an image set from your own photos in ChatGPT, and restyle your website with the kit, adding a browser-tab icon and a link-preview image before you publish.\n\nYou'll leave with:\n- Your brand kit, built and saved to your brain\n- A set of professional images made from your own photos\n- Your website restyled and live"
+   "description": "Vishen's lesson showed you a professional brand without an agency. In this session, Vykintas has you make yours. You'll build your brand kit from your logo, photos and site, create an image set from your own photos in ChatGPT, and restyle your website with the kit, adding a browser-tab icon and a link-preview image before you publish.\n\nYou'll leave with:\n- Your brand kit, built and saved to your brain\n- A set of professional images made from your own photos\n- Your website restyled and live",
+   "prerecorded": false,
+   "airtable_title": "Your Brand Kit, Applied"
   },
   {
    "order": "15",
@@ -229,11 +263,13 @@
    "start_utc": "2027-01-19T15:00:00Z",
    "module": 4,
    "type": "Lesson",
-   "title": "Design a Funnel That Turns Visitors Into Leads",
+   "title": "Funnels: Map the Path From Visitor to Lead",
    "teachers": [
     "Vishen Lakhiani"
    ],
-   "description": "A website brings visitors. A funnel turns them into leads. This week Vishen shows you how to choose the funnel that fits your business: a booked call if you sell services, a purchase if you sell products, a trial if you sell software. You'll design your lead magnet, the free checklist, guide or scorecard you promised on your site, and the nurture emails that follow it, all written in your company's voice. This week you design it; next week you launch it.\n\nYou'll learn:\n- Which of three funnel types fits your business\n- How to create a lead magnet people actually want\n- How to write nurture emails that lead to your offer\n- How to map your funnel before you build it"
+   "description": "A website brings visitors. A funnel turns them into leads. This week Vishen shows you how to choose the funnel that fits your business: a booked call if you sell services, a purchase if you sell products, a trial if you sell software. You'll design your lead magnet, the free checklist, guide or scorecard you promised on your site, and the nurture emails that follow it, all written in your company's voice. This week you design it; next week you launch it.\n\nYou'll learn:\n- Which of three funnel types fits your business\n- How to create a lead magnet people actually want\n- How to write nurture emails that lead to your offer\n- How to map your funnel before you build it",
+   "prerecorded": false,
+   "airtable_title": "Design a Funnel That Turns Visitors Into Leads"
   },
   {
    "order": "16",
@@ -241,11 +277,13 @@
    "start_utc": "2027-01-21T15:00:00Z",
    "module": 4,
    "type": "Workshop",
-   "title": "Your Magnet and Emails, Written",
+   "title": "Create Your Lead Magnet and Write Your Welcome Emails",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vishen's lesson gave you three types of funnel. In this session, Vykintas puts you in the room for yours: services, products or software. You'll choose and map your funnel, create your lead magnet and check it against your brand kit, and write your nurture emails from your offer book and voice file.\n\nYou'll leave with:\n- Your funnel chosen and mapped\n- Your lead magnet, created and on brand\n- Your nurture emails, written and reviewed"
+   "description": "Vishen's lesson gave you three types of funnel. In this session, Vykintas puts you in the room for yours: services, products or software. You'll choose and map your funnel, create your lead magnet and check it against your brand kit, and write your nurture emails from your offer book and voice file.\n\nYou'll leave with:\n- Your funnel chosen and mapped\n- Your lead magnet, created and on brand\n- Your nurture emails, written and reviewed",
+   "prerecorded": false,
+   "airtable_title": "Your Magnet and Emails, Written"
   },
   {
    "order": "17",
@@ -253,11 +291,13 @@
    "start_utc": "2027-01-26T15:00:00Z",
    "module": 4,
    "type": "Lesson",
-   "title": "Launch Your Funnel and Collect Leads",
+   "title": "Funnel Launch: Go Live and Collect Your First Leads",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Last week you designed your funnel. This week Vykintas shows you how to launch it. You'll build your landing page and publish it in one sentence, connect your form to your email platform, and set up the tag that starts your nurture sequence. Then a test lead goes through every step to prove it works. The demo uses Kit, which is free, and because every email tool has the same four parts, you can follow along on the tool you already use.\n\nYou'll learn:\n- How to build and publish a landing page in one sentence\n- The four parts every email tool shares: form, tag, sequence, broadcast\n- How to connect your form so new leads get your lead magnet automatically\n- How to test your funnel end to end before you send traffic to it"
+   "description": "Last week you designed your funnel. This week Vykintas shows you how to launch it. You'll build your landing page and publish it in one sentence, connect your form to your email platform, and set up the tag that starts your nurture sequence. Then a test lead goes through every step to prove it works. The demo uses Kit, which is free, and because every email tool has the same four parts, you can follow along on the tool you already use.\n\nYou'll learn:\n- How to build and publish a landing page in one sentence\n- The four parts every email tool shares: form, tag, sequence, broadcast\n- How to connect your form so new leads get your lead magnet automatically\n- How to test your funnel end to end before you send traffic to it",
+   "prerecorded": false,
+   "airtable_title": "Launch Your Funnel and Collect Leads"
   },
   {
    "order": "18",
@@ -265,11 +305,13 @@
    "start_utc": "2027-01-28T15:00:00Z",
    "module": 4,
    "type": "Workshop",
-   "title": "Funnel Clinic: One Test Lead, End to End",
+   "title": "Send a Test Lead Through Your Live Funnel",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vykintas's lesson showed you how to launch a funnel. In this session, you launch yours, with him in the room. You'll publish your landing page, connect your form to your email platform, set the tag and load your nurture emails. Then you'll send a test lead through and watch it receive your lead magnet and first email. Using a different email tool? There's a room for that.\n\nYou'll leave with:\n- Your funnel live, from landing page to first email\n- Proof it works: a test lead, end to end"
+   "description": "Vykintas's lesson showed you how to launch a funnel. In this session, you launch yours, with him in the room. You'll publish your landing page, connect your form to your email platform, set the tag and load your nurture emails. Then you'll send a test lead through and watch it receive your lead magnet and first email. Using a different email tool? There's a room for that.\n\nYou'll leave with:\n- Your funnel live, from landing page to first email\n- Proof it works: a test lead, end to end",
+   "prerecorded": false,
+   "airtable_title": "Funnel Clinic: One Test Lead, End to End"
   },
   {
    "order": "19",
@@ -277,11 +319,13 @@
    "start_utc": "2027-02-02T15:00:00Z",
    "module": 5,
    "type": "Lesson",
-   "title": "One Idea, a Month of Content",
+   "title": "Content: Turn One Idea Into a Month of Posts",
    "teachers": [
     "Ajit Nawalkha"
    ],
-   "description": "Content eats a founder's week. This week Ajit shows you how to make a month of it from a single idea. One article from your answer hub becomes posts, carousels and a newsletter, written in your company's voice and designed with your brand kit. No face needed, so it works even if you'd rather stay behind the business.\n\nYou'll learn:\n- How to turn one article into a month of posts and carousels\n- How to keep every piece in your voice and on brand\n- How to design carousels without a designer\n- How to plan a month of content in one sitting"
+   "description": "Content eats a founder's week. This week Ajit shows you how to make a month of it from a single idea. One article from your answer hub becomes posts, carousels and a newsletter, written in your company's voice and designed with your brand kit. No face needed, so it works even if you'd rather stay behind the business.\n\nYou'll learn:\n- How to turn one article into a month of posts and carousels\n- How to keep every piece in your voice and on brand\n- How to design carousels without a designer\n- How to plan a month of content in one sitting",
+   "prerecorded": false,
+   "airtable_title": "One Idea, a Month of Content"
   },
   {
    "order": "20",
@@ -289,11 +333,13 @@
    "start_utc": "2027-02-04T15:00:00Z",
    "module": 5,
    "type": "Workshop",
-   "title": "A Month, Scheduled",
+   "title": "Make and Schedule Your Month of Content in One Sitting",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Ajit's lesson showed you how one idea becomes a month of content. In this session, Vykintas has you make yours. You'll turn one of your articles into a month of posts and carousels, export the carousels as images, check everything against your voice file and brand kit, and schedule the first week in each platform's own scheduler.\n\nYou'll leave with:\n- Thirty days of content, made from one idea\n- Your first week scheduled, no face needed"
+   "description": "Ajit's lesson showed you how one idea becomes a month of content. In this session, Vykintas has you make yours. You'll turn one of your articles into a month of posts and carousels, export the carousels as images, check everything against your voice file and brand kit, and schedule the first week in each platform's own scheduler.\n\nYou'll leave with:\n- Thirty days of content, made from one idea\n- Your first week scheduled, no face needed",
+   "prerecorded": false,
+   "airtable_title": "A Month, Scheduled"
   },
   {
    "order": "21",
@@ -301,11 +347,13 @@
    "start_utc": "2027-02-09T15:00:00Z",
    "module": 5,
    "type": "Lesson",
-   "title": "Content That Brings Customers, Week After Week",
+   "title": "Content System: Posts That Bring Customers, Not Just Likes",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Posting isn't the goal. Customers are. This week Vykintas shows you how to set up the weekly rhythm that keeps your content going without you: a newsletter written from the week's articles and posts, next week's batch drafted on a schedule, and a weekly report on which content actually brings customers. Your posts still go out through each platform's own scheduler, because that's what stays reliable.\n\nYou'll learn:\n- How to write a newsletter from content you've already made\n- How to have next week's content drafted automatically\n- How to read your post stats and find what's working\n- How to spot the content that brings customers, not just likes"
+   "description": "Posting isn't the goal. Customers are. This week Vykintas shows you how to set up the weekly rhythm that keeps your content going without you: a newsletter written from the week's articles and posts, next week's batch drafted on a schedule, and a weekly report on which content actually brings customers. Your posts still go out through each platform's own scheduler, because that's what stays reliable.\n\nYou'll learn:\n- How to write a newsletter from content you've already made\n- How to have next week's content drafted automatically\n- How to read your post stats and find what's working\n- How to spot the content that brings customers, not just likes",
+   "prerecorded": false,
+   "airtable_title": "Content That Brings Customers, Week After Week"
   },
   {
    "order": "22",
@@ -313,11 +361,13 @@
    "start_utc": "2027-02-11T15:00:00Z",
    "module": 5,
    "type": "Workshop",
-   "title": "Your Weekly Content Run",
+   "title": "Send Your First Newsletter and Find Your Winning Posts",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vykintas's lesson showed you a content rhythm that runs itself. In this session, he has you set yours up. You'll write and send your first newsletter through your email platform, schedule your weekly content batch to draft itself, and export your post stats so your AI analyst can name your winners.\n\nYou'll leave with:\n- Your first newsletter, sent\n- Next week's content drafting itself\n- A clear view of which content works"
+   "description": "Vykintas's lesson showed you a content rhythm that runs itself. In this session, he has you set yours up. You'll write and send your first newsletter through your email platform, schedule your weekly content batch to draft itself, and export your post stats so your AI analyst can name your winners.\n\nYou'll leave with:\n- Your first newsletter, sent\n- Next week's content drafting itself\n- A clear view of which content works",
+   "prerecorded": false,
+   "airtable_title": "Your Weekly Content Run"
   },
   {
    "order": "23",
@@ -325,11 +375,13 @@
    "start_utc": "2027-02-16T15:00:00Z",
    "module": 5,
    "type": "Lesson",
-   "title": "Run Meta Ads Without an Agency",
+   "title": "Meta Ads: Run Your Own Ads Without an Agency",
    "teachers": [
     "Marisha Lakhiani"
    ],
-   "description": "Paid ads can bring customers faster than any other channel, as long as you know what you're testing. This week Marisha shows you how to run Meta ads without an agency. You'll study what your competitors are running, create ads from your best-performing content, and plan a campaign that sends traffic to the funnel you built. Not ready to spend yet? The research and the ads are valuable on their own, and your test campaign can start very small.\n\nYou'll learn:\n- How to see what your competitors are running on Meta\n- How to turn your best content into ads\n- How to plan a small, controlled test campaign\n- How to read a weekly ad report and decide what to do next"
+   "description": "Paid ads can bring customers faster than any other channel, as long as you know what you're testing. This week Marisha shows you how to run Meta ads without an agency. You'll study what your competitors are running, create ads from your best-performing content, and plan a campaign that sends traffic to the funnel you built. Not ready to spend yet? The research and the ads are valuable on their own, and your test campaign can start very small.\n\nYou'll learn:\n- How to see what your competitors are running on Meta\n- How to turn your best content into ads\n- How to plan a small, controlled test campaign\n- How to read a weekly ad report and decide what to do next",
+   "prerecorded": false,
+   "airtable_title": "Run Meta Ads Without an Agency"
   },
   {
    "order": "24",
@@ -337,11 +389,13 @@
    "start_utc": "2027-02-18T15:00:00Z",
    "module": 5,
    "type": "Workshop",
-   "title": "Tracking and Launch Clinic",
+   "title": "Create Your First 3 Ads and Launch a Test Campaign",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Marisha's lesson gave you the Meta ads playbook. In this session, Vykintas has you put it to work. You'll study your competitors' ads, create three ads from your best content and check them against your brand kit, set up tracking, and launch a small test campaign, or save it as a draft if you're not spending yet.\n\nYou'll leave with:\n- Three ads, created and on brand\n- Tracking set up, and a test campaign ready to run"
+   "description": "Marisha's lesson gave you the Meta ads playbook. In this session, Vykintas has you put it to work. You'll study your competitors' ads, create three ads from your best content and check them against your brand kit, set up tracking, and launch a small test campaign, or save it as a draft if you're not spending yet.\n\nYou'll leave with:\n- Three ads, created and on brand\n- Tracking set up, and a test campaign ready to run",
+   "prerecorded": false,
+   "airtable_title": "Tracking and Launch Clinic"
   },
   {
    "order": "25",
@@ -349,12 +403,14 @@
    "start_utc": "2027-02-23T15:00:00Z",
    "module": 6,
    "type": "Lesson",
-   "title": "Bookkeeping Off Your Desk",
+   "title": "Bookkeeping: Get Invoices and Receipts Off Your Desk",
    "teachers": [
     "Sara Davison",
     "Tyler Fisk"
    ],
-   "description": "Every business has bills and receipts, even before it has sales. This week Sara and Tyler show you how to take bookkeeping off your desk with AI agents that work on a schedule: one finds your invoices and receipts in your inbox and drive and files them in a spreadsheet, another drafts the chase for anything overdue. Then you'll use the same pattern to automate one more task from your list.\n\nYou'll learn:\n- How to set up an agent that files invoices and receipts every week\n- How to chase overdue payments without writing the reminders yourself\n- How to export clean records for your accountant\n- How to reuse the same pattern on any repetitive task"
+   "description": "Every business has bills and receipts, even before it has sales. This week Sara and Tyler show you how to take bookkeeping off your desk with AI agents that work on a schedule: one finds your invoices and receipts in your inbox and drive and files them in a spreadsheet, another drafts the chase for anything overdue. Then you'll use the same pattern to automate one more task from your list.\n\nYou'll learn:\n- How to set up an agent that files invoices and receipts every week\n- How to chase overdue payments without writing the reminders yourself\n- How to export clean records for your accountant\n- How to reuse the same pattern on any repetitive task",
+   "prerecorded": false,
+   "airtable_title": "Bookkeeping Off Your Desk"
   },
   {
    "order": "26",
@@ -362,11 +418,13 @@
    "start_utc": "2027-02-25T15:00:00Z",
    "module": 6,
    "type": "Workshop",
-   "title": "Invoices In, Overdue Chased",
+   "title": "Automate Your Invoices and Chase Late Payments",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Sara and Tyler's lesson showed you bookkeeping on autopilot. In this session, Vykintas has you set it up. You'll start with what your agent may read, and why it never touches a bank account. Then you'll build and schedule your invoice collector, review the overdue chase, and automate one more task from your list with the same pattern.\n\nYou'll leave with:\n- Invoices and receipts filed every week, automatically\n- Overdue payments chased, with you approving every message\n- One more task automated"
+   "description": "Sara and Tyler's lesson showed you bookkeeping on autopilot. In this session, Vykintas has you set it up. You'll start with what your agent may read, and why it never touches a bank account. Then you'll build and schedule your invoice collector, review the overdue chase, and automate one more task from your list with the same pattern.\n\nYou'll leave with:\n- Invoices and receipts filed every week, automatically\n- Overdue payments chased, with you approving every message\n- One more task automated",
+   "prerecorded": false,
+   "airtable_title": "Invoices In, Overdue Chased"
   },
   {
    "order": "27",
@@ -374,11 +432,13 @@
    "start_utc": "2027-03-02T15:00:00Z",
    "module": 7,
    "type": "Lesson",
-   "title": "Never Chase a Bad Lead",
+   "title": "Lead Scoring: Never Chase a Bad Lead Again",
    "teachers": [
     "Joe Stolte"
    ],
-   "description": "By now your marketing is bringing in leads. The question is which ones to chase. This week Joe shows you how to set up AI that scores every lead as it arrives, researches the good ones before you reply, and drafts your outreach the same day. Your pipeline lives in your company brain, and it works with your CRM if you already have one.\n\nYou'll learn:\n- How to score leads automatically, so you know who to call first\n- How to research a prospect in minutes before you reply\n- How to answer every good lead the same day\n- How to keep a clean pipeline, with or without a CRM"
+   "description": "By now your marketing is bringing in leads. The question is which ones to chase. This week Joe shows you how to set up AI that scores every lead as it arrives, researches the good ones before you reply, and drafts your outreach the same day. Your pipeline lives in your company brain, and it works with your CRM if you already have one.\n\nYou'll learn:\n- How to score leads automatically, so you know who to call first\n- How to research a prospect in minutes before you reply\n- How to answer every good lead the same day\n- How to keep a clean pipeline, with or without a CRM",
+   "prerecorded": false,
+   "airtable_title": "Never Chase a Bad Lead"
   },
   {
    "order": "28",
@@ -386,11 +446,13 @@
    "start_utc": "2027-03-04T15:00:00Z",
    "module": 7,
    "type": "Workshop",
-   "title": "Score Your Own Leads",
+   "title": "Score Your Leads and Draft Replies to Your Best 5",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Joe's lesson showed you how to never chase a bad lead. In this session, Vykintas has you build your own lead system. You'll set up your pipeline in your brain or connect your CRM, score and research your real leads, and tune the scoring until you agree with it. Then you'll draft same-day replies to your best five.\n\nYou'll leave with:\n- Every lead scored and researched\n- Replies drafted for your best five leads"
+   "description": "Joe's lesson showed you how to never chase a bad lead. In this session, Vykintas has you build your own lead system. You'll set up your pipeline in your brain or connect your CRM, score and research your real leads, and tune the scoring until you agree with it. Then you'll draft same-day replies to your best five.\n\nYou'll leave with:\n- Every lead scored and researched\n- Replies drafted for your best five leads",
+   "prerecorded": false,
+   "airtable_title": "Score Your Own Leads"
   },
   {
    "order": "29",
@@ -398,11 +460,13 @@
    "start_utc": "2027-03-09T15:00:00Z",
    "module": 7,
    "type": "Lesson",
-   "title": "Close More, Chase Less",
+   "title": "Sales Calls: Close More, Chase Less",
    "teachers": [
     "Noelle Russell"
    ],
-   "description": "Most deals are lost in the follow-up, not on the call. This week Noelle shows you how to set up AI that helps you close: a coach that prepares you before every sales call and reviews the transcript after, a writer that drafts proposals from your offer book, and a follow-up manager that drafts every follow-up until you get a yes or a no. Sell a self-serve product? You'll apply the same workflow to partners and larger customers.\n\nYou'll learn:\n- How to prepare for a sales call in minutes\n- How to learn from every call transcript\n- How to turn a call into a tailored proposal\n- How to follow up consistently without chasing"
+   "description": "Most deals are lost in the follow-up, not on the call. This week Noelle shows you how to set up AI that helps you close: a coach that prepares you before every sales call and reviews the transcript after, a writer that drafts proposals from your offer book, and a follow-up manager that drafts every follow-up until you get a yes or a no. Sell a self-serve product? You'll apply the same workflow to partners and larger customers.\n\nYou'll learn:\n- How to prepare for a sales call in minutes\n- How to learn from every call transcript\n- How to turn a call into a tailored proposal\n- How to follow up consistently without chasing",
+   "prerecorded": false,
+   "airtable_title": "Close More, Chase Less"
   },
   {
    "order": "30",
@@ -410,11 +474,13 @@
    "start_utc": "2027-03-11T15:00:00Z",
    "module": 7,
    "type": "Workshop",
-   "title": "Your Proposal and Follow-Up Kit",
+   "title": "Build Your Proposal Template and Automate Follow-Ups",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Noelle's lesson showed you how AI helps you close more and chase less. In this session, Vykintas has you set it up for your own deals. You'll have the coach review one of your real call transcripts, write a proposal template from your offer book and use it on a live deal, and schedule follow-ups for every open opportunity.\n\nYou'll leave with:\n- A proposal template, used on a live deal\n- Follow-ups scheduled for every open deal"
+   "description": "Noelle's lesson showed you how AI helps you close more and chase less. In this session, Vykintas has you set it up for your own deals. You'll have the coach review one of your real call transcripts, write a proposal template from your offer book and use it on a live deal, and schedule follow-ups for every open opportunity.\n\nYou'll leave with:\n- A proposal template, used on a live deal\n- Follow-ups scheduled for every open deal",
+   "prerecorded": false,
+   "airtable_title": "Your Proposal and Follow-Up Kit"
   },
   {
    "order": "31",
@@ -422,11 +488,13 @@
    "start_utc": "2027-03-16T14:00:00Z",
    "module": 8,
    "type": "Lesson",
-   "title": "Run Your Company From One Screen",
+   "title": "Dashboard: Run Your Company From One Screen",
    "teachers": [
     "Vishen Lakhiani"
    ],
-   "description": "You've built a business full of systems. Now you need to see it. This week Vishen shows you how to bring every number your systems have been saving into one dashboard, and how to get a CEO briefing every Monday with three actions: do this, try this, spend time here. It's the page you'll run your business from next week, when deciding is your only job.\n\nYou'll learn:\n- How to bring your key numbers onto one screen\n- How to get a Monday briefing that tells you what to do\n- Which numbers matter most for a founder\n- How to handle the numbers that only come as exports"
+   "description": "You've built a business full of systems. Now you need to see it. This week Vishen shows you how to bring every number your systems have been saving into one dashboard, and how to get a CEO briefing every Monday with three actions: do this, try this, spend time here. It's the page you'll run your business from next week, when deciding is your only job.\n\nYou'll learn:\n- How to bring your key numbers onto one screen\n- How to get a Monday briefing that tells you what to do\n- Which numbers matter most for a founder\n- How to handle the numbers that only come as exports",
+   "prerecorded": false,
+   "airtable_title": "Run Your Company From One Screen"
   },
   {
    "order": "32",
@@ -434,11 +502,13 @@
    "start_utc": "2027-03-18T14:00:00Z",
    "module": 8,
    "type": "Workshop",
-   "title": "Your Dashboard and Monday Brief",
+   "title": "Build Your Dashboard and Your Monday Briefing",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vishen's lesson showed you how to run your company from one screen. In this session, Vykintas has you build yours. You'll pull your saved numbers into your dashboard and list the gaps, publish it privately on one screen, and schedule your Monday briefing, then read its first three actions out to the room.\n\nYou'll leave with:\n- Your dashboard, on one screen\n- Your Monday briefing, scheduled, with its first three actions"
+   "description": "Vishen's lesson showed you how to run your company from one screen. In this session, Vykintas has you build yours. You'll pull your saved numbers into your dashboard and list the gaps, publish it privately on one screen, and schedule your Monday briefing, then read its first three actions out to the room.\n\nYou'll leave with:\n- Your dashboard, on one screen\n- Your Monday briefing, scheduled, with its first three actions",
+   "prerecorded": false,
+   "airtable_title": "Your Dashboard and Monday Brief"
   },
   {
    "order": "33",
@@ -446,11 +516,13 @@
    "start_utc": "2027-03-23T14:00:00Z",
    "module": 8,
    "type": "Lesson",
-   "title": "Owners, Then the Week You Only Decide",
+   "title": "Handover: Step Back and Let Your Systems Run the Week",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Everything you've built needs an owner. This week Vykintas shows you how to give every system from the program an owner page: what runs and when, who owns it, a person or an AI team with a human checkpoint, what good looks like, and what to do when it breaks. Then comes the test: the five working days until graduation, in which you only decide. Your systems and their owners do the work. You review and make the calls.\n\nYou'll learn:\n- How to write an owner page for every system you've built\n- How to hand a system to a person or an AI team, with a human checkpoint\n- How to spot and fix a system that's failing\n- How to run a week where your only job is deciding"
+   "description": "Everything you've built needs an owner. This week Vykintas shows you how to give every system from the program an owner page: what runs and when, who owns it, a person or an AI team with a human checkpoint, what good looks like, and what to do when it breaks. Then comes the test: the five working days until graduation, in which you only decide. Your systems and their owners do the work. You review and make the calls.\n\nYou'll learn:\n- How to write an owner page for every system you've built\n- How to hand a system to a person or an AI team, with a human checkpoint\n- How to spot and fix a system that's failing\n- How to run a week where your only job is deciding",
+   "prerecorded": false,
+   "airtable_title": "Owners, Then the Week You Only Decide"
   },
   {
    "order": "34",
@@ -458,11 +530,13 @@
    "start_utc": "2027-03-25T14:00:00Z",
    "module": 8,
    "type": "Workshop",
-   "title": "Owner Pages, and the Test Week Begins",
+   "title": "Give Every System an Owner and Plan Your Hands-Off Week",
    "teachers": [
     "Vykintas Glodenis"
    ],
-   "description": "Vykintas's lesson showed you how to give every system an owner. In this session, he has you do it. You'll write an owner page for each system you've built, check every scheduled run against its page and fix what fails, and plan your test week: the decisions you'll make, and the work you won't touch until graduation.\n\nYou'll leave with:\n- An owner page for every system you've built\n- Your test week planned, ready to begin"
+   "description": "Vykintas's lesson showed you how to give every system an owner. In this session, he has you do it. You'll write an owner page for each system you've built, check every scheduled run against its page and fix what fails, and plan your test week: the decisions you'll make, and the work you won't touch until graduation.\n\nYou'll leave with:\n- An owner page for every system you've built\n- Your test week planned, ready to begin",
+   "prerecorded": false,
+   "airtable_title": "Owner Pages, and the Test Week Begins"
   },
   {
    "order": "35",
@@ -470,12 +544,14 @@
    "start_utc": "2027-03-30T14:00:00Z",
    "module": 8,
    "type": "Graduation",
-   "title": "Graduation and Demo Day",
+   "title": "Graduation and Demo Day: The Hours You Got Back",
    "teachers": [
     "Vishen Lakhiani",
     "Vykintas Glodenis"
    ],
-   "description": "This is where we close the program together. Your hours log from before week 1 is counted again: how many hours your business needs from you now, against where you started. Then it's Demo Day, as founders from the cohort each show one system, live. Vishen and Vykintas close by looking ahead to the next twelve months with the AI team you've built, and what to build next.\n\nYou'll leave with:\n- Your before and after: the hours your business needs from you\n- A showcase of what the cohort has built\n- A clear sense of what to build next"
+   "description": "This is where we close the program together. Your hours log from before week 1 is counted again: how many hours your business needs from you now, against where you started. Then it's Demo Day, as founders from the cohort each show one system, live. Vishen and Vykintas close by looking ahead to the next twelve months with the AI team you've built, and what to build next.\n\nYou'll leave with:\n- Your before and after: the hours your business needs from you\n- A showcase of what the cohort has built\n- A clear sense of what to build next",
+   "prerecorded": false,
+   "airtable_title": "Graduation and Demo Day"
   }
  ]
 }

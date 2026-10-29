@@ -30,7 +30,7 @@ def when(s):
     utc = datetime.fromisoformat(s['start_utc'].replace('Z', '+00:00'))
     pt, lon = utc.astimezone(PT), utc.astimezone(LON)
     day = pt.strftime('%a %-d %b')
-    if 'pre-recorded' in s['title']:
+    if s.get('prerecorded'):
         return f'Ready from {day}'
     return f'{day} · {clock(pt)} PT / {clock(lon)} London'
 
@@ -54,7 +54,7 @@ def faces(names):
 
 def card(s):
     kind = TYPE[s['type']]
-    tag = 'Pre-recorded' if 'pre-recorded' in s['title'] else 'Live bonus' if kind == 'Bonus' else kind
+    tag = 'Pre-recorded' if s.get('prerecorded') else 'Live bonus' if kind == 'Bonus' else kind
     return (f'<article class="card {kind.lower()}"><div class="meta"><span class="tag">{tag}</span>'
             f'<span class="when">{when(s)}</span></div><h3>{e(title(s))}</h3>{faces(s["teachers"])}'
             f'<div class="desc">{body(s["description"])}</div></article>')
