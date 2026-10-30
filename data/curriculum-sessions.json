@@ -10,7 +10,7 @@
    "order": "0",
    "id": "recL56pDrsS3AXXPF",
    "start_utc": "2026-11-05T15:00:00Z",
-   "module": null,
+   "module": "Bonus",
    "type": "Bonus",
    "title": "What to Automate First: Your Biggest Time Drain, Built Live",
    "teachers": [
@@ -220,7 +220,7 @@
    "order": "11",
    "id": "rec9gk9Vqjf4b6aLl",
    "start_utc": "2027-01-05T15:00:00Z",
-   "module": "Module 6: Operations",
+   "module": "Module 3: Company Brain",
    "type": "Lesson",
    "title": "Inbox: Wake Up to Sorted Email and Drafted Replies",
    "teachers": [
@@ -236,7 +236,7 @@
    "order": "12",
    "id": "reccAto5yYMZO1T4A",
    "start_utc": "2027-01-07T15:00:00Z",
-   "module": "Module 6: Operations",
+   "module": "Module 3: Company Brain",
    "type": "Workshop",
    "title": "Switch On Your Inbox Assistant and Pick What to Automate",
    "teachers": [
