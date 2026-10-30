@@ -36,7 +36,7 @@ def when(s):
 
 
 def title(s):
-    return re.sub(r'\s*\(pre-recorded\)', '', s['title'])
+    return re.sub(r'^\[Pre-recorded\]\s*|\s*\(pre-recorded\)', '', s['title'], flags=re.I)  # the tag already says it
 
 
 def body(text):
