@@ -75,7 +75,7 @@ def mod_num(s):
 
 
 def build():
-    """One section per module, in date order. A module that pauses and resumes (Marketing) shows as two runs."""
+    """One section per module, in date order: since 30 Oct each module is one month. A module that pauses and resumes would show as two runs."""
     sessions, brk = DATA['sessions'], DATA['break']
     names = {mod_num(s): s['module'].split(': ', 1)[-1] for s in sessions if s.get('module')}
     weeks, wk = [], 0
@@ -110,7 +110,10 @@ def build():
                 blocks.append(f'<div class="break"><b>{e(brk["label"])}</b> {e(brk["dates"])}</div>')
         nums = [w['n'] for w in r['weeks'] if not w['grad']]
         span = ('Before week 1' if not nums else f'Week {nums[0]}' if len(nums) == 1 else f'Weeks {nums[0]} and {nums[1]}' if len(nums) == 2 else f'Weeks {nums[0]} to {nums[-1]}')
+        if r['pre'] and nums: span = 'Before week 1, then ' + span[0].lower() + span[1:]
         if any(w['grad'] for w in r['weeks']): span += ', then graduation'
+        day = first_day(r['pre'] + [s for w in r['weeks'] for s in w['items']])
+        if m and day: span = f'{day.strftime("%B")} · {span}'
         anchor = f'm{m}' if m not in seen else f'm{m}b'
         head = names[m] + (', continued' if m in seen else '')
         seen.add(m)
@@ -180,7 +183,7 @@ h3{font-size:20px;font-weight:700;line-height:1.3;margin-top:10px}
 .break{margin:4px 0 4px 112px;padding:12px 16px;border-radius:16px;background:var(--gold-light);color:#5C4300;font-size:14px}
 footer{margin:48px 0 0;padding:24px 0 40px;border-top:1px solid var(--border);font-size:13px;color:var(--subtle)}
 .mod-0{--mc:#946A00;--mt:#FBF3DE}.mod-1{--mc:#475467;--mt:#F2F4F7}.mod-2{--mc:#1832B4;--mt:#EEF2FF}.mod-3{--mc:#7A12D4;--mt:#F4EBFC}
-.mod-4{--mc:#0F7B4A;--mt:#E8F5EE}.mod-5{--mc:#B54708;--mt:#FEF0E6}.mod-6{--mc:#0E7090;--mt:#E6F4F8}
+.mod-4{--mc:#0F7B4A;--mt:#E8F5EE}.mod-5{--mc:#B54708;--mt:#FEF0E6}
 .mod .mh{border-left:6px solid var(--mc);padding:4px 0 4px 14px;border-radius:2px}
 .mod .eyebrow{color:var(--mc)}
 .card{border-left:4px solid var(--mc)}
