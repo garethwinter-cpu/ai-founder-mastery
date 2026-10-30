@@ -27,6 +27,8 @@ def clock(dt):
 
 
 def when(s):
+    if not s.get('start_utc'):
+        return 'Watch any time before week 1'
     utc = datetime.fromisoformat(s['start_utc'].replace('Z', '+00:00'))
     pt, lon = utc.astimezone(PT), utc.astimezone(LON)
     day = pt.strftime('%a %-d %b')
@@ -55,46 +57,56 @@ def faces(names):
 def card(s):
     kind = TYPE[s['type']]
     tag = 'Pre-recorded' if s.get('prerecorded') else 'Live bonus' if kind == 'Bonus' else kind
+    mod = f'<span class="modtag">{e(s["module"])}</span>' if s.get('module') else ''
     return (f'<article class="card {kind.lower()}"><div class="meta"><span class="tag">{tag}</span>'
-            f'<span class="when">{when(s)}</span></div><h3>{e(title(s))}</h3>{faces(s["teachers"])}'
+            f'<span class="when">{when(s)}</span>{mod}</div><h3>{e(title(s))}</h3>{faces(s["teachers"])}'
             f'<div class="desc">{body(s["description"])}</div></article>')
 
 
+def first_day(items):
+    dated = [s['start_utc'] for s in items if s.get('start_utc')]
+    return datetime.fromisoformat(min(dated).replace('Z', '+00:00')).astimezone(PT) if dated else None
+
+
 def build():
-    sessions, mods, brk = DATA['sessions'], DATA['modules'], DATA['break']
+    """One section per month, as clustered in Airtable's Month field; each session carries its module."""
+    sessions, brk = DATA['sessions'], DATA['break']
     weeks, wk = [], 0
     for s in sessions:  # a week is a Tuesday lesson and its Thursday lab; graduation stands alone
-        if s['module'] == 0:
+        if s['order'].startswith('0'):
             continue
         if s['type'] in ('Lesson', 'Graduation'):
             wk += 1
-            weeks.append({'n': wk, 'module': s['module'], 'grad': s['type'] == 'Graduation', 'items': []})
+            weeks.append({'n': wk, 'month': s['month'], 'grad': s['type'] == 'Graduation', 'items': []})
         weeks[-1]['items'].append(s)
+    pre = [s for s in sessions if s['order'].startswith('0')]
+    months = sorted({s['month'] for s in sessions}, key=lambda m: int(m.split()[-1]))
 
-    out = []
-    pre = [s for s in sessions if s['module'] == 0]
-    out.append(f'<section id="m0" class="mod"><div class="mh"><span class="eyebrow">Before week 1</span>'
-               f'<h2>{e(mods["0"])}</h2></div><div class="week"><div class="wl"><b>Week 0</b><span>4 to 12 Nov</span></div>'
-               f'<div class="cards">{"".join(card(s) for s in pre)}</div></div></section>')
-    for m in range(1, 9):
-        ws = [w for w in weeks if w['module'] == m]
-        nums = [w['n'] for w in ws if not w['grad']]
-        rng = f'Week {nums[0]}' if len(nums) == 1 else f'Weeks {nums[0]} to {nums[-1]}'
+    out, chips = [], []
+    for i, m in enumerate(months, 1):
+        items = [s for s in sessions if s['month'] == m]
+        cal = first_day(items).strftime('%B')
+        mods = []
+        for s in items:
+            name = (s.get('module') or '').split(': ', 1)[-1]
+            if name and name not in mods: mods.append(name)
         blocks = []
-        for w in ws:
+        if i == 1 and pre:
+            blocks.append(f'<div class="week"><div class="wl"><b>Before week 1</b><span>Bonus and setup</span></div>'
+                          f'<div class="cards">{"".join(card(s) for s in pre)}</div></div>')
+        for w in [w for w in weeks if w['month'] == m]:
             label = 'Graduation' if w['grad'] else f'Week {w["n"]}'
-            day = datetime.fromisoformat(w['items'][0]['start_utc'].replace('Z', '+00:00')).astimezone(PT).strftime('%-d %b')
-            blocks.append(f'<div class="week"><div class="wl"><b>{label}</b><span>{day}</span></div>'
+            blocks.append(f'<div class="week"><div class="wl"><b>{label}</b><span>{first_day(w["items"]).strftime("%-d %b")}</span></div>'
                           f'<div class="cards">{"".join(card(s) for s in w["items"])}</div></div>')
             if any(s['order'] == brk['after_order'] for s in w['items']):
                 blocks.append(f'<div class="break"><b>{e(brk["label"])}</b> {e(brk["dates"])}</div>')
-        out.append(f'<section id="m{m}" class="mod"><div class="mh"><span class="eyebrow">Module {m} · {rng}</span>'
-                   f'<h2>{e(mods[str(m)])}</h2></div>{"".join(blocks)}</section>')
+        out.append(f'<section id="m{i}" class="mod"><div class="mh"><span class="eyebrow">{e(m)} · {cal}</span>'
+                   f'<h2>{e(" and ".join(mods))}</h2></div>{"".join(blocks)}</section>')
+        chips.append(f'<a href="#m{i}">{e(m)} · {cal[:3]}</a>')
 
-    chips = '<a href="#m0">Start</a>' + ''.join(f'<a href="#m{m}">{m} · {e(mods[str(m)])}</a>' for m in range(1, 9))
-    page = TEMPLATE.replace('__CHIPS__', chips).replace('__BODY__', '\n'.join(out))
+    page = TEMPLATE.replace('__CHIPS__', ''.join(chips)).replace('__BODY__', '\n'.join(out))
     (R / 'curriculum.html').write_text(page)
-    print(f'curriculum.html: {len(sessions)} sessions, {wk - 1} weeks and a graduation')
+    print(f'curriculum.html: {len(sessions)} sessions in {len(months)} months, {wk - 1} weeks and a graduation')
 
 
 TEMPLATE = '''<!DOCTYPE html>
@@ -137,6 +149,7 @@ h2{font-size:28px;font-weight:700;letter-spacing:-.01em;margin-top:2px}
 .card.lab{background:var(--grey);box-shadow:none}
 .card.graduation{border-color:var(--brand);background:var(--brand-light)}
 .meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:13px;color:var(--subtle)}
+.modtag{font-size:12px;color:var(--subtle)} .modtag::before{content:'· ';}
 .tag{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:128px;padding:3px 10px;background:var(--brand-light);color:var(--brand)}
 .lab .tag{background:#fff;color:var(--muted);border:1px solid var(--border)}
 .bonus .tag{background:var(--gold-light);color:var(--gold)}

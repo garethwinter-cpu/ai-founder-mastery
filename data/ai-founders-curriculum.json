@@ -630,7 +630,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-29T18:24:21Z",
+ "synced_at": "2026-10-30T07:40:16Z",
  "aligned": false,
  "cadence": "Seventeen lessons and a graduation · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London 16 to 25 March) · graduation Tuesday 30 March 2027",
  "slot": {
@@ -1004,7 +1004,7 @@
  },
  "onboarding": {
   "title": "Week 0: Get AI-Ready, pre-recorded and under two hours",
-  "text": "Two pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first, ready from 5 November: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second, ready from 12 November: the go-live walkthrough for hosting, for late buyers and anyone stuck. Before both, on Wednesday 4 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
+  "text": "Two pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second: the go-live walkthrough for hosting, for late buyers and anyone stuck. On Thursday 5 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
  },
  "changelog": [
   "Teacher allocation D, agreed with Vykintas on 29 October and entered in the AIF Airtable base: three teachers in the first four weeks (Vishen, Vykintas, Noelle Russell), so the room meets the faculty early. The 2025 AI Mastery cohort met seven teachers in its first eight lessons and kept 62% of its live audience by lesson 8; the 2026 cohort met four and kept 52%.",
@@ -1012,9 +1012,10 @@
   "The company brain moves to week 5 and the sorted inbox to week 6, the first week back after the holiday break. Brand and funnel run weeks 7 to 9; content weeks 10 and 11; Meta ads week 12. Finance, sales and the cockpit keep their weeks.",
   "Noelle Russell teaches findability in week 4 and closing in week 15. Ajit teaches both content lessons, weeks 10 and 11. Vykintas teaches copy in week 3, the inbox in week 6 and the owner pages in week 17. Vishen opens week 1 and teaches weeks 2, 7, 8 and 16. Marisha (12), Sara and Tyler (13) and Joe Stolte (14) are unchanged.",
   "After team feedback (Marta, Marijana) and agreed with Vykintas: copy (week 3) moves from Noelle to Vykintas, since nothing in her record points to conversion copywriting; the inbox (week 6) stays with Vykintas, because it runs on the brain he teaches and stays in Claude Code; Noelle takes findability (week 4) and keeps closing (week 15); Ajit takes both content lessons (weeks 10 and 11), his proven topic. Same number of lessons for everyone. Open: Vishen may take copy in week 3; it would put him in two programmes that morning (Expert & Authority at 9am Pacific), so Vykintas holds it until he answers.",
-  "A fast action bonus call for early buyers on Wednesday 4 November, 7am Pacific (3pm London): What to Automate First, Built With Vishen, live with Vishen and Vykintas, the bridge from the summit to kickoff. The recording follows in BlinkLearn.",
-  "Both Get AI-Ready sessions are pre-recorded rather than live drop-ins: setup, first skills and the hours log from 5 November; the go-live walkthrough from 12 November.",
-  "Customer-facing descriptions for every session are in Airtable, written to the mastery-lesson-descriptions house style; the internal briefs stay here."
+  "A fast action bonus call for early buyers on Thursday 5 November, 7am Pacific (3pm London): What to Automate First, Built With Vishen, live with Vishen and Vykintas, the bridge from the summit to kickoff. The recording follows in BlinkLearn.",
+  "Both Get AI-Ready sessions are pre-recorded rather than live drop-ins: setup, first skills and the hours log, then the go-live walkthrough, to watch any time before week 1.",
+  "Customer-facing descriptions for every session are in Airtable, written to the mastery-lesson-descriptions house style; the internal briefs stay here.",
+  "Jaideep regrouped the Airtable base on 30 October into six modules and five months: Foundations, Marketing, Company Brain, Finance, Sales, Operations. The fast action bonus call moved to Thursday 5 November; the Get AI-Ready sessions have no date, as they are pre-recorded."
  ],
  "changelog_title": "What changed on 29 October",
  "electives": [
@@ -1344,15 +1345,15 @@
   "Thanksgiving, decided 5 October and checked against the day on 7 October: the Week 2 lab stays on Thursday 26 November, Thanksgiving Day in the US. Expert & Authority’s 2025 reading was that the week holds, and it kept its Friday 27 November workshop. The 2025 Mastery records confirm the week and sharpen the day: AI Mastery’s sessions the day before (422 against 454 and 447 the Wednesdays either side) and the day after (307 against 274 and 313) showed no dip; the one session that ran on Thanksgiving Day itself, Entrepreneurship Mastery’s Thursday lesson, kept 214 of a usual 300, about 70 percent, and its recording was watched more that week than any other Thursday’s that month. So the lab runs, Vykintas-led and recorded, and the Tuesday 1 December lesson picks up anyone who missed it. Wednesday 25 November is the alternative if the team prefers not to run on the day; the day before showed no dip.",
   "Time slot, set 7 October: 7am Pacific, which is 3pm London except from 16 to 25 March 2027, when it is 2pm (US clocks change on 14 March, UK clocks on 28 March); graduation on 30 March is back at 3pm London. Janja set the hour for team capacity and schedule; the data supports it. Attendance across five Mastery bases shows no hour effect between 7am and 10am Pacific (Entrepreneurship Mastery moved from 5pm to 3pm London mid-cohort and attendance did not move), Manifesting and Speaking & Influence Mastery run at 3pm London with the highest live rates in the set, and the final hour-by-hour preference was for 9am because about 60 percent of students are in North America; that was never a hill to die on. Students are told the Pacific time; London is the derived time. Evidence in briefs/AIF-TIME-SLOT-EVIDENCE.md.",
   "What this programme leaves to AI Mastery: how models work, prompting in depth, image and video generation, writing skills from scratch, building apps (the one exception is the software elective, offered outside the core seventeen). Where both touch the same tool the angle differs: the brain in AI Mastery is your personal knowledge; here it is the company’s, shared with the team. Neither is the advanced one.",
-  "Outside the lessons: the fast action bonus call, live on Wednesday 4 November with Vishen and Vykintas, and two pre-recorded Get AI-Ready sessions, ready from 5 and 12 November, the second being the go-live walkthrough for hosting. Office hours and an alumni reunion were removed on 7 October, and the Monday opening was folded into week 1 on 14 October. Software building is an elective; its format, recorded or an extra live call, is not yet decided.",
+  "Outside the lessons: the fast action bonus call, live on Thursday 5 November with Vishen and Vykintas, and two pre-recorded Get AI-Ready sessions to watch any time before week 1, the second being the go-live walkthrough for hosting. Office hours and an alumni reunion were removed on 7 October, and the Monday opening was folded into week 1 on 14 October. Software building is an elective; its format, recorded or an extra live call, is not yet decided.",
   "Summit learnings applied: a live build directly before every offer; every session leaves something built; written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; untested builders get a paid webinar or Highlights slot before the summit; Shawn never follows Vykintas in the same event."
  ],
  "sessions": [
   {
    "id": "aif-fast-action",
-   "title": "What to Automate First, Built With Vishen",
+   "title": "What to Automate First: Your Biggest Time Drain, Built Live",
    "type": "Bonus",
-   "start": "2026-11-04T15:00:00.000Z",
+   "start": "2026-11-05T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1365,7 +1366,7 @@
     }
    ],
    "module": null,
-   "description": "Fast action bonus call for early buyers, live on Wednesday 4 November: each founder looks at their own week, finds the work that eats the most hours, chooses the one thing to hand to AI first, and sees it built live. The bridge from the summit to kickoff; the recording follows in BlinkLearn."
+   "description": "Fast action bonus call for early buyers, live on Thursday 5 November: each founder looks at their own week, finds the work that eats the most hours, chooses the one thing to hand to AI first, and sees it built live. The bridge from the summit to kickoff; the recording follows in BlinkLearn."
   },
   {
    "id": "aif-ready-1",
@@ -1380,7 +1381,7 @@
     }
    ],
    "module": null,
-   "description": "Pre-recorded, ready from 5 November: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log started.\n\nTwo pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first, ready from 5 November: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second, ready from 12 November: the go-live walkthrough for hosting, for late buyers and anyone stuck. Before both, on Wednesday 4 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
+   "description": "Pre-recorded, to watch any time before week 1: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log started.\n\nTwo pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second: the go-live walkthrough for hosting, for late buyers and anyone stuck. On Thursday 5 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
   },
   {
    "id": "aif-ready-2",
@@ -1395,7 +1396,7 @@
     }
    ],
    "module": null,
-   "description": "Pre-recorded, ready from 12 November: hosting set up step by step, so publishing is one sentence from week 1. For late buyers and anyone stuck; anyone who still cannot publish goes live in the week 1 lab.\n\nTwo pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first, ready from 5 November: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second, ready from 12 November: the go-live walkthrough for hosting, for late buyers and anyone stuck. Before both, on Wednesday 4 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
+   "description": "Pre-recorded, to watch any time before week 1: hosting set up step by step, so publishing is one sentence from week 1. For late buyers and anyone stuck; anyone who still cannot publish goes live in the week 1 lab.\n\nTwo pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second: the go-live walkthrough for hosting, for late buyers and anyone stuck. On Thursday 5 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
   },
   {
    "id": "aif-w01-lesson",

@@ -15,7 +15,8 @@ page and Expert & Authority go to the live Mindvalley site, which needs Google s
 
 **Curriculum page.** Airtable is the source of truth. Refresh `data/curriculum-sessions.json` from the base, then run
 `python3 scripts/build_curriculum.py`. The export below leaves `curriculum.html` alone.
-Session titles come from the `mastery-lesson-titles` skill and are in Airtable as of 30 October.
+Session titles come from the `mastery-lesson-titles` skill and are in Airtable as of 30 October. The page is grouped by
+the Month field in Airtable, and each session shows its module (six modules since 30 October).
 
 **Front door and pack.** These files are exported from `garethwinter-cpu/expert-authority-mastery`, where the curriculum is
 built and served live. To refresh this repo from there:
