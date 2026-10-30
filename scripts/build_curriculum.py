@@ -87,19 +87,23 @@ def build():
             weeks.append({'n': wk, 'month': s['month'], 'mod': mod_num(s), 'grad': s['type'] == 'Graduation', 'items': []})
         weeks[-1]['items'].append(s)
     pre = [s for s in sessions if s['order'].startswith('0')]
-    months = sorted({s['month'] for s in sessions}, key=lambda m: int(m.split()[-1]))
+    months = sorted({s['month'] for s in sessions if s['month'].startswith('Month')}, key=lambda m: int(m.split()[-1]))
 
     first = {}   # where each module first appears, for the key at the top
     out = []
+    if pre:   # onboarding sits outside the four months, as in Airtable's Pre-Class Bonus
+        blocks = []
+        for s in pre: first.setdefault(mod_num(s), f'w0-{mod_num(s)}')
+        for mn in sorted({mod_num(s) for s in pre}):
+            blocks.append(f'<div class="week mod-{mn}" id="w0-{mn}"><div class="wl"><b>Before week 1</b><span>{"Live" if mn == 0 else "Pre-recorded"}</span></div>'
+                          f'<div class="cards">{"".join(card(s) for s in pre if mod_num(s) == mn)}</div></div>')
+        out.append(f'<section id="m0" class="month"><div class="mh"><span class="eyebrow">Before week 1</span>'
+                   f'<h2>{e(pre[0]["month"])}</h2></div>{"".join(blocks)}</section>')
     for i, m in enumerate(months, 1):
         items = [s for s in sessions if s['month'] == m]
         blocks = []
-        if i == 1 and pre:
-            for s in pre: first.setdefault(mod_num(s), f'w0-{mod_num(s)}')
-            for mn in sorted({mod_num(s) for s in pre}):
-                blocks.append(f'<div class="week mod-{mn}" id="w0-{mn}"><div class="wl"><b>Before week 1</b><span>{"Live" if mn == 0 else "Pre-recorded"}</span></div>'
-                              f'<div class="cards">{"".join(card(s) for s in pre if mod_num(s) == mn)}</div></div>')
-        for w in [w for w in weeks if w['month'] == m]:
+        mw = [w for w in weeks if w['month'] == m]
+        for w in mw:
             first.setdefault(w['mod'], f'w{w["n"]}')
             label = 'Graduation' if w['grad'] else f'Week {w["n"]}'
             blocks.append(f'<div class="week mod-{w["mod"]}" id="w{w["n"]}"><div class="wl"><b>{label}</b><span>{first_day(w["items"]).strftime("%-d %b")}</span>'
@@ -109,13 +113,17 @@ def build():
                 blocks.append(f'<div class="break"><b>{e(brk["label"])}</b> {e(brk["dates"])}</div>')
         mods = sorted({mod_num(s) for s in items})
         pills = ''.join(f'<span class="modtag mod-{n}">{e(names[n] if n == 0 else f"Module {n}: {names[n]}")}</span>' for n in mods)
-        out.append(f'<section id="m{i}" class="month"><div class="mh"><span class="eyebrow">{e(m)}</span>'
-                   f'<h2>{first_day(items).strftime("%B")}</h2><div class="pills">{pills}</div></div>{"".join(blocks)}</section>')
+        nums = [w['n'] for w in mw if not w['grad']]
+        span = f'Weeks {nums[0]} to {nums[-1]}' + (', then graduation' if any(w['grad'] for w in mw) else '')
+        last = max(s['start_utc'] for s in items if s.get('start_utc'))
+        last = datetime.fromisoformat(last.replace('Z', '+00:00')).astimezone(PT)
+        out.append(f'<section id="m{i}" class="month"><div class="mh"><span class="eyebrow">{span} · {first_day(items).strftime("%-d %b")} to {last.strftime("%-d %b")}</span>'
+                   f'<h2>{e(m)}</h2><div class="pills">{pills}</div></div>{"".join(blocks)}</section>')
 
     chips = ''.join(f'<a class="mod-{n}" href="#{first[n]}">{e(names[n]) if n == 0 else f"{n} · {e(names[n])}"}</a>' for n in sorted(names))
     page = TEMPLATE.replace('__CHIPS__', chips).replace('__BODY__', '\n'.join(out))
     (R / 'curriculum.html').write_text(page)
-    print(f'curriculum.html: {len(sessions)} sessions in teaching order, {len(months)} months, {len(names)} module tags, {wk - 1} weeks and a graduation')
+    print(f'curriculum.html: {len(sessions)} sessions in teaching order, {len(months)} months plus pre-class, {len(names)} module tags, {wk - 1} weeks and a graduation')
 
 
 TEMPLATE = '''<!DOCTYPE html>
@@ -192,7 +200,7 @@ footer{margin:48px 0 0;padding:24px 0 40px;border-top:1px solid var(--border);fo
 <section class="hero">
 <h1>The curriculum</h1>
 <p class="lede">Every Tuesday, a live lesson. Every Thursday, a hands-on lab where you build it for your own business.</p>
-<div class="facts"><span>Starts <b>Tue 17 Nov</b></span><span>Live <b>7am PT / 3pm London</b></span><span><b>90 min</b> per session</span><span>Graduation <b>Tue 30 Mar</b></span></div>
+<div class="facts"><span>Starts <b>Tue 17 Nov</b></span><span>Live <b>7am PT / 3pm London</b></span><span><b>18 weeks</b> · 4 months</span><span><b>90 min</b> per session</span><span>Graduation <b>Tue 30 Mar</b></span></div>
 </section>
 __BODY__
 <footer>Times are Pacific and London. Teachers and dates may change before the program starts.</footer>
