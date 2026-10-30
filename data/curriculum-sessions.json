@@ -59,7 +59,7 @@
    "order": "1",
    "id": "rec9HBTxIAPQEE7YS",
    "start_utc": "2026-11-17T15:00:00Z",
-   "module": "Module 1: Foundations",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Website: Build One That Beats Your 3 Closest Competitors",
    "teachers": [
@@ -76,7 +76,7 @@
    "order": "2",
    "id": "recvzsUOiXXs0NHxm",
    "start_utc": "2026-11-19T15:00:00Z",
-   "module": "Module 1: Foundations",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Launch Your Website and Test Your Lead Form",
    "teachers": [
@@ -92,7 +92,7 @@
    "order": "3",
    "id": "recEKC1BI49fO60F1",
    "start_utc": "2026-11-24T15:00:00Z",
-   "module": "Module 1: Foundations",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Offer and Pricing: Who Buys, What to Sell, What to Charge",
    "teachers": [
@@ -108,7 +108,7 @@
    "order": "4",
    "id": "recf3PWFGeENrgnwM",
    "start_utc": "2026-11-26T15:00:00Z",
-   "module": "Module 1: Foundations",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Put Your Offers and Prices on Your Website",
    "teachers": [
@@ -124,7 +124,7 @@
    "order": "5",
    "id": "recoDxaLCbwiznnu0",
    "start_utc": "2026-12-01T15:00:00Z",
-   "module": "Module 2: Copy, Search and Company Brain",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Copywriting: Turn Your Website Visitors Into Buyers",
    "teachers": [
@@ -140,7 +140,7 @@
    "order": "6",
    "id": "recr0QiLDyRicCBpW",
    "start_utc": "2026-12-03T15:00:00Z",
-   "module": "Module 2: Copy, Search and Company Brain",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Rewrite Your Website and Score the Difference",
    "teachers": [
@@ -156,7 +156,7 @@
    "order": "7",
    "id": "rec1F4vmHObL9vmO5",
    "start_utc": "2026-12-08T15:00:00Z",
-   "module": "Module 2: Copy, Search and Company Brain",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Search: Get Recommended by ChatGPT and Google",
    "teachers": [
@@ -172,7 +172,7 @@
    "order": "8",
    "id": "recPxp0DvMxaLuYQn",
    "start_utc": "2026-12-10T15:00:00Z",
-   "module": "Module 2: Copy, Search and Company Brain",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Publish Your First Search Article and Start Tracking It",
    "teachers": [
@@ -188,7 +188,7 @@
    "order": "9",
    "id": "recXLMXMUIelfyyLG",
    "start_utc": "2026-12-15T15:00:00Z",
-   "module": "Module 2: Copy, Search and Company Brain",
+   "module": "Module 3: Company Brain",
    "type": "Lesson",
    "title": "Company Brain: Never Explain Your Business Twice",
    "teachers": [
@@ -204,7 +204,7 @@
    "order": "10",
    "id": "recYWISw4dQd7GaST",
    "start_utc": "2026-12-17T15:00:00Z",
-   "module": "Module 2: Copy, Search and Company Brain",
+   "module": "Module 3: Company Brain",
    "type": "Workshop",
    "title": "Set Up Your Company Brain and Ask It Anything",
    "teachers": [
@@ -220,7 +220,7 @@
    "order": "11",
    "id": "rec9gk9Vqjf4b6aLl",
    "start_utc": "2027-01-05T15:00:00Z",
-   "module": "Module 3: Inbox, Brand and Funnels",
+   "module": "Module 6: Operations",
    "type": "Lesson",
    "title": "Inbox: Wake Up to Sorted Email and Drafted Replies",
    "teachers": [
@@ -236,7 +236,7 @@
    "order": "12",
    "id": "reccAto5yYMZO1T4A",
    "start_utc": "2027-01-07T15:00:00Z",
-   "module": "Module 3: Inbox, Brand and Funnels",
+   "module": "Module 6: Operations",
    "type": "Workshop",
    "title": "Switch On Your Inbox Assistant and Pick What to Automate",
    "teachers": [
@@ -252,7 +252,7 @@
    "order": "13",
    "id": "recygA1gUDoH7pnVN",
    "start_utc": "2027-01-12T15:00:00Z",
-   "module": "Module 3: Inbox, Brand and Funnels",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Branding: A Professional Brand Without a Design Agency",
    "teachers": [
@@ -268,7 +268,7 @@
    "order": "14",
    "id": "rec3WRWYD6MGgd4N4",
    "start_utc": "2027-01-14T15:00:00Z",
-   "module": "Module 3: Inbox, Brand and Funnels",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Build Your Brand Kit and Restyle Your Website",
    "teachers": [
@@ -284,7 +284,7 @@
    "order": "15",
    "id": "recD8gms9SqMQ293I",
    "start_utc": "2027-01-19T15:00:00Z",
-   "module": "Module 3: Inbox, Brand and Funnels",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Funnels: Map the Path From Visitor to Lead",
    "teachers": [
@@ -300,7 +300,7 @@
    "order": "16",
    "id": "recjoTnn9CpQNg3Y2",
    "start_utc": "2027-01-21T15:00:00Z",
-   "module": "Module 3: Inbox, Brand and Funnels",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Create Your Lead Magnet and Write Your Welcome Emails",
    "teachers": [
@@ -316,7 +316,7 @@
    "order": "17",
    "id": "rect2SKmg3EcthJeS",
    "start_utc": "2027-01-26T15:00:00Z",
-   "module": "Module 3: Inbox, Brand and Funnels",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Funnel Launch: Go Live and Collect Your First Leads",
    "teachers": [
@@ -332,7 +332,7 @@
    "order": "18",
    "id": "recqeg9GMvFwU0S0r",
    "start_utc": "2027-01-28T15:00:00Z",
-   "module": "Module 3: Inbox, Brand and Funnels",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Send a Test Lead Through Your Live Funnel",
    "teachers": [
@@ -348,7 +348,7 @@
    "order": "19",
    "id": "recChFFcray41Qsmz",
    "start_utc": "2027-02-02T15:00:00Z",
-   "module": "Module 4: Content, Ads and Finance",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Content: Turn One Idea Into a Month of Posts",
    "teachers": [
@@ -364,7 +364,7 @@
    "order": "20",
    "id": "recoQi3FnVgDGfRU7",
    "start_utc": "2027-02-04T15:00:00Z",
-   "module": "Module 4: Content, Ads and Finance",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Make and Schedule Your Month of Content in One Sitting",
    "teachers": [
@@ -380,7 +380,7 @@
    "order": "21",
    "id": "rec25vtoi9MYRgDyo",
    "start_utc": "2027-02-09T15:00:00Z",
-   "module": "Module 4: Content, Ads and Finance",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Content System: Posts That Bring Customers, Not Just Likes",
    "teachers": [
@@ -396,7 +396,7 @@
    "order": "22",
    "id": "rec8VzcuR8Kcmilbs",
    "start_utc": "2027-02-11T15:00:00Z",
-   "module": "Module 4: Content, Ads and Finance",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Send Your First Newsletter and Find Your Winning Posts",
    "teachers": [
@@ -412,7 +412,7 @@
    "order": "23",
    "id": "rec6elTIN7jQ0jLLN",
    "start_utc": "2027-02-16T15:00:00Z",
-   "module": "Module 4: Content, Ads and Finance",
+   "module": "Module 2: Marketing",
    "type": "Lesson",
    "title": "Meta Ads: Run Your Own Ads Without an Agency",
    "teachers": [
@@ -428,7 +428,7 @@
    "order": "24",
    "id": "recRAXZ5imJJ1sxHq",
    "start_utc": "2027-02-18T15:00:00Z",
-   "module": "Module 4: Content, Ads and Finance",
+   "module": "Module 2: Marketing",
    "type": "Workshop",
    "title": "Create Your First 3 Ads and Launch a Test Campaign",
    "teachers": [
@@ -444,7 +444,7 @@
    "order": "25",
    "id": "recjs4yuYCUgF48sg",
    "start_utc": "2027-02-23T15:00:00Z",
-   "module": "Module 4: Content, Ads and Finance",
+   "module": "Module 4: Finance",
    "type": "Lesson",
    "title": "Bookkeeping: Get Invoices and Receipts Off Your Desk",
    "teachers": [
@@ -461,7 +461,7 @@
    "order": "26",
    "id": "recGex9RxnFVsAMAk",
    "start_utc": "2027-02-25T15:00:00Z",
-   "module": "Module 4: Content, Ads and Finance",
+   "module": "Module 4: Finance",
    "type": "Workshop",
    "title": "Automate Your Invoices and Chase Late Payments",
    "teachers": [
@@ -477,7 +477,7 @@
    "order": "27",
    "id": "recbvA3pa97lzD2pY",
    "start_utc": "2027-03-02T15:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 5: Sales",
    "type": "Lesson",
    "title": "Lead Scoring: Never Chase a Bad Lead Again",
    "teachers": [
@@ -493,7 +493,7 @@
    "order": "28",
    "id": "recp0VwbJ6zH7pibO",
    "start_utc": "2027-03-04T15:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 5: Sales",
    "type": "Workshop",
    "title": "Score Your Leads and Draft Replies to Your Best 5",
    "teachers": [
@@ -509,7 +509,7 @@
    "order": "29",
    "id": "recLfaVrhUQtNPfqt",
    "start_utc": "2027-03-09T15:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 5: Sales",
    "type": "Lesson",
    "title": "Sales Calls: Close More, Chase Less",
    "teachers": [
@@ -525,7 +525,7 @@
    "order": "30",
    "id": "rec4uEtIBdrzF6r4H",
    "start_utc": "2027-03-11T15:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 5: Sales",
    "type": "Workshop",
    "title": "Build Your Proposal Template and Automate Follow-Ups",
    "teachers": [
@@ -541,7 +541,7 @@
    "order": "31",
    "id": "recoSHl6SbBvIFkRW",
    "start_utc": "2027-03-16T14:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 6: Operations",
    "type": "Lesson",
    "title": "Dashboard: Run Your Company From One Screen",
    "teachers": [
@@ -557,7 +557,7 @@
    "order": "32",
    "id": "recFg7qRZDB5WVq6H",
    "start_utc": "2027-03-18T14:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 6: Operations",
    "type": "Workshop",
    "title": "Build Your Dashboard and Your Monday Briefing",
    "teachers": [
@@ -573,7 +573,7 @@
    "order": "33",
    "id": "recK6SPlorDIXJF5m",
    "start_utc": "2027-03-23T14:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 6: Operations",
    "type": "Lesson",
    "title": "Handover: Step Back and Let Your Systems Run the Week",
    "teachers": [
@@ -589,7 +589,7 @@
    "order": "34",
    "id": "recSXBhffVUWyNaZ1",
    "start_utc": "2027-03-25T14:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 6: Operations",
    "type": "Workshop",
    "title": "Give Every System an Owner and Plan Your Hands-Off Week",
    "teachers": [
@@ -605,7 +605,7 @@
    "order": "35",
    "id": "recnWNvfsxJybPK69",
    "start_utc": "2027-03-30T14:00:00Z",
-   "module": "Module 5: Sales and Operations",
+   "module": "Module 6: Operations",
    "type": "Graduation",
    "title": "Graduation and Demo Day: The Hours You Got Back",
    "teachers": [

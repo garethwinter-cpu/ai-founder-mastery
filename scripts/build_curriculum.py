@@ -75,7 +75,7 @@ def mod_num(s):
 
 
 def build():
-    """One section per module, in date order: since 30 Oct each module is one month. A module that pauses and resumes would show as two runs."""
+    """Teaching order, one section per month (Airtable's Month field). Each session is tagged and coloured by its module."""
     sessions, brk = DATA['sessions'], DATA['break']
     names = {mod_num(s): s['module'].split(': ', 1)[-1] for s in sessions if s.get('module')}
     weeks, wk = [], 0
@@ -84,47 +84,38 @@ def build():
             continue
         if s['type'] in ('Lesson', 'Graduation'):
             wk += 1
-            weeks.append({'n': wk, 'mod': mod_num(s), 'grad': s['type'] == 'Graduation', 'items': []})
+            weeks.append({'n': wk, 'month': s['month'], 'mod': mod_num(s), 'grad': s['type'] == 'Graduation', 'items': []})
         weeks[-1]['items'].append(s)
     pre = [s for s in sessions if s['order'].startswith('0')]
+    months = sorted({s['month'] for s in sessions}, key=lambda m: int(m.split()[-1]))
 
-    runs = [{'mod': m, 'pre': [s for s in pre if mod_num(s) == m], 'weeks': []} for m in sorted({mod_num(s) for s in pre})]
-    for w in weeks:
-        if runs and runs[-1]['mod'] == w['mod']:
-            runs[-1]['weeks'].append(w)
-        else:
-            runs.append({'mod': w['mod'], 'pre': [], 'weeks': [w]})
-
-    out, seen = [], set()
-    for r in runs:
-        m = r['mod']
+    first = {}   # where each module first appears, for the key at the top
+    out = []
+    for i, m in enumerate(months, 1):
+        items = [s for s in sessions if s['month'] == m]
         blocks = []
-        if r['pre']:
-            blocks.append(f'<div class="week"><div class="wl"><b>Before week 1</b><span>{"Live" if m == 0 else "Pre-recorded"}</span></div>'
-                          f'<div class="cards">{"".join(card(s) for s in r["pre"])}</div></div>')
-        for w in r['weeks']:
+        if i == 1 and pre:
+            for s in pre: first.setdefault(mod_num(s), f'w0-{mod_num(s)}')
+            for mn in sorted({mod_num(s) for s in pre}):
+                blocks.append(f'<div class="week mod-{mn}" id="w0-{mn}"><div class="wl"><b>Before week 1</b><span>{"Live" if mn == 0 else "Pre-recorded"}</span></div>'
+                              f'<div class="cards">{"".join(card(s) for s in pre if mod_num(s) == mn)}</div></div>')
+        for w in [w for w in weeks if w['month'] == m]:
+            first.setdefault(w['mod'], f'w{w["n"]}')
             label = 'Graduation' if w['grad'] else f'Week {w["n"]}'
-            blocks.append(f'<div class="week"><div class="wl"><b>{label}</b><span>{first_day(w["items"]).strftime("%-d %b")}</span></div>'
+            blocks.append(f'<div class="week mod-{w["mod"]}" id="w{w["n"]}"><div class="wl"><b>{label}</b><span>{first_day(w["items"]).strftime("%-d %b")}</span>'
+                          f'<em>{e(names[w["mod"]])}</em></div>'
                           f'<div class="cards">{"".join(card(s) for s in w["items"])}</div></div>')
             if any(s['order'] == brk['after_order'] for s in w['items']):
                 blocks.append(f'<div class="break"><b>{e(brk["label"])}</b> {e(brk["dates"])}</div>')
-        nums = [w['n'] for w in r['weeks'] if not w['grad']]
-        span = ('Before week 1' if not nums else f'Week {nums[0]}' if len(nums) == 1 else f'Weeks {nums[0]} and {nums[1]}' if len(nums) == 2 else f'Weeks {nums[0]} to {nums[-1]}')
-        if r['pre'] and nums: span = 'Before week 1, then ' + span[0].lower() + span[1:]
-        if any(w['grad'] for w in r['weeks']): span += ', then graduation'
-        day = first_day(r['pre'] + [s for w in r['weeks'] for s in w['items']])
-        if m and day: span = f'{day.strftime("%B")} · {span}'
-        anchor = f'm{m}' if m not in seen else f'm{m}b'
-        head = names[m] + (', continued' if m in seen else '')
-        seen.add(m)
-        eyebrow = span if m == 0 else f'Module {m} · {span}'
-        out.append(f'<section id="{anchor}" class="mod mod-{m}"><div class="mh"><span class="eyebrow">{eyebrow}</span>'
-                   f'<h2>{e(head)}</h2></div>{"".join(blocks)}</section>')
+        mods = sorted({mod_num(s) for s in items})
+        pills = ''.join(f'<span class="modtag mod-{n}">{e(names[n] if n == 0 else f"Module {n}: {names[n]}")}</span>' for n in mods)
+        out.append(f'<section id="m{i}" class="month"><div class="mh"><span class="eyebrow">{e(m)}</span>'
+                   f'<h2>{first_day(items).strftime("%B")}</h2><div class="pills">{pills}</div></div>{"".join(blocks)}</section>')
 
-    chips = ''.join(f'<a class="mod-{m}" href="#m{m}">{e(names[m]) if m == 0 else f"{m} · {e(names[m])}"}</a>' for m in sorted(names))
+    chips = ''.join(f'<a class="mod-{n}" href="#{first[n]}">{e(names[n]) if n == 0 else f"{n} · {e(names[n])}"}</a>' for n in sorted(names))
     page = TEMPLATE.replace('__CHIPS__', chips).replace('__BODY__', '\n'.join(out))
     (R / 'curriculum.html').write_text(page)
-    print(f'curriculum.html: {len(sessions)} sessions in {len(names)} modules ({len(runs)} runs), {wk - 1} weeks and a graduation')
+    print(f'curriculum.html: {len(sessions)} sessions in teaching order, {len(months)} months, {len(names)} module tags, {wk - 1} weeks and a graduation')
 
 
 TEMPLATE = '''<!DOCTYPE html>
@@ -156,7 +147,7 @@ h1{font-size:clamp(32px,5vw,48px);font-weight:700;line-height:1.08;letter-spacin
 .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .facts span{border:1px solid var(--border);border-radius:128px;padding:7px 14px;font-size:14px;font-weight:500}
 .facts b{color:var(--brand);font-weight:700}
-.mod{padding:40px 0 8px}
+.mod,.month{padding:40px 0 8px}
 .mh{margin-bottom:16px}
 .eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
 h2{font-size:28px;font-weight:700;letter-spacing:-.01em;margin-top:2px}
@@ -183,9 +174,10 @@ h3{font-size:20px;font-weight:700;line-height:1.3;margin-top:10px}
 .break{margin:4px 0 4px 112px;padding:12px 16px;border-radius:16px;background:var(--gold-light);color:#5C4300;font-size:14px}
 footer{margin:48px 0 0;padding:24px 0 40px;border-top:1px solid var(--border);font-size:13px;color:var(--subtle)}
 .mod-0{--mc:#946A00;--mt:#FBF3DE}.mod-1{--mc:#475467;--mt:#F2F4F7}.mod-2{--mc:#1832B4;--mt:#EEF2FF}.mod-3{--mc:#7A12D4;--mt:#F4EBFC}
-.mod-4{--mc:#0F7B4A;--mt:#E8F5EE}.mod-5{--mc:#B54708;--mt:#FEF0E6}
-.mod .mh{border-left:6px solid var(--mc);padding:4px 0 4px 14px;border-radius:2px}
-.mod .eyebrow{color:var(--mc)}
+.mod-4{--mc:#0F7B4A;--mt:#E8F5EE}.mod-5{--mc:#B54708;--mt:#FEF0E6}.mod-6{--mc:#0E7090;--mt:#E6F4F8}
+.month .eyebrow{color:var(--subtle)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.wl em{display:block;font-style:normal;font-size:12px;font-weight:700;color:var(--mc);margin-top:6px;border-left:3px solid var(--mc);padding-left:6px}
 .card{border-left:4px solid var(--mc)}
 .modtag{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--mc);background:var(--mt);border-radius:128px;padding:3px 10px}
 .chips a{border-color:var(--mc);color:var(--mc)} .chips a:hover{background:var(--mt);color:var(--mc);border-color:var(--mc)}
